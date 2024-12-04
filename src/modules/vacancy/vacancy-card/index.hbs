@@ -1,0 +1,49 @@
+<section class="vacancy-card">
+    <div class="vacancy-card__inner">
+        <header class="vacancy-card__header vacancy-card_normalized box__col box__col_xs_12 box__col_sm_12 box__col_md_3">
+            <div class="vacancy-card__logo">
+                {{> modules/common/svg-icon/index src="icons/logo.svg" }}
+            </div>
+            <div class="vacancy-card__arrow hidden_md hidden_xl">
+                {{> modules/common/svg-icon/index src="icons/arrow-down.svg" }}
+            </div>
+        </header>
+        <section class="vacancy-card__body vacancy-card_normalized box__col box__col_xs_12 box__col_sm_12 box__col_md_8">
+            <div class="vacancy-card__title">
+                {{ title }}
+            </div>
+            <div class="vacancy-card__company">
+                {{company}}
+            </div>
+        </section>
+        <section class="vacancy-card__arrow vacancy-card__arrow-heavy vacancy-card_normalized hidden_xs hidden_sm box__col_sm_12 box__col_md_1">
+            {{> modules/common/svg-icon/index src="icons/arrow-heavy.svg" }}
+        </section>
+    </div>
+    <div class="vacancy-card__expanded-body">
+        <div class="vacancy-card__message box__col">
+            {{message}}
+        </div>
+        <div class="vacancy-card__container box__col">
+            {{#each offerSections}}
+                <div class="vacancy-card__link-title">{{expandedTitle}}</div>
+                <ul class="vacancy-card__link-list">
+                    {{#each offerList}}
+                        <li class="vacancy-card__link">
+                            {{this}}
+                        </li>
+                {{/each}}
+                </ul>
+             {{/each}}
+        </div>
+        <div class="vacancy-card__expanded-body-actions ">
+            <div class="vacancy-card__action-logo">
+                <span class="hidden_md hidden_xl hidden_lg">{{> modules/common/svg-icon/index src="icons/arrow-down.svg" }}</span>
+                <span class="hidden_xs hidden_sm">{{> modules/common/svg-icon/index src="icons/arrow-heavy.svg" }}</span>
+            </div>
+            <div class="vacancy-card__action-text">
+                Свернуть
+            </div>
+        </div>
+    </div>
+</section>

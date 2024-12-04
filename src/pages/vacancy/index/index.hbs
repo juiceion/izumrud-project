@@ -1,0 +1,32 @@
+{{#> modules/layout/default/index }}
+  <main class="page page-vacancy">
+    <section class="box">
+        <section class="box__row">
+            <section class="box__col">
+                <div class="page-vacancy__breadcrumb">
+                    <a href="/">Главная</a>
+                    {{> modules/common/svg-icon/index src="icons/min-arrow.svg" }}
+                    <a href="">Вакансии</a>
+                </div>
+            </section>
+        </section>
+        <section class="box__row page-vacancy__title-container">
+            <section class="box__col box__col_xs_12 box__col_sm_6">
+                <h1 class="page-vacancy__title">Вакансии</h1>
+            </section>
+            <section class="box__col box__col_xs_12 box__col_sm_6 page-vacancy_end">
+                <a class="page-vacancy__button ">
+                    Анкета соискателя
+                </a>
+            </section>
+        </section>
+        <section class="box__row">
+            <section class="box__col page-vacancy__list">
+                {{#each vacancyList}}
+                    {{>modules/vacancy/vacancy-card/index }}
+                {{/each}}
+            </section>
+        </section>
+    </section>
+  </main>
+{{/ modules/layout/default/index }}

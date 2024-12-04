@@ -1,7 +1,9 @@
 {
-  "author": "Okruzhko",
+  "author": "juiceion",
+  "homepage": "https://juiceion.github.io/izumrud-project",
   "dependencies": {
     "@webcomponents/webcomponentsjs": "^2.6.0",
+    "gh-pages": "^6.2.0",
     "handlebars": "^4.7.7",
     "lit-element": "^3.1.1",
     "normalize.css": "^8.0.1"
@@ -72,7 +74,8 @@
     "serve": "cross-env NODE_ENV=production webpack serve --mode=production",
     "start": "cross-env NODE_ENV=development webpack serve --mode=development",
     "stylelint": "stylelint ./**/*.{css,less} --fix",
-    "test": "echo \"Warning: no test specified\" && exit 0"
+    "test": "echo \"Warning: no test specified\" && exit 0",
+    "deploy": "gn-pages -d build"
   },
   "version": "0.0.1"
 }

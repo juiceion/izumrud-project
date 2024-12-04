@@ -75,7 +75,7 @@
     "start": "cross-env NODE_ENV=development webpack serve --mode=development",
     "stylelint": "stylelint ./**/*.{css,less} --fix",
     "test": "echo \"Warning: no test specified\" && exit 0",
-    "deploy": "gn-pages -d build"
+    "deploy": "gh-pages -d www"
   },
   "version": "0.0.1"
 }

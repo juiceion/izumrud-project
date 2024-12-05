@@ -1,6 +1,86 @@
 {{#> modules/layout/default/index }}
   <div class="page page_gray page-index">
-    <h1>HTML Layout Kit</h1>
+      <section>
+          <div class="swiper main-swiper">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class="slide-image">
+                          {{> modules/common/svg-icon/index src="images/main_banner.svg" }}
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="slide-image">
+                          {{> modules/common/svg-icon/index src="images/main_banner.svg" }}
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="slide-image">
+                          {{> modules/common/svg-icon/index src="images/main_banner.svg" }}
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="slide-image">
+                          {{> modules/common/svg-icon/index src="images/main_banner.svg" }}
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="slide-image">
+                          {{> modules/common/svg-icon/index src="images/main_banner.svg" }}
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-pagination"></div>
+          </div>
+      </section>
+      <section class="tiles">
+        <div class="tile">
+            {{> modules/common/svg-icon/index src="images/shop_icon.svg" }}
+            <span>Магазины</span>
+        </div>
+          <a href="#" class="tile">
+              {{> modules/common/svg-icon/index src="images/kids.svg" }}
+              <span>Детям</span>
+          </a>
+          <a href="#" class="tile">
+              {{> modules/common/svg-icon/index src="images/uslugi.svg" }}
+              <span>Услуги</span>
+          </a>
+          <a href="#" class="tile">
+              {{> modules/common/svg-icon/index src="images/food.svg" }}
+              <span>Еда</span>
+          </a>
+          <a href="#" class="tile">
+              {{> modules/common/svg-icon/index src="images/services.svg" }}
+              <span>Сервисы</span>
+          </a>
+          <a href="#" class="tile">
+              {{> modules/common/svg-icon/index src="images/entertaintments.svg" }}
+              <span>Развлечения</span>
+          </a>
+          <a href="#" class="tile">
+              {{> modules/common/svg-icon/index src="images/photos.svg" }}
+              <span>Фотографии</span>
+          </a>
+      </section>
+      <section class="promo">
+          <div class="promo__background">
+              {{> modules/common/svg-icon/index src="images/promoBackground.svg" }}
+          </div>
+          <div class="promo__label-row">
+              <span class="promo__label">Сейчас в изумрудном</span>
+              <a href="#" class="promo__all-promo">
+                  <span>Все предложения </span>
+                  {{> modules/common/svg-icon/index src="images/promoArrow.svg" }}
+              </a>
+          </div>
+          <div class="swiper promo-swiper">
+              <div class="swiper-wrapper">
+                  {{#each promos}}
+                      {{>modules/main/promo-card/index }}
+                  {{/each}}
+              </div>
+          </div>
+      </section>
     <div class="page__block page__block_offset">
       <ul>
         {{# each menu}}

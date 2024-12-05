@@ -22,7 +22,7 @@ module.exports = (options) => {
       filename: '[name].min.js',
       library: ['htmlLayoutKit'],
       path: options.dist,
-      publicPath: '/izumrud-project/',
+      publicPath: isProd ? '/izumrud-project/' : '/',
     },
     plugins: [new CopyWebpackPlugin({patterns: [{from: options.public, to: options.dist}]})],
     resolve: {

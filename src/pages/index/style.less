@@ -1,0 +1,167 @@
+@import (reference) 'src/style/mixins';
+
+.main-swiper {
+  .slide-image {
+    height: 100%;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;
+    margin-inline: 1px !important;
+    opacity: 1;
+    transition: all 0.3s ease-in;
+
+    @media (@md-min) {
+      width: 10px;
+      height: 10px;
+      margin-inline: 5px !important;
+      border-radius: 5px;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 6px;
+    background-color: #fff;
+    margin-inline: 0 !important;
+
+    @media (@md-min) {
+      width: 30px;
+      margin-inline: 0 !important;
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 6px;
+
+    @media (@md-min) {
+      bottom: 30px;
+    }
+  }
+}
+
+.tiles {
+  padding: 20px 20px 40px;
+  display: flex;
+  gap: 10px 20px;
+  flex-wrap: wrap;
+
+  @media (@md-min) {
+    gap: 15px;
+    padding: 70px 100px;
+    justify-content: center;
+  }
+}
+
+.tile {
+  padding: 5px 10px;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: #fff;
+  width: calc(50% - 10px);
+
+  @media (@md-min) {
+    padding-block: 40px;
+    gap: 15px;
+    flex-direction: column;
+    width: calc(25% - 11.25px);
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+
+    @media (@md-min) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  span {
+    font-size: 12px;
+    line-height: 1em;
+    font-weight: 200;
+    color: #000;
+
+    @media (@md-min) {
+      font-size: 36px;
+    }
+  }
+}
+
+.promo {
+  width: 100%;
+  position: relative;
+  padding-bottom: 60px;
+
+  &__label-row {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+    @media (@md-min) {
+      padding-inline: 36px;
+      justify-content: space-between;
+    }
+  }
+
+  &__label {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+  }
+
+  &__all-promo {
+    display: flex;
+    align-items: center;
+    color: #503872;
+    font-size: 16px;
+    span {
+      display: none;
+    }
+
+    svg {
+      width: 20px;
+      height: 8px;
+    }
+
+    @media (@md-min) {
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 400;
+      gap: 10px;
+
+      span {
+        display: initial;
+      }
+
+      svg {
+        margin-bottom: 2px;
+      }
+    }
+  }
+
+  &__background {
+    position: absolute;
+    top: 51px;
+    bottom: 0;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+

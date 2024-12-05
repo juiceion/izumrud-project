@@ -5,5 +5,27 @@
     "title": "Index",
     "image": "image.svg",
     "url": "http://html-layout-kit.ru"
-  }
+  },
+  "promos": [
+    {
+      "name": "MALINA",
+      "type": "акции",
+      "description": "Летняя распродажа скидка до -50% в Malina"
+    },
+    {
+      "name": "MARMALATO",
+      "type": "события",
+      "description": "Долгожданная коллекция купальников"
+    },
+    {
+      "name": "Gloria Jeanes",
+      "type": "события",
+      "description": "Сезонная распродажа «Скидки до -50%»"
+    },
+    {
+      "name": "ReStore:",
+      "type": "события",
+      "description": "MacBook Air в restore:"
+    }
+  ]
 }

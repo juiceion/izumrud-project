@@ -63,9 +63,6 @@
           </a>
       </section>
       <section class="promo">
-          <div class="promo__background">
-              {{> modules/common/svg-icon/index src="images/promoBackground.svg" }}
-          </div>
           <div class="promo__label-row">
               <span class="promo__label">Сейчас в изумрудном</span>
               <a href="#" class="promo__all-promo">
@@ -75,9 +72,89 @@
           </div>
           <div class="swiper promo-swiper">
               <div class="swiper-wrapper">
-                  {{#each promos}}
-                      {{>modules/main/promo-card/index }}
-                  {{/each}}
+                  <div class="swiper-slide coupon-swiper-slide">
+                      <img src="images/malina.png" />
+                  </div>
+                  <div class="swiper-slide coupon-swiper-slide">
+                      <img src="images/marmalato.png" />
+                  </div>
+                  <div class="swiper-slide coupon-swiper-slide">
+                      <img src="images/gloriaJeans.png" />
+                  </div>
+                  <div class="swiper-slide coupon-swiper-slide">
+                      <img src="images/reStore.png" />
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="coupons">
+          <div class="coupons__content">
+              <div class="coupons__main-info">
+                  <img class="coupons__main-info__right-izumrud" src="images/rightIzumrud.png" />
+                  <img class="coupons__main-info__left-izumrud" src="images/leftIzumrud.png" />
+                  <div class="coupons__main-info__text">
+                      <span class="coupons__main-info__label">Накапливай Изумруды
+                      – получай купоны</span>
+                      <span class="coupons__main-info__value">1 Изумруд = 100₽</span>
+                      <div class="coupons__main-info__question-container">
+                          <span class="coupons__main-info__question">как получить изумруды?</span>
+                      </div>
+                  </div>
+
+                  <div class="coupons__main-info__app">
+                      <img class="coupons__main-info__app-qr" src="images/qr.png" />
+                      <div class="coupons__main-info__app-info">
+                      <span class="coupons__main-info__mobile-app-label">
+                          Cкачайте бесплатное
+                          приложение
+                      </span>
+                          <a href="#" class="coupons__main-info__app-link">
+                              <img class="coupons__main-info__app-image" src="images/appStore.png" />
+                          </a>
+                          <a href="#" class="coupons__main-info__app-link">
+                              <img class="coupons__main-info__app-image" src="images/googlePlay.png" />
+                          </a>
+                          <span class="coupons__main-info__desktop-app-label">
+                          Наведите камеру
+                          и скачайте
+                          бесплатное приложение
+                      </span>
+                      </div>
+                  </div>
+              </div>
+              <div class="coupons__items-container">
+                  <div class="coupons__items-container__row">
+                      <span class="coupons__items-container__label">Наши комплименты</span>
+                      <a href="#" class="coupons__items-container__all">
+                          Доступно 47 купонов
+                          {{> modules/common/svg-icon/index src="images/promoArrow.svg" }}
+                      </a>
+                  </div>
+                  <div class="swiper coupons-swiper">
+                      <div class="swiper-wrapper">
+                          <div class="swiper-slide coupon-swiper-slide">
+                              <img src="images/coupon2.png" />
+                          </div>
+                          <div class="swiper-slide coupon-swiper-slide">
+                              <img src="images/coupon2.png" />
+                          </div>
+                          <div class="swiper-slide coupon-swiper-slide">
+                              <img src="images/coupon2.png" />
+                          </div>
+                          <div class="swiper-slide coupon-swiper-slide">
+                              <img src="images/coupon3.png" />
+                          </div>
+                          <div class="swiper-slide coupon-swiper-slide">
+                              <img src="images/coupon3.png" />
+                          </div>
+                          <div class="swiper-slide coupon-swiper-slide">
+                              <img src="images/coupon4.png" />
+                          </div>
+                          <div class="swiper-slide coupon-swiper-slide">
+                              <img src="images/coupon4.png" />
+                          </div>
+                      </div>
+                  </div>
               </div>
           </div>
       </section>

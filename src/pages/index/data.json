@@ -26,6 +26,11 @@
       "name": "ReStore:",
       "type": "события",
       "description": "MacBook Air в restore:"
+    },
+    {
+      "name": "ReStore:",
+      "type": "события",
+      "description": "MacBook Air в restore:"
     }
   ]
 }

@@ -26,4 +26,16 @@ const promoSwiper = new Swiper('.promo-swiper', {
     }
 );
 
-promoSwiper.loopCreate()
+const couponsSwiper = new Swiper('.coupons-swiper', {
+        slidesPerView: 2.4,
+        spaceBetween: 2,
+        slidesOffsetAfter: 20,
+        slidesOffsetBefore: 20,
+    breakpoints: {
+        960: {
+            spaceBetween: 40,
+            slidesPerView: 4,
+        }
+    }
+    }
+);

@@ -87,8 +87,8 @@
               </div>
           </div>
       </section>
-      <section class="coupons">
-          <div class="coupons__content">
+      <div class="purple-container">
+          <section class="coupons">
               <div class="coupons__main-info">
                   <img class="coupons__main-info__right-izumrud" src="images/rightIzumrud.png" />
                   <img class="coupons__main-info__left-izumrud" src="images/leftIzumrud.png" />
@@ -127,7 +127,7 @@
                       <span class="coupons__items-container__label">Наши комплименты</span>
                       <a href="#" class="coupons__items-container__all">
                           Доступно 47 купонов
-                          {{> modules/common/svg-icon/index src="images/promoArrow.svg" }}
+                          {{> modules/common/svg-icon/index src="images/whiteArrow.svg" }}
                       </a>
                   </div>
                   <div class="swiper coupons-swiper">
@@ -156,8 +156,70 @@
                       </div>
                   </div>
               </div>
-          </div>
-      </section>
+          </section>
+          <section class="goodwin">
+              <div class="goodwin__label-container">
+                <span class="goodwin__label">Кинотеатр GOODWIN</span>
+                  <a href="#" class="goodwin__link">
+                      <span>Все сеансы</span>
+                      {{> modules/common/svg-icon/index src="images/whiteArrow.svg" }}
+                  </a>
+              </div>
+              <div class="goodwin__buttons-container">
+                  <a href="#" class="goodwin__promo-link">
+                      Акции
+                  </a>
+                  <img class="goodwin__cinema-logo" src="images/goodwin.png" />
+
+                  <div class="goodwin__poster-buttons">
+                      <button class="goodwin__poster-type-button">Сегодня в кино</button>
+                      <button class="goodwin__poster-type-button">Скоро в кино</button>
+                  </div>
+              </div>
+              <div class="swiper goodwin-swiper">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide goodwin-swiper__slide">
+                          <img src="images/movie1.png" />
+                          <span>Манюня: Приключения в Москве (2D, 6+)</span>
+                      </div>
+                      <div class="swiper-slide goodwin-swiper__slide">
+                          <img src="images/movie2.png" />
+                          <span>Незнакомцы: Начало (2D, 18+)</span>
+                      </div>
+                      <div class="swiper-slide goodwin-swiper__slide">
+                          <img src="images/movie3.png" />
+                          <span>Суперпташки. Улётная миссия (2D, 0+)</span>
+                      </div>
+                      <div class="swiper-slide goodwin-swiper__slide">
+                          <img src="images/movie4.png" />
+                          <span>Гарфилд (предсеанс. обсл) & "Остановка" (2D, 6+)</span>
+                      </div>
+                      <div class="swiper-slide goodwin-swiper__slide">
+                          <img src="images/movie1.png" />
+                          <span>Манюня: Приключения в Москве (2D, 6+)</span>
+                      </div>
+                      <div class="swiper-slide goodwin-swiper__slide">
+                          <img src="images/movie2.png" />
+                          <span>Незнакомцы: Начало (2D, 18+)</span>
+                      </div>
+                      <div class="swiper-slide goodwin-swiper__slide">
+                          <img src="images/movie3.png" />
+                          <span>Суперпташки. Улётная миссия (2D, 0+)</span>
+                      </div>
+                      <div class="swiper-slide goodwin-swiper__slide">
+                          <img src="images/movie4.png" />
+                          <span>Гарфилд (предсеанс. обсл) & "Остановка" (2D, 6+)</span>
+                      </div>
+                  </div>
+                  <div class="swiper-button-prev goodwin-swiper-button-prev">
+                      {{> modules/common/svg-icon/index src="images/arrow.svg" }}
+                  </div>
+                  <div class="swiper-button-next goodwin-swiper-button-next">
+                      {{> modules/common/svg-icon/index src="images/arrow.svg" }}
+                  </div>
+              </div>
+          </section>
+      </div>
     <div class="page__block page__block_offset">
       <ul>
         {{# each menu}}

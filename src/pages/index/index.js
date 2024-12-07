@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Pagination } from 'swiper/modules';
+import {Navigation, Pagination} from 'swiper/modules';
 // import Swiper and modules styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -10,7 +10,7 @@ import 'modules/layout/layout';
 import './style.less';
 
 const mainSwiper = new Swiper('.main-swiper', {
-        modules: [Pagination],
+    modules: [Pagination],
     loop: true,
     pagination: {
         el: '.swiper-pagination',
@@ -39,3 +39,39 @@ const couponsSwiper = new Swiper('.coupons-swiper', {
     }
     }
 );
+
+const goodwinSwiper = new Swiper('.goodwin-swiper', {
+        slidesPerView: 2.3,
+        spaceBetween: 10,
+        slidesOffsetAfter: 20,
+        slidesOffsetBefore: 20,
+        breakpoints: {
+            960: {
+                spaceBetween: 50,
+                slidesPerView: 4,
+                modules: [
+                    Navigation,
+                ],
+                navigation: {
+                    nextEl: '.goodwin-swiper-button-prev',
+                    prevEl: '.goodwin-swiper-button-next',
+                },
+                slidesOffsetAfter: 0,
+                slidesOffsetBefore: 0,
+                allowSlideNext: true,
+                allowSlidePrev: true
+            }
+        }
+    }
+);
+
+const nextButton = document.querySelector(".goodwin-swiper-button-next");
+const prevButton = document.querySelector(".goodwin-swiper-button-prev");
+
+nextButton.addEventListener("click", () => {
+    goodwinSwiper.slideNext();
+});
+
+prevButton.addEventListener("click", () => {
+    goodwinSwiper.slidePrev();
+});

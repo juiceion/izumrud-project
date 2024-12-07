@@ -1,18 +1,18 @@
 [
   {
-    "link": "/",
+    "link": "izumrud-project/",
     "title": "Home"
   },
   {
-    "link": "/vacancy",
+    "link": "izumrud-project/vacancy",
     "title": "Vacancy"
   },
   {
-  "link": "/event",
+  "link": "izumrud-project/event",
   "title": "Event"
 },
   {
-    "link": "/shares",
+    "link": "izumrud-project/shares",
     "title": "Shares"
   }
 ]

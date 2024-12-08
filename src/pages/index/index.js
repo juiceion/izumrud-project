@@ -75,3 +75,20 @@ nextButton.addEventListener("click", () => {
 prevButton.addEventListener("click", () => {
     goodwinSwiper.slidePrev();
 });
+
+const lookbooksSwiper = new Swiper('.lookbooks__swiper', {
+        slidesPerView: 2.4,
+        spaceBetween: 2,
+        slidesOffsetAfter: 20,
+        slidesOffsetBefore: 20,
+
+    breakpoints: {
+            960: {
+                slidesPerView: 3,
+                spaceBetween: 28,
+                slidesOffsetAfter: 0,
+                slidesOffsetBefore: 0
+            }
+    }
+    }
+);

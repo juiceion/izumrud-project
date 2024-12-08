@@ -1,5 +1,5 @@
 <div class="header">
-    <div class="box">
+    <div class="box header__inner-container">
         <div class="box__row header__row">
             <div class="box__col box__col_xs_2 box__col_sm_4">
                 <div class="header__menu-container">
@@ -28,7 +28,10 @@
                         {{> modules/common/svg-icon/index src="icons/search.svg" }}
                         <span class="header__text hidden_xs hidden_sm">поиск</span>
                     </button>
-                    <a class="header__time hidden_xs hidden_sm">
+                    <button id="schedule-mobile-close">
+                        {{> modules/common/svg-icon/index src="icons/close.svg" }}
+                    </button>
+                    <a id="desktop-time" class="header__time hidden_xs hidden_sm">
                         {{> modules/common/svg-icon/index src="icons/time.svg" }}
                         <span class="header__text">сегодня до 22:00</span>
                     </a>
@@ -49,11 +52,18 @@
                 </a>
             </div>
             <div class="box__col box__col_xs_4">
-                <a class="header__time header__mobile-container">
+                <div id="schedule-mobile-button" class="header__time header__mobile-container">
                     {{> modules/common/svg-icon/index src="icons/time.svg" }}
                     <span class="header__text">Время работы</span>
-                </a>
+                </div>
             </div>
+        </div>
+        <div id="schedule-desktop-container">{{> modules/layout/schedule/index }}</div>
+    </div>
+    <div id="schedule-mobile-container">
+        <div id="schedule-mobile-container-overlay">
+            {{> modules/layout/schedule/index }}
         </div>
     </div>
 </div>
+

@@ -70,20 +70,76 @@
                   {{> modules/common/svg-icon/index src="icons/promoArrow.svg" }}
               </a>
           </div>
-          <div class="swiper promo-swiper">
+          <div class="swiper promo-mobile-swiper">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide">
+                    <img src="images/malina.png" />
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img src="images/marmalato.png" />
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img src="images/gloriaJeans.png" />
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img src="images/reStore.png" />
+                </a>
+            </div>
+          </div>
+          <div class="swiper promo-desktop-swiper">
               <div class="swiper-wrapper">
-                  <a href="#" class="swiper-slide coupon-swiper-slide">
-                      <img src="images/malina.png" />
-                  </a>
-                  <a href="#" class="swiper-slide coupon-swiper-slide">
-                      <img src="images/marmalato.png" />
-                  </a>
-                  <a href="#" class="swiper-slide coupon-swiper-slide">
-                      <img src="images/gloriaJeans.png" />
-                  </a>
-                  <a href="#" class="swiper-slide coupon-swiper-slide">
-                      <img src="images/reStore.png" />
-                  </a>
+                  <div class="swiper-slide">
+                      <div class="promo-desktop-swiper__slide">
+                          <a href="#">
+                              <img src="images/malina.png" />
+                          </a>
+                          <a href="#">
+                              <img src="images/marmalato.png" />
+                          </a>
+                          <a href="#">
+                              <img src="images/gloriaJeans.png" />
+                          </a>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="promo-desktop-swiper__slide">
+                          <a href="#">
+                              <img src="images/malina.png" />
+                          </a>
+                          <a href="#">
+                              <img src="images/marmalato.png" />
+                          </a>
+                          <a href="#">
+                              <img src="images/gloriaJeans.png" />
+                          </a>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="promo-desktop-swiper__slide">
+                          <a href="#">
+                              <img src="images/malina.png" />
+                          </a>
+                          <a href="#">
+                              <img src="images/marmalato.png" />
+                          </a>
+                          <a href="#">
+                              <img src="images/gloriaJeans.png" />
+                          </a>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="promo-desktop-swiper__slide">
+                          <a href="#">
+                              <img src="images/malina.png" />
+                          </a>
+                          <a href="#">
+                              <img src="images/marmalato.png" />
+                          </a>
+                          <a href="#">
+                              <img src="images/gloriaJeans.png" />
+                          </a>
+                      </div>
+                  </div>
               </div>
           </div>
       </section>
@@ -104,8 +160,7 @@
                   <div class="coupons__main-info__app">
                       <img class="coupons__main-info__app-qr" src="images/qr.png" />
                       <div class="coupons__main-info__app-info">
-                      <span class="coupons__main-info__mobile-app-label">
-                          Cкачайте бесплатное
+                      <span class="coupons__main-info__mobile-app-label">Cкачайте бесплатное
                           приложение
                       </span>
                           <a href="#" class="coupons__main-info__app-link">
@@ -157,23 +212,23 @@
                   </div>
               </div>
           </section>
-          <section class="goodwin">
-              <div class="goodwin__label-container">
-                <span class="goodwin__label">Кинотеатр GOODWIN</span>
-                  <a href="#" class="goodwin__link">
+          <section class="goodwin-mobile">
+              <div class="goodwin-label-container">
+                <span class="goodwin-label">Кинотеатр GOODWIN</span>
+                  <a href="#" class="goodwin-link">
                       <span>Все сеансы</span>
                       {{> modules/common/svg-icon/index src="icons/whiteArrow.svg" }}
                   </a>
               </div>
-              <div class="goodwin__buttons-container">
-                  <a href="#" class="goodwin__promo-link">
+              <div class="goodwin-buttons-container">
+                  <a href="#" class="goodwin-promo-link">
                       Акции
                   </a>
-                  <img class="goodwin__cinema-logo" src="images/goodwin.png" />
+                  <img class="goodwin-cinema-logo" src="images/goodwin.png" />
 
-                  <div class="goodwin__poster-buttons">
-                      <button class="goodwin__poster-type-button">Сегодня в кино</button>
-                      <button class="goodwin__poster-type-button">Скоро в кино</button>
+                  <div class="goodwin-poster-buttons">
+                      <button class="goodwin-poster-type-button">Сегодня в кино</button>
+                      <button class="goodwin-poster-type-button">Скоро в кино</button>
                   </div>
               </div>
               <div class="swiper goodwin-swiper">
@@ -239,6 +294,68 @@
                   <a href="#" class="swiper-slide lookbooks__swiper-slide">
                       <img src="images/lookbook3.png" />
                   </a>
+              </div>
+          </div>
+      </section>
+      <section class="goodwin-desktop">
+          <div class="goodwin-label-container">
+              <span class="goodwin-label">Кинотеатр GOODWIN</span>
+              <a href="#" class="goodwin-link">
+                  <span>Все сеансы</span>
+                  {{> modules/common/svg-icon/index src="icons/whiteArrow.svg" }}
+              </a>
+          </div>
+          <div class="goodwin-buttons-container">
+              <a href="#" class="goodwin-promo-link">
+                  Акции
+              </a>
+              <img class="goodwin-cinema-logo" src="images/goodwin.png" />
+
+              <div class="goodwin-poster-buttons">
+                  <button class="goodwin-poster-type-button">Сегодня в кино</button>
+                  <button class="goodwin-poster-type-button">Скоро в кино</button>
+              </div>
+          </div>
+          <div class="swiper goodwin-desktop-swiper">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide goodwin-swiper__slide">
+                      <a href="#"><img src="images/movie1.png" /></a>
+                      <a href="#" class="text">Манюня: Приключения в Москве (2D, 6+)</a>
+                  </div>
+                  <div class="swiper-slide goodwin-swiper__slide">
+                      <a href="#"><img src="images/movie2.png" /></a>
+                      <a href="#" class="text">Незнакомцы: Начало (2D, 18+)</a>
+                  </div>
+                  <div class="swiper-slide goodwin-swiper__slide">
+                      <a href="#"><img src="images/movie3.png" /></a>
+                      <a href="#" class="text">Суперпташки. Улётная миссия (2D, 0+)</a>
+                  </div>
+                  <div class="swiper-slide goodwin-swiper__slide">
+                      <a href="#"><img src="images/movie4.png" /></a>
+                      <a href="#" class="text">Гарфилд (предсеанс. обсл) & "Остановка" (2D, 6+)</a>
+                  </div>
+                  <div class="swiper-slide goodwin-swiper__slide">
+                      <a href="#"><img src="images/movie1.png" /></a>
+                      <a href="#" class="text">Манюня: Приключения в Москве (2D, 6+)</a>
+                  </div>
+                  <div class="swiper-slide goodwin-swiper__slide">
+                      <a href="#"><img src="images/movie2.png" /></a>
+                      <a href="#" class="text">Незнакомцы: Начало (2D, 18+)</a>
+                  </div>
+                  <div class="swiper-slide goodwin-swiper__slide">
+                      <a href="#"><img src="images/movie3.png" /></a>
+                      <a href="#" class="text">Суперпташки. Улётная миссия (2D, 0+)</a>
+                  </div>
+                  <div class="swiper-slide goodwin-swiper__slide">
+                      <a href="#"><img src="images/movie4.png" /></a>
+                      <a href="#" class="text">Гарфилд (предсеанс. обсл) & "Остановка" (2D, 6+)</a>
+                  </div>
+              </div>
+              <div class="swiper-button-prev goodwin-swiper-button-prev">
+                  {{> modules/common/svg-icon/index src="icons/arrow.svg" }}
+              </div>
+              <div class="swiper-button-next goodwin-swiper-button-next">
+                  {{> modules/common/svg-icon/index src="icons/arrow.svg" }}
               </div>
           </div>
       </section>

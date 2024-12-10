@@ -19,7 +19,7 @@
     opacity: 1;
     transition: all 0.3s ease-in;
 
-    @media (@md-min) {
+    @media (@lg-min) {
       width: 10px;
       height: 10px;
       margin-inline: 5px !important;
@@ -32,7 +32,7 @@
     background-color: #fff;
     margin-inline: 0 !important;
 
-    @media (@md-min) {
+    @media (@lg-min) {
       width: 30px;
       margin-inline: 0 !important;
     }
@@ -41,7 +41,7 @@
   .swiper-pagination {
     bottom: 6px;
 
-    @media (@md-min) {
+    @media (@lg-min) {
       bottom: 30px;
     }
   }
@@ -53,9 +53,9 @@
   gap: 10px 20px;
   flex-wrap: wrap;
 
-  @media (@md-min) {
+  @media (@lg-min) {
     gap: 15px;
-    padding: 70px 100px;
+    padding: 60px 70px;
     justify-content: center;
   }
 }
@@ -74,33 +74,33 @@
     background-color: #F2F2F2;
   }
 
-  @media (@md-min) {
+  @media (@lg-min) {
     padding-block: 40px;
     gap: 15px;
     flex-direction: column;
-    width: calc(25% - 11.25px);
+    width: 260px;
   }
 
   svg {
     width: 20px;
     height: 20px;
 
-    @media (@md-min) {
+    @media (@lg-min) {
       width: 60px;
       height: 60px;
     }
   }
 
   span {
-    font-size: 12px;
-    line-height: 1em;
+    font-size: 10px;
     font-weight: 200;
+    line-height: 10px;
     color: #000;
 
-    @media (@md-min) {
-      font-size: 28px;
+    @media (@lg-min) {
+      font-size: 24px;
       font-weight: 400;
-      line-height: 25.2px;
+      line-height: 21.6px;
     }
   }
 }
@@ -113,6 +113,12 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media (@lg-min) {
+    width: 100dvw;
+    margin-inline: calc((50dvw - min(50cqw, 720px)) * -1);
+    padding-inline: calc((50dvw - min(50cqw, 720px)));
+  }
+
   &__label-row {
     position: relative;
     z-index: 1;
@@ -122,8 +128,8 @@
     gap: 30px;
     align-items: center;
 
-    @media (@md-min) {
-      padding-inline: 36px;
+    @media (@lg-min) {
+      padding-left: 0;
       justify-content: space-between;
     }
   }
@@ -134,10 +140,10 @@
     font-weight: 700;
     color: #000;
 
-    @media (@md-min) {
-      font-size: 36px;
+    @media (@lg-min) {
+      font-size: 32px;
       font-weight: 700;
-      line-height: 32.4px;
+      line-height: 38.4px;
     }
   }
 
@@ -159,10 +165,10 @@
       height: 8px;
     }
 
-    @media (@md-min) {
-      font-size: 24px;
-      line-height: 26px;
+    @media (@lg-min) {
+      font-size: 20px;
       font-weight: 400;
+      line-height: 26px;
       gap: 10px;
 
       span {
@@ -176,11 +182,37 @@
   }
 }
 
-.promo-swiper-slide {
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.promo-mobile-swiper {
+  @media (@lg-min) {
+    display: none;
+  }
+}
+
+.promo-desktop-swiper {
+  display: none;
+  @media (@lg-min) {
+    display: block;
+    height: 970px;
+    width: 1080px;
+    margin-inline: auto;
+  }
+
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+
+  &__slide {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    a {
+      flex: 1;
+
+      &:nth-child(2) {
+        transform: translateY(-20px);
+      }
+    }
   }
 }
 
@@ -193,6 +225,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+
+  @media (@lg-min) {
+    background-image: url(images/purpleBackgroundDesktop.svg);
+    width: 100dvw;
+    margin-inline: calc((50dvw - min(50cqw, 720px)) * -1);
+    padding-inline: calc((50dvw - min(50cqw, 720px)));
+    padding-bottom: 60px;
+  }
 
   a {
     color: #fff;
@@ -215,13 +255,11 @@
     padding-top: 40px;
     margin-bottom: 40px;
 
-    @media (@md-min) {
-      padding-top: 70px;
+    @media (@lg-min) {
+      padding: 60px 100px 50px;
       flex-direction: row;
-      padding-inline: 40px;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 50px;
     }
 
     &__text {
@@ -229,7 +267,7 @@
       flex-direction: column;
       align-items: center;
 
-      @media (@md-min) {
+      @media (@lg-min) {
         align-items: flex-start;
       }
     }
@@ -244,9 +282,8 @@
       text-shadow: 0 2px 30px rgba(250, 0, 255, 0.5);
 
 
-      @media (@md-min) {
-        font-size: 36px;
-        text-align: left;
+      @media (@lg-min) {
+        display: none;
       }
     }
 
@@ -257,11 +294,11 @@
       line-height: 21px;
       text-align: center;
 
-      @media (@md-min) {
+      @media (@lg-min) {
         margin-top: 30px;
-        font-size: 36px;
+        font-size: 32px;
         font-weight: 700;
-        line-height: 32.4px;
+        line-height: 38.4px;
         text-align: left;
       }
     }
@@ -276,20 +313,20 @@
       padding: 4px 54px;
       border-radius: 10px;
 
-      @media (@md-min) {
-        margin-top: 30px;
+      @media (@lg-min) {
+        margin-top: 20px;
         padding: 12px 76px;
       }
     }
 
     &__question {
-      font-size: 12px;
+      font-size: 10px;
       font-weight: 200;
-      line-height: 12px;
+      line-height: 10px;
       text-align: center;
 
-      @media (@md-min) {
-        font-size: 24px;
+      @media (@lg-min) {
+        font-size: 20px;
         font-weight: 400;
         line-height: 26px;
         text-align: left;
@@ -299,19 +336,20 @@
     &__app {
       margin-top: 30px;
 
-      @media (@md-min) {
+      @media (@lg-min) {
+        margin-top: 0;
         display: flex;
-        gap: 40px;
+        gap: 30px;
       }
     }
 
     &__app-qr {
       display: none;
 
-      @media (@md-min) {
+      @media (@lg-min) {
         display: initial;
-        width: 230px;
-        height: 230px;
+        width: 205px;
+        height: 205px;
       }
     }
 
@@ -320,7 +358,7 @@
       flex-direction: column;
       align-items: center;
 
-      @media (@md-min) {
+      @media (@lg-min) {
         align-items: flex-start;
       }
     }
@@ -333,7 +371,7 @@
       white-space: pre-line;
       margin-bottom: 10px;
 
-      @media (@md-min) {
+      @media (@lg-min) {
         display: none;
       }
     }
@@ -341,10 +379,10 @@
     &__desktop-app-label {
       display: none;
 
-      @media (@md-min) {
+      @media (@lg-min) {
         display: initial;
-        margin-top: 34px;
-        font-size: 24px;
+        margin-top: 20px;
+        font-size: 20px;
         font-weight: 400;
         line-height: 26px;
         white-space: pre-line;
@@ -356,18 +394,18 @@
         margin-bottom: 10px;
       }
 
-      @media (@md-min) {
+      @media (@lg-min) {
         &:first-of-type {
-          margin-bottom: 15px;
+          margin-bottom: 5px;
         }
       }
     }
 
     &__app-image {
-      width: 132px;
+      width: 120px;
 
-      @media (@md-min) {
-        width: 177px;
+      @media (@lg-min) {
+        width: 165px;
       }
     }
 
@@ -384,8 +422,8 @@
       top: 145px;
       left: calc(50% - 220px);
 
-      @media (@md-min) {
-        width: 476px;
+      @media (@lg-min) {
+        width: 346px;
         top: 20px;
         left: calc(50% - 300px);
       }
@@ -398,10 +436,10 @@
       top: 70px;
       right: calc(50% - 260px);
 
-      @media (@md-min) {
-        width: 476px;
-        top: -90px;
-        right: calc(50% - 280px);
+      @media (@lg-min) {
+        width: 220px;
+        top: 10px;
+        right: calc(50% - 54px);
       }
     }
   }
@@ -412,8 +450,9 @@
       display: flex;
       justify-content: center;
 
-      @media (@md-min) {
-        padding-inline: 120px;
+      @media (@lg-min) {
+        margin-bottom: 0;
+        padding-inline: 100px;
         justify-content: space-between;
         align-items: center;
       }
@@ -422,11 +461,11 @@
     &__label {
       display: none;
 
-      @media (@md-min) {
+      @media (@lg-min) {
         display: initial;
-        font-size: 36px;
+        font-size: 32px;
         font-weight: 700;
-        line-height: 32.4px;
+        line-height: 38.4px;
       }
     }
 
@@ -444,10 +483,10 @@
         height: 8px;
       }
 
-      @media (@md-min) {
+      @media (@lg-min) {
         font-size: 24px;
-        line-height: 26px;
         font-weight: 400;
+        line-height: 21.6px;
         gap: 10px;
 
         span {
@@ -461,8 +500,8 @@
     }
 
     .coupons-swiper {
-      @media (@md-min) {
-        padding-top: 45px;
+      @media (@lg-min) {
+        padding-top: 40px;
       }
     }
 
@@ -474,13 +513,13 @@
         object-fit: contain;
       }
 
-      @media (@md-min) {
+      @media (@lg-min) {
         img {
           transition: all ease-in-out 0.15s;
         }
         &:hover {
           img {
-            transform: translateY(-45px);
+            transform: translateY(-20px);
           }
         }
       }
@@ -488,14 +527,27 @@
   }
 }
 
-.goodwin {
-  padding-block: 60px;
-
-  @media (@md-min) {
-    padding-block: 70px;
+.goodwin-mobile {
+  padding: 60px 0 50px;
+  @media (@lg-min) {
+    display: none;
   }
+}
 
-  &__label-container {
+.goodwin-desktop {
+  display: none;
+  @media (@lg-min) {
+    padding: 60px 100px;
+    display: initial;
+    background-image: url(images/purpleBackgroundDesktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.goodwin-mobile,
+.goodwin-desktop {
+  .goodwin-label-container {
     margin-inline: auto;
     width: 280px;
     display: flex;
@@ -511,7 +563,7 @@
     }
   }
 
-  &__label {
+  .goodwin-label {
     font-size: 16px;
     font-weight: 700;
     line-height: 16px;
@@ -524,7 +576,7 @@
     }
   }
 
-  &__link {
+  .goodwin-link {
     display: flex;
     align-items: center;
     color: #fff;
@@ -553,7 +605,7 @@
     }
   }
 
-  &__buttons-container {
+  .goodwin-buttons-container {
     margin-inline: auto;
     width: 280px;
     display: flex;
@@ -572,7 +624,7 @@
     }
   }
 
-  &__promo-link {
+  .goodwin-promo-link {
     padding: 10px 24px;
     border: 1px solid #fff;
     border-radius: 21px;
@@ -592,7 +644,7 @@
     }
   }
 
-  &__cinema-logo {
+  .goodwin-cinema-logo {
     height: 41px;
 
     @media (@md-min) {
@@ -602,7 +654,7 @@
     }
   }
 
-  &__poster-buttons {
+  .goodwin-poster-buttons {
     width: 100%;
     display: flex;
     border: 1px solid #fff;
@@ -615,7 +667,7 @@
     }
   }
 
-  &__poster-type-button {
+  .goodwin-poster-type-button {
     flex: 1;
     display: flex;
     align-items: center;

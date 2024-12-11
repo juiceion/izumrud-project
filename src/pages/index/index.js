@@ -8,6 +8,13 @@ import 'modules/layout/header';
 import 'modules/layout/layout';
 import './style.less';
 
+const storiesSwiper = new Swiper('.stories-swiper', {
+    slidesPerView: 3.6,
+    spaceBetween: 2,
+    slidesOffsetAfter: 12,
+    slidesOffsetBefore: 12,
+});
+
 const mainSwiper = new Swiper('.main-swiper', {
     modules: [Pagination, Autoplay],
     loop: true,

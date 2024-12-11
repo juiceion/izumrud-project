@@ -274,7 +274,7 @@
   width: 100%;
   height: 100%;
 
-  .schedule {
+  .schedule__day-item {
     border-radius: 0 0 10px 10px;
   }
 }
@@ -296,9 +296,19 @@
   }
 }
 
-.schedule {
+.schedule.dark {
   background: #000;
   color: #fff;
+
+  .schedule__custom-schedule-item.active {
+    background: #503872;
+    border: none;
+  }
+}
+
+.schedule {
+  background: #fff;
+  color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -378,7 +388,8 @@
     flex: 1;
 
     &.active {
-      background: #503872;
+      border: 1px solid #503872;
+      box-shadow: 0 4px 4px 0 #00000040;
     }
 
     span {

@@ -1,6 +1,6 @@
 {{#> modules/layout/default/index }}
   <div class="page page_gray page-index">
-      <section>
+      <section class="banners">
           <div class="swiper main-swiper">
               <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -72,74 +72,188 @@
           </div>
           <div class="swiper promo-mobile-swiper">
             <div class="swiper-wrapper">
-                <a href="#" class="swiper-slide">
-                    <img src="images/malina.png" />
+                <a href="/shares" class="swiper-slide">
+                    <div class="promo-card">
+                        <img src="images/malina.png" />
+                        <div class="promo-card__content">
+                            <span class="promo-card__name">MALINA</span>
+                            <span class="promo-card__type">акции</span>
+                            <span class="promo-card__description">
+                                  Летняя распродажа скидка до -50% в Malina
+                              </span>
+                        </div>
+                    </div>
                 </a>
-                <a href="#" class="swiper-slide">
-                    <img src="images/marmalato.png" />
+                <a href="/event" class="swiper-slide">
+                    <div class="promo-card">
+                        <img src="images/marmalato.png" />
+                        <div class="promo-card__content">
+                            <div class="promo-card__row">
+                                <span class="promo-card__name">MARMALATO</span>
+                                <span class="promo-card__type">события</span>
+                            </div>
+                            <span class="promo-card__description">
+                                  Долгожданная коллекция купальников
+                              </span>
+                        </div>
+                    </div>
                 </a>
-                <a href="#" class="swiper-slide">
-                    <img src="images/gloriaJeans.png" />
+                <a href="/event" class="swiper-slide">
+                    <div class="promo-card">
+                        <img src="images/gloriaJeans.png" />
+                        <div class="promo-card__content">
+                            <div class="promo-card__row">
+                                <span class="promo-card__name">Gloria Jeans</span>
+                                <span class="promo-card__type">акции</span>
+                            </div>
+                            <span class="promo-card__description">
+                                  Сезонная распродажа «Скидки до -50%»
+                              </span>
+                        </div>
+                    </div>
                 </a>
-                <a href="#" class="swiper-slide">
-                    <img src="images/reStore.png" />
+                <a href="/event" class="swiper-slide">
+                    <div class="promo-card">
+                        <img src="images/reStore.png" />
+                        <div class="promo-card__content">
+                            <div class="promo-card__row">
+                                <span class="promo-card__name">ReStore:</span>
+                                <span class="promo-card__type">события</span>
+                            </div>
+                            <span class="promo-card__description">
+                                  MacBook Air в restore:
+                              </span>
+                        </div>
+                    </div>
                 </a>
             </div>
           </div>
-          <div class="swiper promo-desktop-swiper">
-              <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                      <div class="promo-desktop-swiper__slide">
-                          <a href="#">
-                              <img src="images/malina.png" />
-                          </a>
-                          <a href="#">
-                              <img src="images/marmalato.png" />
-                          </a>
-                          <a href="#">
-                              <img src="images/gloriaJeans.png" />
-                          </a>
+          <div class="promo-desktop-items">
+              <div class="promo-desktop-items__row">
+                  <a href="/shares">
+                      <div class="promo-card">
+                          <img src="images/malina.png" />
+                          <div class="promo-card__content">
+                              <span class="promo-card__name">MALINA</span>
+                              <span class="promo-card__type">акции</span>
+                              <span class="promo-card__description">
+                                  Летняя распродажа скидка до -50% в Malina
+                              </span>
+                          </div>
                       </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="promo-desktop-swiper__slide">
-                          <a href="#">
-                              <img src="images/malina.png" />
-                          </a>
-                          <a href="#">
-                              <img src="images/marmalato.png" />
-                          </a>
-                          <a href="#">
-                              <img src="images/gloriaJeans.png" />
-                          </a>
+                  </a>
+                  <a href="/event">
+                      <div class="promo-card">
+                          <img src="images/marmalato.png" />
+                          <div class="promo-card__content">
+                              <div class="promo-card__row">
+                                  <span class="promo-card__name">MARMALATO</span>
+                                  <span class="promo-card__type">события</span>
+                              </div>
+                              <span class="promo-card__description">
+                                  Долгожданная коллекция купальников
+                              </span>
+                          </div>
                       </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="promo-desktop-swiper__slide">
-                          <a href="#">
-                              <img src="images/malina.png" />
-                          </a>
-                          <a href="#">
-                              <img src="images/marmalato.png" />
-                          </a>
-                          <a href="#">
-                              <img src="images/gloriaJeans.png" />
-                          </a>
+                  </a>
+                  <a href="/event">
+                      <div class="promo-card">
+                          <img src="images/gloriaJeans.png" />
+                          <div class="promo-card__content">
+                              <div class="promo-card__row">
+                                  <span class="promo-card__name">Gloria Jeans</span>
+                                  <span class="promo-card__type">акции</span>
+                              </div>
+                              <span class="promo-card__description">
+                                  Сезонная распродажа «Скидки до -50%»
+                              </span>
+                          </div>
                       </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="promo-desktop-swiper__slide">
-                          <a href="#">
-                              <img src="images/malina.png" />
-                          </a>
-                          <a href="#">
-                              <img src="images/marmalato.png" />
-                          </a>
-                          <a href="#">
-                              <img src="images/gloriaJeans.png" />
-                          </a>
+                  </a>
+              </div>
+              <div class="promo-desktop-items__row">
+                  <a href="/shares">
+                      <div class="promo-card">
+                          <img src="images/malina.png" />
+                          <div class="promo-card__content">
+                              <span class="promo-card__name">MALINA</span>
+                              <span class="promo-card__type">акции</span>
+                              <span class="promo-card__description">
+                                  Летняя распродажа скидка до -50% в Malina
+                              </span>
+                          </div>
                       </div>
-                  </div>
+                  </a>
+                  <a href="/event">
+                      <div class="promo-card">
+                          <img src="images/marmalato.png" />
+                          <div class="promo-card__content">
+                              <div class="promo-card__row">
+                                  <span class="promo-card__name">MARMALATO</span>
+                                  <span class="promo-card__type">события</span>
+                              </div>
+                              <span class="promo-card__description">
+                                  Долгожданная коллекция купальников
+                              </span>
+                          </div>
+                      </div>
+                  </a>
+                  <a href="/event">
+                      <div class="promo-card">
+                          <img src="images/gloriaJeans.png" />
+                          <div class="promo-card__content">
+                              <div class="promo-card__row">
+                                  <span class="promo-card__name">Gloria Jeans</span>
+                                  <span class="promo-card__type">акции</span>
+                              </div>
+                              <span class="promo-card__description">
+                                  Сезонная распродажа «Скидки до -50%»
+                              </span>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="promo-desktop-items__row">
+                  <a href="/shares">
+                      <div class="promo-card">
+                          <img src="images/malina.png" />
+                          <div class="promo-card__content">
+                              <span class="promo-card__name">MALINA</span>
+                              <span class="promo-card__type">акции</span>
+                              <span class="promo-card__description">
+                                  Летняя распродажа скидка до -50% в Malina
+                              </span>
+                          </div>
+                      </div>
+                  </a>
+                  <a href="/event">
+                      <div class="promo-card">
+                          <img src="images/marmalato.png" />
+                          <div class="promo-card__content">
+                              <div class="promo-card__row">
+                                  <span class="promo-card__name">MARMALATO</span>
+                                  <span class="promo-card__type">события</span>
+                              </div>
+                              <span class="promo-card__description">
+                                  Долгожданная коллекция купальников
+                              </span>
+                          </div>
+                      </div>
+                  </a>
+                  <a href="/event">
+                      <div class="promo-card">
+                          <img src="images/gloriaJeans.png" />
+                          <div class="promo-card__content">
+                              <div class="promo-card__row">
+                                  <span class="promo-card__name">Gloria Jeans</span>
+                                  <span class="promo-card__type">акции</span>
+                              </div>
+                              <span class="promo-card__description">
+                                  Сезонная распродажа «Скидки до -50%»
+                              </span>
+                          </div>
+                      </div>
+                  </a>
               </div>
           </div>
       </section>
@@ -187,26 +301,83 @@
                   </div>
                   <div class="swiper coupons-swiper">
                       <div class="swiper-wrapper">
-                          <a href="#" class="swiper-slide coupon-swiper-slide">
-                              <img src="images/coupon2.png" />
+                          <a href="#" class="swiper-slide">
+                              <div class="coupon-card">
+                                  <img class="coupon-card__top-image" src="images/top21shop.png" />
+                                  <div class="coupon-card__brand-image-container">
+                                      <img src="images/21shopLogo.png" />
+                                  </div>
+                                  <span class="coupon-card__description">Сертификат на шопинг в магазине 21 shop</span>
+                                  <span class="coupon-card__date">до 8 сентября</span>
+                                  <img class="coupon-card__izumrud" src="images/izumrud.png" />
+                                  <span class="coupon-card__izumrud-count">15</span>
+                                  <span class="coupon-card__more">подробнее</span>
+                              </div>
                           </a>
-                          <a href="#" class="swiper-slide coupon-swiper-slide">
-                              <img src="images/coupon2.png" />
+                          <a href="#" class="swiper-slide">
+                              <div class="coupon-card">
+                                  <img class="coupon-card__top-image" src="images/topSiberica.png" />
+                                  <div class="coupon-card__brand-image-container">
+                                      <img src="images/sibericaLogo.png" />
+                                  </div>
+                                  <span class="coupon-card__description">Набор из натурального состава</span>
+                                  <span class="coupon-card__date">до 25 сентября</span>
+                                  <img class="coupon-card__izumrud" src="images/izumrud.png" />
+                                  <span class="coupon-card__izumrud-count">10</span>
+                                  <span class="coupon-card__more">подробнее</span>
+                              </div>
                           </a>
-                          <a href="#" class="swiper-slide coupon-swiper-slide">
-                              <img src="images/coupon2.png" />
+                          <a href="#" class="swiper-slide">
+                              <div class="coupon-card">
+                                  <img class="coupon-card__top-image" src="images/top21shop.png" />
+                                  <div class="coupon-card__brand-image-container">
+                                      <img src="images/21shopLogo.png" />
+                                  </div>
+                                  <span class="coupon-card__description">Сертификат на шопинг в магазине 21 shop</span>
+                                  <span class="coupon-card__date">до 8 сентября</span>
+                                  <img class="coupon-card__izumrud" src="images/izumrud.png" />
+                                  <span class="coupon-card__izumrud-count">15</span>
+                                  <span class="coupon-card__more">подробнее</span>
+                              </div>
                           </a>
-                          <a href="#" class="swiper-slide coupon-swiper-slide">
-                              <img src="images/coupon3.png" />
+                          <a href="#" class="swiper-slide">
+                              <div class="coupon-card">
+                                  <img class="coupon-card__top-image" src="images/topSiberica.png" />
+                                  <div class="coupon-card__brand-image-container">
+                                      <img src="images/sibericaLogo.png" />
+                                  </div>
+                                  <span class="coupon-card__description">Набор из натурального состава</span>
+                                  <span class="coupon-card__date">до 25 сентября</span>
+                                  <img class="coupon-card__izumrud" src="images/izumrud.png" />
+                                  <span class="coupon-card__izumrud-count">10</span>
+                                  <span class="coupon-card__more">подробнее</span>
+                              </div>
                           </a>
-                          <a href="#" class="swiper-slide coupon-swiper-slide">
-                              <img src="images/coupon3.png" />
+                          <a href="#" class="swiper-slide">
+                              <div class="coupon-card">
+                                  <img class="coupon-card__top-image" src="images/top21shop.png" />
+                                  <div class="coupon-card__brand-image-container">
+                                      <img src="images/21shopLogo.png" />
+                                  </div>
+                                  <span class="coupon-card__description">Сертификат на шопинг в магазине 21 shop</span>
+                                  <span class="coupon-card__date">до 8 сентября</span>
+                                  <img class="coupon-card__izumrud" src="images/izumrud.png" />
+                                  <span class="coupon-card__izumrud-count">15</span>
+                                  <span class="coupon-card__more">подробнее</span>
+                              </div>
                           </a>
-                          <a href="#" class="swiper-slide coupon-swiper-slide">
-                              <img src="images/coupon4.png" />
-                          </a>
-                          <a href="#" class="swiper-slide coupon-swiper-slide">
-                              <img src="images/coupon4.png" />
+                          <a href="#" class="swiper-slide">
+                              <div class="coupon-card">
+                                  <img class="coupon-card__top-image" src="images/topSiberica.png" />
+                                  <div class="coupon-card__brand-image-container">
+                                      <img src="images/sibericaLogo.png" />
+                                  </div>
+                                  <span class="coupon-card__description">Набор из натурального состава</span>
+                                  <span class="coupon-card__date">до 25 сентября</span>
+                                  <img class="coupon-card__izumrud" src="images/izumrud.png" />
+                                  <span class="coupon-card__izumrud-count">10</span>
+                                  <span class="coupon-card__more">подробнее</span>
+                              </div>
                           </a>
                       </div>
                   </div>
@@ -216,7 +387,6 @@
               <div class="goodwin-label-container">
                 <span class="goodwin-label">Кинотеатр GOODWIN</span>
                   <a href="#" class="goodwin-link">
-                      <span>Все сеансы</span>
                       {{> modules/common/svg-icon/index src="icons/whiteArrow.svg" }}
                   </a>
               </div>
@@ -266,12 +436,6 @@
                           <a href="#" class="text">Гарфилд (предсеанс. обсл) & "Остановка" (2D, 6+)</a>
                       </div>
                   </div>
-                  <div class="swiper-button-prev goodwin-swiper-button-prev">
-                      {{> modules/common/svg-icon/index src="icons/arrow.svg" }}
-                  </div>
-                  <div class="swiper-button-next goodwin-swiper-button-next">
-                      {{> modules/common/svg-icon/index src="icons/arrow.svg" }}
-                  </div>
               </div>
           </section>
       </div>
@@ -286,13 +450,28 @@
           <div class="swiper lookbooks__swiper">
               <div class="swiper-wrapper">
                   <a href="#" class="swiper-slide lookbooks__swiper-slide">
-                      <img src="images/lookbook1.png" />
+                      <div class="lookbook-card">
+                          <img src="images/lookbook1.png" />
+                          <span class="lookbook-card__text">Выбор
+                              стилистов
+                          </span>
+                      </div>
                   </a>
                   <a href="#" class="swiper-slide lookbooks__swiper-slide">
-                      <img src="images/lookbook2.png" />
+                      <div class="lookbook-card">
+                          <img src="images/lookbook2.png" />
+                          <span class="lookbook-card__text">Тренды
+                              сезона
+                          </span>
+                      </div>
                   </a>
                   <a href="#" class="swiper-slide lookbooks__swiper-slide">
-                      <img src="images/lookbook3.png" />
+                      <div class="lookbook-card">
+                          <img src="images/lookbook3.png" />
+                          <span class="lookbook-card__text">Летняя
+                              коллекция
+                          </span>
+                      </div>
                   </a>
               </div>
           </div>
@@ -300,10 +479,6 @@
       <section class="goodwin-desktop">
           <div class="goodwin-label-container">
               <span class="goodwin-label">Кинотеатр GOODWIN</span>
-              <a href="#" class="goodwin-link">
-                  <span>Все сеансы</span>
-                  {{> modules/common/svg-icon/index src="icons/whiteArrow.svg" }}
-              </a>
           </div>
           <div class="goodwin-buttons-container">
               <a href="#" class="goodwin-promo-link">
@@ -315,52 +490,62 @@
                   <button class="goodwin-poster-type-button">Сегодня в кино</button>
                   <button class="goodwin-poster-type-button">Скоро в кино</button>
               </div>
+
+              <a href="#" class="goodwin-desktop-link">
+                  <span>Все сеансы</span>
+                  {{> modules/common/svg-icon/index src="icons/whiteArrow.svg" }}
+              </a>
           </div>
-          <div class="swiper goodwin-desktop-swiper">
-              <div class="swiper-wrapper">
-                  <div class="swiper-slide goodwin-swiper__slide">
-                      <a href="#"><img src="images/movie1.png" /></a>
-                      <a href="#" class="text">Манюня: Приключения в Москве (2D, 6+)</a>
-                  </div>
-                  <div class="swiper-slide goodwin-swiper__slide">
-                      <a href="#"><img src="images/movie2.png" /></a>
-                      <a href="#" class="text">Незнакомцы: Начало (2D, 18+)</a>
-                  </div>
-                  <div class="swiper-slide goodwin-swiper__slide">
-                      <a href="#"><img src="images/movie3.png" /></a>
-                      <a href="#" class="text">Суперпташки. Улётная миссия (2D, 0+)</a>
-                  </div>
-                  <div class="swiper-slide goodwin-swiper__slide">
-                      <a href="#"><img src="images/movie4.png" /></a>
-                      <a href="#" class="text">Гарфилд (предсеанс. обсл) & "Остановка" (2D, 6+)</a>
-                  </div>
-                  <div class="swiper-slide goodwin-swiper__slide">
-                      <a href="#"><img src="images/movie1.png" /></a>
-                      <a href="#" class="text">Манюня: Приключения в Москве (2D, 6+)</a>
-                  </div>
-                  <div class="swiper-slide goodwin-swiper__slide">
-                      <a href="#"><img src="images/movie2.png" /></a>
-                      <a href="#" class="text">Незнакомцы: Начало (2D, 18+)</a>
-                  </div>
-                  <div class="swiper-slide goodwin-swiper__slide">
-                      <a href="#"><img src="images/movie3.png" /></a>
-                      <a href="#" class="text">Суперпташки. Улётная миссия (2D, 0+)</a>
-                  </div>
-                  <div class="swiper-slide goodwin-swiper__slide">
-                      <a href="#"><img src="images/movie4.png" /></a>
-                      <a href="#" class="text">Гарфилд (предсеанс. обсл) & "Остановка" (2D, 6+)</a>
-                  </div>
-              </div>
+          <div class="goodwin-desktop-swiper-container">
               <div class="swiper-button-prev goodwin-swiper-button-prev">
                   {{> modules/common/svg-icon/index src="icons/arrow.svg" }}
+              </div>
+              <div class="swiper goodwin-desktop-swiper">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide goodwin-swiper__slide">
+                          <a href="#"><img src="images/movie1.png" /></a>
+                          <a href="#" class="text">Манюня: Приключения в Москве (2D, 6+)</a>
+                      </div>
+                      <div class="swiper-slide goodwin-swiper__slide">
+                          <a href="#"><img src="images/movie2.png" /></a>
+                          <a href="#" class="text">Незнакомцы: Начало (2D, 18+)</a>
+                      </div>
+                      <div class="swiper-slide goodwin-swiper__slide">
+                          <a href="#"><img src="images/movie3.png" /></a>
+                          <a href="#" class="text">Суперпташки. Улётная миссия (2D, 0+)</a>
+                      </div>
+                      <div class="swiper-slide goodwin-swiper__slide">
+                          <a href="#"><img src="images/movie4.png" /></a>
+                          <a href="#" class="text">Гарфилд (предсеанс. обсл) & "Остановка" (2D, 6+)</a>
+                      </div>
+                      <div class="swiper-slide goodwin-swiper__slide">
+                          <a href="#"><img src="images/movie1.png" /></a>
+                          <a href="#" class="text">Манюня: Приключения в Москве (2D, 6+)</a>
+                      </div>
+                      <div class="swiper-slide goodwin-swiper__slide">
+                          <a href="#"><img src="images/movie2.png" /></a>
+                          <a href="#" class="text">Незнакомцы: Начало (2D, 18+)</a>
+                      </div>
+                      <div class="swiper-slide goodwin-swiper__slide">
+                          <a href="#"><img src="images/movie3.png" /></a>
+                          <a href="#" class="text">Суперпташки. Улётная миссия (2D, 0+)</a>
+                      </div>
+                      <div class="swiper-slide goodwin-swiper__slide">
+                          <a href="#"><img src="images/movie4.png" /></a>
+                          <a href="#" class="text">Гарфилд (предсеанс. обсл) & "Остановка" (2D, 6+)</a>
+                      </div>
+                  </div>
               </div>
               <div class="swiper-button-next goodwin-swiper-button-next">
                   {{> modules/common/svg-icon/index src="icons/arrow.svg" }}
               </div>
+              <img class="popcorn" src="images/popcorn.png" />
           </div>
       </section>
       <section class="info">
-          <img class="info__izumrud" src="images/rightIzumrud.png" />
+          <img class="info__izumrud" src="images/leftIzumrud.png" />
+
+          <div class="info__line-background">{{> modules/common/svg-icon/index src="images/lineBackground.svg" }}</div>
 
         <div class="info__buttons">
             <a href="#" class="info__button">
@@ -371,7 +556,7 @@
                 {{> modules/common/svg-icon/index src="icons/advertisers.svg" }}
                 <span>Рекламодателям</span>
             </a>
-            <a href="#" class="info__button">
+            <a href="/vacancy" class="info__button">
                 {{> modules/common/svg-icon/index src="icons/vacancies.svg" }}
                 <span>Вакансии</span>
             </a>
@@ -419,14 +604,5 @@
               </div>
           </div>
       </section>
-    <div class="page__block page__block_offset">
-      <ul>
-        {{# each menu}}
-          <li>
-            <a href="{{this.link}}">{{this.title}}</a>
-          </li>
-        {{/each}}
-      </ul>
-    </div>
   </div>
 {{/ modules/layout/default/index }}

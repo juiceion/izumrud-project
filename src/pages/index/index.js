@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import {Navigation, Pagination, Autoplay, FreeMode} from 'swiper/modules';
+import {Navigation, Pagination, Autoplay} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -31,24 +31,6 @@ const promoMobileSwiper = new Swiper('.promo-mobile-swiper', {
     }
 );
 
-const promoDesktopSwiper = new Swiper('.promo-desktop-swiper', {
-        modules: [Autoplay, FreeMode],
-        slidesPerView: 2,
-        spaceBetween: 30,
-        direction: 'vertical',
-        slidesOffsetBefore: 20,
-        freeMode: true,
-        loop: true,
-        autoplay: {
-            enabled: true,
-            delay: 0,
-            disableOnInteraction:false,
-        },
-        speed: 5000,
-        allowTouchMove: false,
-    }
-);
-
 const couponsSwiper = new Swiper('.coupons-swiper', {
         slidesPerView: 2.4,
         spaceBetween: 10,
@@ -57,7 +39,7 @@ const couponsSwiper = new Swiper('.coupons-swiper', {
     breakpoints: {
         1280: {
             spaceBetween: 20,
-            slidesPerView: 4,
+            slidesPerView: 2.4,
             slidesOffsetAfter: 0,
             slidesOffsetBefore: 0,
         }
@@ -65,46 +47,28 @@ const couponsSwiper = new Swiper('.coupons-swiper', {
     }
 );
 
-const initGoodwinSwiper = (className) => {
-    const goodwinSwiper = new Swiper(className, {
-            slidesPerView: 2.3,
-            spaceBetween: 10,
-            slidesOffsetAfter: 20,
-            slidesOffsetBefore: 20,
-            breakpoints: {
-                960: {
-                    spaceBetween: 50,
-                    slidesPerView: 4,
-                    modules: [
-                        Navigation,
-                    ],
-                    navigation: {
-                        nextEl: '.goodwin-swiper-button-prev',
-                        prevEl: '.goodwin-swiper-button-next',
-                    },
-                    slidesOffsetAfter: 0,
-                    slidesOffsetBefore: 0,
-                    allowSlideNext: true,
-                    allowSlidePrev: true
-                }
-            }
-        }
-    );
+const goodwinMobileSwiper = new Swiper('.goodwin-swiper', {
+        slidesPerView: 2.3,
+        spaceBetween: 10,
+        slidesOffsetAfter: 20,
+        slidesOffsetBefore: 20,
+    }
+);
 
-    const nextButton = document.querySelector(".goodwin-swiper-button-next");
-    const prevButton = document.querySelector(".goodwin-swiper-button-prev");
-
-    nextButton.addEventListener("click", () => {
-        goodwinSwiper.slideNext();
-    });
-
-    prevButton.addEventListener("click", () => {
-        goodwinSwiper.slidePrev();
-    });
-}
-
-initGoodwinSwiper('.goodwin-swiper')
-initGoodwinSwiper('.goodwin-desktop-swiper')
+const goodwinDesktopSwiper= new Swiper('.goodwin-desktop-swiper', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        modules: [
+            Navigation,
+        ],
+        navigation: {
+            nextEl: '.goodwin-swiper-button-next',
+            prevEl: '.goodwin-swiper-button-prev',
+        },
+        allowSlideNext: true,
+        allowSlidePrev: true
+    }
+);
 
 
 
@@ -113,14 +77,13 @@ const lookbooksSwiper = new Swiper('.lookbooks__swiper', {
         spaceBetween: 2,
         slidesOffsetAfter: 20,
         slidesOffsetBefore: 20,
-
-    breakpoints: {
-            960: {
+        breakpoints: {
+            1280: {
                 slidesPerView: 3,
-                spaceBetween: 28,
+                spaceBetween: 15,
                 slidesOffsetAfter: 0,
                 slidesOffsetBefore: 0
             }
-    }
+        }
     }
 );

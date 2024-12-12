@@ -1,4 +1,5 @@
 import './style.less';
+import '../schedule';
 
 const desktopTime = document.getElementById('desktop-time');
 const desktopSchedule = document.getElementById('schedule-desktop-container');

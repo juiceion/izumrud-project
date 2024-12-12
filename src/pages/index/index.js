@@ -6,6 +6,9 @@ import 'swiper/css/pagination';
 import 'modules/layout/footer';
 import 'modules/layout/header';
 import 'modules/layout/layout';
+import 'modules/common/promo-card';
+import 'modules/common/lookbook-card';
+import 'modules/common/coupon-card';
 import './style.less';
 
 const storiesSwiper = new Swiper('.stories-swiper', {

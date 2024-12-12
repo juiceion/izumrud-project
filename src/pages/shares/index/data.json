@@ -5,5 +5,19 @@
     "title": "Событие - Изумрудный город",
     "image": "image.svg",
     "url": "http://html-layout-kit.ru"
-  }
+  },
+  "desktopPromoList1": [
+    {
+      "image": "images/marmalato.png",
+      "name": "MARMALATO",
+      "type": "события",
+      "description": "Долгожданная коллекция купальников"
+    },
+    {
+      "image": "images/gloriaJeans.png",
+      "name": "Gloria Jeans",
+      "type": "акции",
+      "description": "Сезонная распродажа «Скидки до -50%»"
+    }
+  ]
 }

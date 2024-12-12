@@ -1,14 +1,12 @@
 {{#> modules/layout/default/index }}
   <section class="page page-shares">
-    <section class="box">
+    <section class="box page-shares__box">
         <section class="box__row">
             <section class="box__col">
-                <div class="page-event__breadcrumb">
+                <div class="page-shares__breadcrumb">
                     <a href="/">Главная</a>
                     {{> modules/common/svg-icon/index src="icons/min-arrow.svg" }}
                     <a href="">Акции</a>
-                    {{> modules/common/svg-icon/index src="icons/min-arrow.svg" }}
-                    <a href="">Maramalato</a>
                 </div>
             </section>
         </section>
@@ -51,14 +49,12 @@
                             Похожие акции
                         </div>
                         <div class="page-shares__cards">
-                            <div class="page-shares__card">
-                                <div class="page-shares__card-image">
+                                    {{#each desktopPromoList1}}
+                                        <a href="/shares" class="">
+                                            {{>modules/common/promo-card/index }}
+                                        </a>
+                                    {{/each}}
                                 </div>
-                                <div class="">
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>

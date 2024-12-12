@@ -2,13 +2,19 @@
 
 .page-vacancy {
   margin-bottom: 50px;
+
+  @media (@md-min) {
+    padding-inline: 100px;
+  }
+
+
   &__title {
     font-size: 16px;
     font-weight: bold;
     margin: 0;
 
     @media(@md-min) {
-      font-size: 36px;
+      font-size: 32px;
       font-weight: 400;
     }
   }
@@ -26,9 +32,9 @@
     margin-top: 10px;
 
     @media (@md-min) {
-      font-size: 24px;
+      font-size: 20px;
       max-width: 350px;
-      padding: 22px;
+      padding: 16px;
       margin: 0;
     }
 
@@ -44,7 +50,7 @@
     font-weight: 100;
 
     @media (@md-min) {
-      font-size: 16px;
+      font-size: 14px;
     }
 
     a {
@@ -52,7 +58,7 @@
       font-size: 12px;
 
       @media (@md-min) {
-        font-size: 16px;
+        font-size: 14px;
       }
     }
 
@@ -80,7 +86,7 @@
     align-items: center;
 
     @media(@md-min) {
-      margin-top: 60px;
+      margin-top: 40px;
     }
   }
 }

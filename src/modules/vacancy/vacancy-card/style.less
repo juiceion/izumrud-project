@@ -12,6 +12,13 @@
     padding: 16px 20px;
     background-color: #fff;
     border-radius: 10px;
+    cursor: pointer;
+    transition: all ease-in 0.15s;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+
 
     @media (@md-min) {
       display: flex;
@@ -29,7 +36,7 @@
 
     @media (@md-min) {
       justify-content: center;
-      max-width: 320px;
+      max-width: 165px;
     }
   }
 
@@ -93,7 +100,7 @@
     line-height: 22px;
 
     @media (@md-min) {
-      font-size: 26px;
+      font-size: 20px;
       max-width: 926px;
       line-height: 26px;
     }
@@ -105,7 +112,7 @@
     font-weight: 100;
 
     @media (@md-min) {
-      font-size: 20px;
+      font-size: 16px;
     }
   }
 
@@ -119,6 +126,7 @@
 
     @media (@md-min) {
       padding: 36px 36px;
+      margin-top: 10px;
     }
 
     &_show {
@@ -130,7 +138,8 @@
     font-size: 14px;
 
     @media (@md-min) {
-      font-size: 24px;
+      font-size: 20px;
+      line-height: 26px;
     }
   }
 
@@ -147,9 +156,11 @@
     font-weight: bold;
     margin-top: 20px;
 
+
     @media (@md-min) {
-      margin-top: 40px;
-      font-size: 24px;
+      margin-top: 25px;
+      line-height: 26px;
+      font-size: 20px;
     }
   }
 
@@ -166,7 +177,7 @@
     font-size: 14px;
 
     @media (@md-min) {
-      font-size: 24px;
+      font-size: 20px;
       line-height: 26px;
       margin-top: 2px;
     }
@@ -175,6 +186,7 @@
   &__expanded-body-actions {
     display: flex;
     align-items: baseline;
+    cursor: pointer;
   }
 
   &__action-logo {

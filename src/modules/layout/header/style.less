@@ -5,11 +5,15 @@
   background-color: #F9F9F9;
   font-size: 14px;
   align-items: center;
-  padding: 13px 0;
-  max-width: @size-xl-min;
+  padding: 13px 20px;
+  max-width: @size-lg-min;
   margin: 0 auto;
   width: 100%;
   position: relative;
+
+  @media (@lg-min) {
+    padding-inline: 100px;
+  }
 
   &__inner-container {
     position: relative;
@@ -53,7 +57,7 @@
     font-weight: 300;
 
     &:hover {
-      @media(@sm-max) {
+      @media(@md-max) {
         background-color: #503872;
         color: #FFFFFF;
         svg {
@@ -70,7 +74,7 @@
       margin-right: 4px;
       color: #000;
 
-      @media(@md-min) {
+      @media(@lg-min) {
         height: 19px;
         width: 22px;
       }
@@ -83,14 +87,14 @@
     font-size: 10px;
     font-weight: 100;
 
-    @media (@md-min) {
+    @media (@lg-min) {
 
       font-size: 24px;
       font-weight: 300;
     }
 
     &:hover {
-      @media(@sm-max) {
+      @media(@md-max) {
         background-color: #503872;
         color: #FFFFFF;
         svg {
@@ -107,7 +111,7 @@
       margin-right: 4px;
       color: #000;
 
-      @media (@md-min) {
+      @media (@lg-min) {
         height: 24px;
         width: 24px;
       }
@@ -121,7 +125,7 @@
       height: 30px;
       margin-right: 6px;
 
-      @media(@md-min) {
+      @media(@lg-min) {
         height: 50px;
         width: 165px;
       }
@@ -155,7 +159,7 @@
     align-items: center;
 
     &:hover {
-      @media(@sm-max) {
+      @media(@md-max) {
         background-color: #503872;
         color: #FFFFFF;
         svg {
@@ -172,7 +176,7 @@
       margin-right: 4px;
       color: #000;
 
-      @media(@md-min) {
+      @media(@lg-min) {
           width: 18px;
           height: 18px;
       }
@@ -212,7 +216,7 @@
     font-size: 10px;
     font-weight: 100;
 
-    @media (@md-min) {
+    @media (@lg-min) {
       font-size: 20px;
       font-weight: 200;
       margin-left: 4px;
@@ -264,7 +268,7 @@
     opacity: 1;
   }
 
-  @media (@md-min) {
+  @media (@lg-min) {
     display: none;
   }
 }

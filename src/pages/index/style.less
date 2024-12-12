@@ -134,9 +134,25 @@
   width: 100%;
   position: relative;
   padding-bottom: 60px;
-  background-image: url(images/lineBackground.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
+
+  &__background {
+    position: absolute;
+    top: 51px;
+    left: -34px;
+    right: -184px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    @media (@lg-min) {
+      top: 200px;
+      left: -301px;
+      right: -494px;
+    }
+  }
 
   @media (@lg-min) {
     width: 100dvw;
@@ -208,6 +224,8 @@
 }
 
 .promo-mobile-swiper {
+  position: relative;
+  z-index: 1;
   @media (@lg-min) {
     display: none;
   }
@@ -216,6 +234,8 @@
 .promo-desktop-items {
   display: none;
   @media (@lg-min) {
+    position: relative;
+    z-index: 1;
     display: block;
     width: 100%;
   }
@@ -251,8 +271,24 @@
   background-size: cover;
   color: #fff;
 
+  &__desktop-background {
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    svg {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
   @media (@lg-min) {
-    background-image: url(images/purpleBackgroundDesktop.svg);
+    background-image: url(images/purpleBackgroundDesktop.png);
     width: 100dvw;
     margin-inline: calc((50dvw - min(50%, 720px)) * -1);
     padding-inline: calc((50dvw - min(50%, 720px)));
@@ -269,6 +305,8 @@
 }
 
 .coupons {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
 
@@ -549,23 +587,43 @@
 }
 
 .goodwin-desktop {
+  overflow: hidden;
+  position: relative;
   display: none;
   @media (@lg-min) {
     color: #fff;
     padding-block: 60px;
     display: block;
-    background-image: url(images/purpleBackgroundDesktop.svg);
+    background-image: url(images/purpleBackgroundDesktop.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100dvw;
     margin-inline: calc((50dvw - min(50%, 720px))* -1);
     padding-inline: calc(50dvw - min(50%, 720px) + 100px);
   }
+
+  &__desktop-background {
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
 }
 
 .goodwin-mobile,
 .goodwin-desktop {
   .goodwin-label-container {
+    position: relative;
+    z-index: 1;
     margin-inline: auto;
     width: 280px;
     display: flex;
@@ -607,6 +665,8 @@
   }
 
   .goodwin-buttons-container {
+    position: relative;
+    z-index: 1;
     margin-inline: auto;
     width: 280px;
     display: flex;
@@ -762,6 +822,7 @@
   }
 
   .goodwin-desktop-swiper-container {
+    z-index: 1;
     display: flex;
     align-items: center;
     position: relative;

@@ -1,0 +1,24 @@
+{{#> modules/layout/default/index }}
+  <div class="page page_gray page-shop">
+      <div class="page-event__breadcrumb">
+          <a href="/">Главная</a>
+          {{> modules/common/svg-icon/index src="icons/min-arrow.svg" }}
+          <a href="">Акции</a>
+          {{> modules/common/svg-icon/index src="icons/min-arrow.svg" }}
+          <a href="">Befree</a>
+      </div>
+      <div class="page-shop__info">
+          <div class="page-shop__container">
+              <div class="page-shop__text-container">
+                  <img class="page-shop__logo" src="images/befreeLogo.png" />
+                  <div class="page-shop__row"></div>
+              </div>
+          </div>
+          <div class="page-shop__promo-container">
+              {{#each promoList}}
+                  {{>modules/common/promo-card/index }}
+              {{/each}}
+          </div>
+      </div>
+  </div>
+{{/ modules/layout/default/index }}

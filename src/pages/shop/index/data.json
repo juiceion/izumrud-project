@@ -1,0 +1,29 @@
+{
+  "head": {
+    "description": "Index",
+    "keywords": "Index",
+    "title": "Index",
+    "image": "image.svg",
+    "url": "http://html-layout-kit.ru"
+  },
+  "promoList": [
+    {
+      "image": "images/befree1.png",
+      "name": "Befree",
+      "type": "Акции",
+      "description": "1000 рублей в подарок"
+    },
+    {
+      "image": "images/befree2.png",
+      "name": "Befree",
+      "type": "Акции",
+      "description": "2+1 на всё"
+    },
+    {
+      "image": "images/befree3.png",
+      "name": "Befree",
+      "type": "Акции",
+      "description": "Долгожданная \nколлекция Denim 24"
+    }
+  ]
+}

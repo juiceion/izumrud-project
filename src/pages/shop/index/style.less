@@ -1,0 +1,95 @@
+@import (reference) '../../../style/mixins';
+
+.page-shop {
+  padding-block: 20px 50px;
+
+  @media (@lg-min) {
+    padding: 60px 100px 110px;
+  }
+
+  &__breadcrumb {
+    margin-left: 20px;
+    color: #808080;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 12px;
+
+    @media (@lg-min) {
+      font-size: 16px;
+      margin-left: 0;
+    }
+
+    a {
+      color: #808080;
+      @media (@lg-min) {
+        font-size: 16px;
+      }
+
+      &:hover {
+        color: #808080;
+      }
+    }
+
+    svg {
+      fill: transparent;
+      width: 4px;
+      height: 4px;
+      margin-bottom: 2px;
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    @media (@lg-min) {
+      flex-direction: row;
+      gap: 40px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @media (@lg-min) {
+      flex-direction: row;
+      gap: 70px;
+    }
+  }
+
+  &__text-container {
+    padding: 40px 20px 0;
+  }
+
+  &__logo {
+    height: 35px;
+    margin-bottom: 20px;
+
+    @media (@lg-min) {
+      height: 53px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  &__promo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-inline: 20px;
+
+    @media (@lg-min) {
+      padding-inline: 0;
+      flex-direction: row;
+      gap: 15px;
+    }
+  }
+}

@@ -3,6 +3,7 @@ import './style.less'
 class VacancyCard {
     constructor(item) {
         this.vacancy = item;
+        this.inner = this.vacancy.querySelector('.j-vacancy-card')
         this.toggles = this.vacancy.querySelector('.vacancy-card__arrow');
         this.container = this.vacancy.querySelector('.vacancy-card__expanded-body');
         this.button = this.vacancy.querySelector('.vacancy-card__expanded-body-actions')
@@ -10,6 +11,7 @@ class VacancyCard {
         this.toggles.addEventListener('click', this.onClick.bind(this))
         this.button.addEventListener('click', this.onClick.bind(this));
         this.buttonArrow.addEventListener('click', this.onClick.bind(this));
+        this.inner.addEventListener('click', this.onClick.bind(this));
     }
 
     onClick() {

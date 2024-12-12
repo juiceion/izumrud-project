@@ -4,9 +4,10 @@
   width: 100%;
   display: flex;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 10px;
   position: relative;
   color: #fff;
+  --width: 100%;
 
   img {
     width: 100%;
@@ -25,55 +26,54 @@
 
   &__name {
     position: absolute;
-    top: 12.5%;
-    left: 8.3%;
-    font-size: calc(24px + 82 * (100vw - 320px) / 880);
+    top: calc(var(--width) * 0.123);
+    left: calc(var(--width) * 0.1);
+    font-size: calc(var(--width) * 0.077);
     font-weight: 700;
     line-height: 0.9em;
     color: #fff;
 
     @media (@lg-min) {
-      top: 11.4%;
-      left: 5.7%;
-      font-size: 24px;
+      top: calc(var(--width) * 0.115);
+      left: calc(var(--width) * 0.074);
+      font-size: calc(var(--width) * 0.071);
       font-weight: 700;
-      line-height: 21.6px;
     }
   }
 
   &__type {
     position: absolute;
-    top: 12.5%;
-    right: 8.3%;
-    font-size: calc(24px + 82 * (100vw - 320px) / 880);
-    font-weight: 300;
-    line-height: 0.9em;
+    top: calc(var(--width) * 0.115);
+    right: calc(var(--width) * 0.085);
+    font-size: calc(var(--width) * 0.077);
+    font-weight: 200;
+    line-height: 1em;
 
     @media (@lg-min) {
-      top: 11.4%;
-      right: 11.4%;
-      font-size: 24px;
+      top: calc(var(--width) * 0.118);
+      right: calc(var(--width) * 0.03);
+      font-size: calc(var(--width) * 0.053);
       font-weight: 400;
-      line-height: 21.6px;
+      line-height: 0.9em;
     }
   }
 
   &__description {
     position: absolute;
-    bottom: 8.3%;
-    right: 8.3%;
-    left: 8.3%;
-    font-size: calc(24px + 82 * (100vw - 320px) / 880);
-    font-weight: 300;
-    line-height: 0.9em;
+    bottom: calc(var(--width) * 0.123);
+    left: calc(var(--width) * 0.077);
+    right: calc(var(--width) * 0.0385);
+    font-size: calc(var(--width) * 0.077);
+    font-weight: 400;
+    line-height: 1em;
 
     @media (@lg-min) {
-      bottom: 9.7%;
-      right: 11.4%;
-      left: 8.6%;
-      font-size: 32px;
+      bottom: calc(var(--width) * 0.089);
+      left: calc(var(--width) * 0.118);
+      right: calc(var(--width) * 0.059);
+      font-size: calc(var(--width) * 0.071);
       font-weight: 400;
-      line-height: 38.4px;
+      line-height: 0.9em;
     }
   }
 

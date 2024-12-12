@@ -5,7 +5,8 @@
   aspect-ratio: 13 / 18;
   display: flex;
   overflow: hidden;
-  border-radius: 10px;
+  --width: 100%;
+  border-radius: calc(var(--width) * 0.077);
   position: relative;
   background-color: #fff;
 
@@ -17,104 +18,106 @@
     left: 0;
   }
 
-  &__brand-image-container {
+  &__brand-image {
     position: absolute;
-    top: 37%;
-    left: 0;
-    width: 100%;
-    height: 17.5%;
-    padding: 4.6% 9.9%;
-
-    img {
-      height: 100%;
-    }
+    top: calc(var(--width) * 0.515);
+    left: calc(var(--width) * 0.077);
+    height: calc(var(--width) * 0.138);
+    max-height: calc(var(--width) * 0.138);
 
     @media (@lg-min) {
-      top: 42%;
+      top: calc(var(--width) * 0.58);
+      left: calc(var(--width) * 0.1);
+      height: calc(var(--width) * 0.15);
+      max-height: calc(var(--width) * 0.15);
     }
   }
 
   &__description {
     position: absolute;
-    top: 55%;
-    left: 7%;
-    right: 8.8%;
-    font-size: calc(10px + 31 * (100vw - 320px) / 880);
+    top: calc(var(--width) * 0.738);
+    left: calc(var(--width) * 0.077);
+    right: calc(var(--width) * 0.077);
+    font-size: calc(var(--width) * 0.077);
     font-weight: 600;
     line-height: 1em;
     color: #282828;
 
     @media (@lg-min) {
-      top: 61%;
-      font-size: 32px;
-      font-weight: 400;
-      line-height: 28.8px;
+      top: calc(var(--width) * 0.78);
+      left: calc(var(--width) * 0.1);
+      right: calc(var(--width) * 0.125);
+      font-size: calc(var(--width) * 0.08);
+      line-height: 0.9em;
     }
   }
 
   &__date {
     position: absolute;
-    top: 74%;
-    left: 7%;
-    right: 8.8%;
-    font-size: calc(10px + 31 * (100vw - 320px) / 880);
+    top: calc(var(--width) * 1.008);
+    left: calc(var(--width) * 0.077);
+    font-size: calc(var(--width) * 0.077);
     font-weight: 400;
     line-height: 1em;
     color: #000;
 
     @media (@lg-min) {
-      top: 77%;
-      font-size: 20px;
+      top: calc(var(--width) * 1.035);
+      left: calc(var(--width) * 0.1);
+      font-size: calc(var(--width) * 0.05);
       font-weight: 400;
-      line-height: 26px;
+      line-height: 1.3em;
     }
   }
 
   &__izumrud {
     position: absolute;
-    left: 7%;
-    bottom: 5.2%;
-    width: 6%;
+    left: calc(var(--width) * 0.077);
+    bottom: calc(var(--width) * 0.1);
+    width: calc(var(--width) * 0.062);
+
+    @media (@lg-min) {
+      bottom: calc(var(--width) * 0.08);
+      left: calc(var(--width) * 0.1);
+      width: calc(var(--width) * 0.08);
+    }
   }
 
   &__izumrud-count {
     position: absolute;
-    left: 15%;
-    bottom: 5.2%;
-    font-size: calc(10px + 31 * (100vw - 320px) / 880);
+    left: calc(var(--width) * 0.17);
+    font-size: calc(var(--width) * 0.077);
+    bottom: calc(var(--width) * 0.1);
     font-weight: 600;
     line-height: 1em;
     color: #009970;
 
     @media (@lg-min) {
-      font-size: 32px;
-      font-weight: 700;
-      line-height: 38.4px;
+      bottom: calc(var(--width) * 0.08);
+      left: calc(var(--width) * 0.21);
+      font-size: calc(var(--width) * 0.08);
+      line-height: 1.2em;
     }
   }
 
   &__more {
     position: absolute;
-    right: 8%;
-    bottom: 5.2%;
-    font-size: calc(8px + 25 * (100vw - 320px) / 880);
+    right: calc(var(--width) * 0.1);
+    bottom: calc(var(--width) * 0.115);
+    font-size: calc(var(--width) * 0.062);
     font-weight: 400;
     line-height: 1em;
     color: #009870;
 
     @media (@lg-min) {
-      bottom: 6.5%;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 26px;
+      right: calc(var(--width) * 0.085);
+      bottom: calc(var(--width) * 0.11);
+      font-size: calc(var(--width) * 0.05);
+      line-height: 1.3em;
     }
   }
 
   @media (@lg-min) {
-    border-radius: 20px;
-
-    img {
-      transition: all 0.3s ease-in-out;
-    }
+    border-radius: calc(var(--width) * 0.05);
   }
 }

@@ -1,6 +1,6 @@
 {{#> modules/layout/default/index }}
   <div class="page page_gray page-shop">
-      <div class="page-event__breadcrumb">
+      <div class="page-shop__breadcrumb">
           <a href="/">Главная</a>
           {{> modules/common/svg-icon/index src="icons/min-arrow.svg" }}
           <a href="">Акции</a>
@@ -11,7 +11,118 @@
           <div class="page-shop__container">
               <div class="page-shop__text-container">
                   <img class="page-shop__logo" src="images/befreeLogo.png" />
-                  <div class="page-shop__row"></div>
+                  <div class="page-shop__row">
+                      <div class="page-shop__floor-container">
+                          {{> modules/common/svg-icon/index src="icons/floor.svg" }}
+                          <span class="page-shop__floor">2 этаж</span>
+                      </div>
+                      <button class="page-shop__map-button">Показать на карте</button>
+                  </div>
+                  <div class="page-shop__socials-container">
+                      <a href="#">
+                          {{> modules/common/svg-icon/index src="icons/site.svg" }}</a>
+                      <a href="#">
+                          {{> modules/common/svg-icon/index src="icons/telegramColored.svg" }}</a>
+                      <a href="#">
+                          {{> modules/common/svg-icon/index src="icons/vkColored.svg" }}</a>
+                  </div>
+                  <a href="tel:88007070666" class="page-shop__phone-container">
+                      {{> modules/common/svg-icon/index src="icons/phone.svg" }}
+                      8-800-7070-666
+                  </a>
+                  <div class="page-shop__schedule-outer-container">
+                      {{> modules/common/svg-icon/index src="icons/clock.svg" }}
+                      <div class="page-shop__schedule-inner-container">
+                          <div class="page-shop__day-item active">
+                              <span>
+                                10:00
+                                22:00
+                              </span>
+                          </div>
+                          <div class="page-shop__day-item">
+                              <span>
+                                10:00
+                                22:00
+                              </span>
+                          </div>
+                          <div class="page-shop__day-item">
+                              <span>
+                                  10:00
+                                  22:00
+                              </span>
+                          </div>
+                          <div class="page-shop__day-item">
+                              <span>
+                                  10:00
+                                  22:00
+                              </span>
+                          </div>
+                          <div class="page-shop__day-item">
+                              <span>
+                                  10:00
+                                  22:00
+                              </span>
+                          </div>
+                          <div class="page-shop__day-item">
+                              <span>
+                                  10:00
+                                  22:00
+                              </span>
+                          </div>
+                          <div class="page-shop__day-item">
+                              <span>
+                                  10:00
+                                  22:00
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="page-shop__info-container">
+                    <span>
+                        Befree — бренд для всех, кто любит молодежную моду, независимо от возраста. Свобода самовыражения, инклюзивность, красота и уникальность каждого — вот ценности, которые мы продвигаем.
+                    </span>
+                    <span>
+                        Магазины Befree — это пространства в стиле минималистичного fusion с комфортной зоной отдыха и мягким светом в примерочных. У нас есть мужской и женский отделы, обувь, одежда для дома и спорта, белье и аксессуары. Отдельное направление — коллекции Befree Co:Create, которые мы создаем вместе с художниками, дизайнерами и инфлюэнсерами. Присоединяйтесь к #befreecommunity!
+                    </span>
+                  </div>
+                  <div class="page-shop__categories-container">
+                      <span>Одежда</span>
+                      <span>Обувь</span>
+                  </div>
+              </div>
+              <div class="page-shop__mobile-sliders-container">
+                  <div class="swiper first-slider">
+                      <div class="swiper-wrapper">
+                          <img class="swiper-slide first-slider-item" src="images/shop1.png" />
+                          <img class="swiper-slide first-slider-item" src="images/shop2.png" />
+                          <img class="swiper-slide first-slider-item" src="images/shop3.png" />
+                          <img class="swiper-slide first-slider-item" src="images/shop1.png" />
+                          <img class="swiper-slide first-slider-item" src="images/shop2.png" />
+                          <img class="swiper-slide first-slider-item" src="images/shop3.png" />
+                          <img class="swiper-slide first-slider-item" src="images/shop1.png" />
+                          <img class="swiper-slide first-slider-item" src="images/shop2.png" />
+                          <img class="swiper-slide first-slider-item" src="images/shop3.png" />
+                      </div>
+                  </div>
+                  <div class="swiper second-slider">
+                      <div class="swiper-wrapper">
+                          <img class="swiper-slide second-slider-item" src="images/shop3.png" />
+                          <img class="swiper-slide second-slider-item" src="images/shop4.png" />
+                          <img class="swiper-slide second-slider-item" src="images/shop5.png" />
+                          <img class="swiper-slide second-slider-item" src="images/shop3.png" />
+                          <img class="swiper-slide second-slider-item" src="images/shop4.png" />
+                          <img class="swiper-slide second-slider-item" src="images/shop5.png" />
+                          <img class="swiper-slide second-slider-item" src="images/shop3.png" />
+                          <img class="swiper-slide second-slider-item" src="images/shop4.png" />
+                          <img class="swiper-slide second-slider-item" src="images/shop5.png" />
+                      </div>
+                  </div>
+              </div>
+              <div class="page-shop__desktop-photos-container">
+                  <img class="page-shop__desktop-photos-container__img" src="images/shop1.png" />
+                  <img class="page-shop__desktop-photos-container__img" src="images/shop2.png" />
+                  <img class="page-shop__desktop-photos-container__img" src="images/shop3.png" />
+                  <img class="page-shop__desktop-photos-container__img" src="images/shop4.png" />
               </div>
           </div>
           <div class="page-shop__promo-container">

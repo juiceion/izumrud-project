@@ -505,6 +505,11 @@
     padding: 20px 14px;
     border-radius: 10px;
     background-color: #fff;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #F2F2F2;
+    }
 
     &__img-container {
       width: 100%;
@@ -538,20 +543,12 @@
     }
 
     &__floor {
+      margin-top: auto;
       font-size: 14px;
       font-weight: 600;
       line-height: 18.2px;
       color: #808080;
       white-space: nowrap;
-    }
-
-    &__row {
-      margin-top: auto;
-      display: flex;
-      justify-content: space-between;
-      gap: 30px;
-      align-items: flex-end;
-      width: 100%;
     }
 
     &__new {

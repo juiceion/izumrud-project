@@ -12,28 +12,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-class SliderElement {
-    constructor(el) {
-        this.el = el;
-
-        this.observer = new ResizeObserver((entries) => {
-            const target = entries[0];
-            const width = target.contentRect.width;
-
-            swiper2.params.slidesOffsetBefore = width / 2;
-            swiper2.update();
-        });
-
-        this.observer.observe(this.el);
-    }
-}
-
-const node = document.querySelector('.first-slider-item');
-
-if (node) {
-    new SliderElement(node);
-}
-
 const swiper1 = new Swiper('.first-slider', {
         modules: [Autoplay, FreeMode],
         freeMode: true,
@@ -55,31 +33,6 @@ const swiper1 = new Swiper('.first-slider', {
                 slidesPerView: 4,
             }
         }
-    }
-);
-
-const swiper2 = new Swiper('.second-slider', {
-    modules: [Autoplay, FreeMode],
-    freeMode: true,
-    loop: true,
-    allowTouchMove: false,
-    slidesPerView: 2,
-    spaceBetween: 15,
-    slidesOffsetBefore: node ? node.clientWidth / 2 : 0,
-    autoplay: {
-        enabled: true,
-        delay: 0,
-    },
-    speed: 4000,
-    breakpoints: {
-        640: {
-            slidesPerView: 3,
-            spaceBetween: 15,
-        },
-        960: {
-            slidesPerView: 4,
-        }
-    }
     }
 );
 

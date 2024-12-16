@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" name="viewport" />
+<meta content="htmlLayoutKit" name="copyright">
+<meta content="RU" name="language">
+<meta content="index,follow" name="robots" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="htmlLayoutKit" name="og:site_name" />
+  <meta content="Index" name="description" />
+<meta content="Index" name="keywords" />
+<meta content="Index" name="title">
+<meta content="http://html-layout-kit.ru" name="url">
+
+<meta content="Index" property="og:description">
+  <meta content="/izumrud-project/sprite.svg#view-icon-image-c1c4b" property="og:image">
+<meta content="Index" property="og:title">
+<meta content="website" property="og:type">
+<meta content="http://html-layout-kit.ru" property="og:url">
+
+<meta content="summary" property="twitter:card">
+<meta content="Index" property="twitter:description">
+  <meta content="/izumrud-project/sprite.svg#view-icon-image-c1c4b" property="twitter:image">
+<meta content="Index" property="twitter:title">
+<meta content="http://html-layout-kit.ru" property="twitter:url">
+  <link href="/izumrud-project/sprite.svg#view-icon-image-c1c4b" rel="icon">
+
+<title>Index</title>
+  <style>
+    svg {
+      height: 0;
+    }
+
+    .opacity {
+      opacity: 0;
+    }
+    </style>
+<script defer src="/izumrud-project/main.min.js?074c683807de3e5b20b8"></script><link href="/izumrud-project/vendor.min.css?074c683807de3e5b20b8" rel="stylesheet"><link href="/izumrud-project/main.min.css?074c683807de3e5b20b8" rel="stylesheet"></head>
+<body class="opacity">
+  
+<div class="layout">
+  <div class="layout__header">
+    <div class="header">
+    <div class="header__inner-container">
+        <div class="box__row header__row">
+            <div class="box__col box__col_xs_2 box__col_sm_4">
+                <div class="header__menu-container">
+                    <button class="header__menu-btn">
+                        <svg class="svg-icon " viewBox="0 0 36 36">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-burger-9b26f"></use>
+</svg>
+                    </button>
+                    <a class="header__map hidden_xs hidden_sm">
+                        <svg class="svg-icon " viewBox="0 0 19 22">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-map-35c5a"></use>
+</svg>
+                        <span class="header__text">Карта этажей</span>
+                    </a>
+                    <a class="header__location hidden_xs hidden_sm">
+                        <svg class="svg-icon " viewBox="0 0 24 24">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-place-6fc2f"></use>
+</svg>
+                        <span class="header__text">Как добраться</span>
+                    </a>
+                </div>
+            </div>
+            <div class="box__col box__col_xs_6 header__center">
+                <a href="/izumrud-project/" class="header__logo">
+                    <svg class="svg-icon " viewBox="0 0 165 51">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-logo-5f22e"></use>
+</svg>
+                </a>
+            </div>
+
+            <div class="box__col box__col_xs_4">
+                <div class="header__menu-container header__menu-container_end">
+                    <button class="header__search">
+                        <svg class="svg-icon " viewBox="0 0 24 24">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-search-11df8"></use>
+</svg>
+                        <span class="header__text hidden_xs hidden_sm">поиск</span>
+                    </button>
+                    <button id="schedule-mobile-close">
+                        <svg class="svg-icon " viewBox="0 0 24 24">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-close-0db4a"></use>
+</svg>
+                    </button>
+                    <a id="desktop-time" class="header__time hidden_xs hidden_sm">
+                        <svg class="svg-icon " viewBox="0 0 11 12">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-time-b5438"></use>
+</svg>
+                        <span class="header__text">сегодня до 22:00</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box__row hidden_md hidden_lg hidden_xl">
+            <div class="box__col box__col_xs_4">
+                <a class="header__map header__mobile-container">
+                    <svg class="svg-icon " viewBox="0 0 19 22">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-map-35c5a"></use>
+</svg>
+                    <span class="header__text">Карта этажей</span>
+                </a>
+            </div>
+            <div class="box__col box__col_xs_4">
+                <a class="header__location header__mobile-container">
+                    <svg class="svg-icon " viewBox="0 0 24 24">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-place-6fc2f"></use>
+</svg>
+                    <span class="header__text">Как добраться</span>
+                </a>
+            </div>
+            <div class="box__col box__col_xs_4">
+                <div id="schedule-mobile-button" class="header__time header__mobile-container">
+                    <svg class="svg-icon " viewBox="0 0 11 12">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-time-b5438"></use>
+</svg>
+                    <span class="header__text">Время работы</span>
+                </div>
+            </div>
+        </div>
+        <div id="schedule-desktop-container"><div class="schedule">
+    <img class="schedule__shop-build" src="/izumrud-project/images/shopBuild.png" />
+    <div class="schedule__content">
+        <div class="schedule__label-row">
+            <svg class="svg-icon " viewBox="0 0 22 22">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-clock-628cf"></use>
+</svg>
+            <span>Время работы</span>
+        </div>
+        <div class="schedule__schedule-outer-container">
+            <svg class="svg-icon " viewBox="0 0 22 22">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-clock-628cf"></use>
+</svg>
+            <div class="schedule__schedule-inner-container">
+                <div class="schedule__day-item">
+                    <span>ПН</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item active">
+                    <span>ВТ</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>СР</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>ЧТ</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>ПТ</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>СБ</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>ВС</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="schedule__custom-schedule-container">
+            <div class="schedule__custom-schedule-item">
+                <span class="schedule__custom-schedule-item__name">INTERSPAR</span>
+                <span class="schedule__custom-schedule-item__type">Супермаркет</span>
+                <span class="schedule__custom-schedule-item__time">10:00 - 23:00</span>
+            </div>
+            <div class="schedule__custom-schedule-item">
+                <span class="schedule__custom-schedule-item__name">WEZION</span>
+                <span class="schedule__custom-schedule-item__type">Компьютерный клуб</span>
+                <span class="schedule__custom-schedule-item__time">Круглосуточно</span>
+            </div>
+            <div class="schedule__custom-schedule-item">
+                <span class="schedule__custom-schedule-item__name">GOODWIN
+                    CINEMA
+                </span>
+                <span class="schedule__custom-schedule-item__type">Кинотеатр</span>
+                <span class="schedule__custom-schedule-item__time">10:00 - 23:00</span>
+            </div>
+        </div>
+    </div>
+</div></div>
+    </div>
+    <div id="schedule-mobile-container">
+        <div id="schedule-mobile-container-overlay">
+            <div class="schedule">
+    <img class="schedule__shop-build" src="/izumrud-project/images/shopBuild.png" />
+    <div class="schedule__content">
+        <div class="schedule__label-row">
+            <svg class="svg-icon " viewBox="0 0 22 22">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-clock-628cf"></use>
+</svg>
+            <span>Время работы</span>
+        </div>
+        <div class="schedule__schedule-outer-container">
+            <svg class="svg-icon " viewBox="0 0 22 22">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-clock-628cf"></use>
+</svg>
+            <div class="schedule__schedule-inner-container">
+                <div class="schedule__day-item">
+                    <span>ПН</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item active">
+                    <span>ВТ</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>СР</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>ЧТ</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>ПТ</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>СБ</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>ВС</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="schedule__custom-schedule-container">
+            <div class="schedule__custom-schedule-item">
+                <span class="schedule__custom-schedule-item__name">INTERSPAR</span>
+                <span class="schedule__custom-schedule-item__type">Супермаркет</span>
+                <span class="schedule__custom-schedule-item__time">10:00 - 23:00</span>
+            </div>
+            <div class="schedule__custom-schedule-item">
+                <span class="schedule__custom-schedule-item__name">WEZION</span>
+                <span class="schedule__custom-schedule-item__type">Компьютерный клуб</span>
+                <span class="schedule__custom-schedule-item__time">Круглосуточно</span>
+            </div>
+            <div class="schedule__custom-schedule-item">
+                <span class="schedule__custom-schedule-item__name">GOODWIN
+                    CINEMA
+                </span>
+                <span class="schedule__custom-schedule-item__type">Кинотеатр</span>
+                <span class="schedule__custom-schedule-item__time">10:00 - 23:00</span>
+            </div>
+        </div>
+    </div>
+</div>        </div>
+    </div>
+</div>
+
+
+  </div>
+  <div class="layout__body">
+          <div class="page page_gray page-catalog">
+      <div class="page-catalog__breadcrumb">
+          <a href="/">Главная</a>
+          <svg class="svg-icon " viewBox="0 0 4 5">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-min-arrow-ca54e"></use>
+</svg>
+          <a href="#">Каталог</a>
+          <svg class="svg-icon " viewBox="0 0 4 5">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-min-arrow-ca54e"></use>
+</svg>
+          <a href="#">Магазины</a>
+      </div>
+      <div class="page-catalog__mobile-menu">
+          <div class="page-catalog__mobile-item active">
+              <div class="page-catalog__mobile-item__header">
+                  <div class="page-catalog__mobile-item__icon-container">
+                      <svg data-type="fill" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.27615 8.6925H7.05178L5.87298 19.8546H18.962L17.7832 8.6925H17.0063V6.79607H17.7966C18.7444 6.79607 19.54 7.52036 19.6404 8.47607L20.8234 19.6693C20.9404 20.7814 20.0807 21.7511 18.9796 21.7511H5.85434C4.75219 21.7511 3.89451 20.7814 4.01053 19.6704L5.19347 8.47607C5.29498 7.51929 6.09051 6.79393 7.03727 6.79393H8.28029C8.37662 4.68321 10.0941 3 12.1999 3C14.3659 3 16.1227 4.78179 16.1227 6.98036V10.4775H14.2509V8.69143H11.3474V6.795H14.2437C14.1504 5.73107 13.27 4.8975 12.1989 4.8975C11.0646 4.8975 10.1459 5.82964 10.1459 6.98036V10.4775H8.27511V8.69143L8.27615 8.6925Z" fill="white"/>
+                      </svg>
+                  </div>
+                  <span>Магазины</span>
+                  <svg class="svg-icon " viewBox="0 0 14 8">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-arrowdown-3637c"></use>
+</svg>
+              </div>
+              <div class="page-catalog__mobile-item__content-outer-container">
+                  <div class="page-catalog__mobile-item__content-inner-container">
+                      <div class="page-catalog__mobile-item__categories-container">
+                          <button class="page-catalog__mobile-item__category-item active">Одежда</button>
+                          <button class="page-catalog__mobile-item__category-item">Аксессуары</button>
+                          <button class="page-catalog__mobile-item__category-item">Белье и купальники</button>
+                          <button class="page-catalog__mobile-item__category-item">Бытовая техника</button>
+                          <button class="page-catalog__mobile-item__category-item">Красота и здоровье</button>
+                          <button class="page-catalog__mobile-item__category-item">Обувь</button>
+                      </div>
+                      <div class="page-catalog__mobile-item__other-categories-container">
+                          <button class="page-catalog__mobile-item__other-category-item">Женское</button>
+                          <button class="page-catalog__mobile-item__other-category-item active">Мужское</button>
+                          <button class="page-catalog__mobile-item__other-category-item">Детское</button>
+                      </div>
+                      <div class="page-catalog__mobile-item__card-container">
+                          <a href="#" class="page-catalog__mobile-item__card">
+                              <img class="page-catalog__mobile-item__card__img" src="/izumrud-project/images/befreeLogo.png" />
+                              <span class="page-catalog__mobile-item__card__name">Befree</span>
+                              <div class="page-catalog__mobile-item__card__row">
+                                  <span class="page-catalog__mobile-item__card__description">Одежда, Мужская одежда, Женская одежда</span>
+                                  <span class="page-catalog__mobile-item__card__floor">3 этаж</span>
+                              </div>
+                          </a>
+                          <a href="#" class="page-catalog__mobile-item__card">
+                              <img class="page-catalog__mobile-item__card__img" src="/izumrud-project/images/befreeLogo.png" />
+                              <span class="page-catalog__mobile-item__card__name">Befree</span>
+                              <div class="page-catalog__mobile-item__card__row">
+                                  <span class="page-catalog__mobile-item__card__description">Одежда, Мужская одежда, Женская одежда</span>
+                                  <span class="page-catalog__mobile-item__card__floor">3 этаж</span>
+                              </div>
+                          </a>
+                          <a href="#" class="page-catalog__mobile-item__card">
+                              <span class="page-catalog__mobile-item__card__new">Новый</span>
+                              <img class="page-catalog__mobile-item__card__img" src="/izumrud-project/images/befreeLogo.png" />
+                              <span class="page-catalog__mobile-item__card__name">Befree</span>
+                              <div class="page-catalog__mobile-item__card__row">
+                                  <span class="page-catalog__mobile-item__card__description">Одежда, Мужская одежда, Женская одежда</span>
+                                  <span class="page-catalog__mobile-item__card__floor">3 этаж</span>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="page-catalog__mobile-item">
+              <div class="page-catalog__mobile-item__header">
+                  <div class="page-catalog__mobile-item__icon-container">
+                      <svg data-type="fill" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M14.528 3.80621C14.754 3.69213 14.9254 3.49297 15.0045 3.25254C15.0836 3.01211 15.0639 2.75011 14.9498 2.52418C14.8357 2.29825 14.6365 2.12688 14.3961 2.04779C14.1556 1.9687 13.8936 1.98836 13.6676 2.10244L14.0912 2.95792C13.9513 2.67193 13.8109 2.38676 13.6676 2.10244H13.6652L13.6628 2.10484L13.658 2.10724L13.646 2.11324C13.6064 2.13332 13.5675 2.15493 13.5296 2.17803C13.1569 2.41374 12.826 2.70973 12.5504 3.05391C12.2222 3.46543 11.9702 3.93232 11.8064 4.43252C11.4837 4.14779 11.1059 3.93255 10.6964 3.80021C10.2512 3.65462 9.78475 3.58446 9.3164 3.59263L9.2864 3.59384H9.2708L9.2696 3.59504L9.3176 4.54771L9.2672 3.59504C9.02059 3.61617 8.79182 3.7322 8.62909 3.91866C8.46635 4.10513 8.38236 4.34747 8.3948 4.59464C8.40725 4.8418 8.51516 5.07449 8.69581 5.24366C8.87645 5.41284 9.11572 5.50531 9.3632 5.50158H9.4028C9.56743 5.50358 9.73145 5.52207 9.8924 5.55677C6.6536 6.50464 4.1804 9.17428 3.6896 12.4894C3.19475 12.6662 2.76673 12.9917 2.46423 13.4214C2.16173 13.851 1.99957 14.3637 2 14.8891C2 15.987 2.6936 16.9084 3.6572 17.2672C4.9292 21.4342 9.044 23 12.5 23C15.956 23 20.072 21.4342 21.3428 17.2648C21.8288 17.0853 22.2482 16.7613 22.5445 16.3364C22.8407 15.9114 22.9997 15.4059 23 14.8879C23 13.7817 22.2956 12.841 21.3104 12.4894C20.744 8.66195 17.5352 5.69595 13.5584 5.24481C13.6444 4.88142 13.8086 4.54116 14.0396 4.24775C14.1745 4.07915 14.3348 3.93261 14.5148 3.81341L14.528 3.80621ZM10.6976 17.3932L10.7072 17.4004C10.8417 17.4895 10.9839 17.5666 11.132 17.6307C11.4476 17.7687 11.9144 17.9103 12.5 17.9103C13.0856 17.9103 13.5524 17.7687 13.868 17.6307C14.0161 17.5667 14.1583 17.4896 14.2928 17.4004L14.3024 17.3932C14.5018 17.2372 14.755 17.1669 15.0062 17.1976C15.2575 17.2283 15.4863 17.3576 15.6422 17.5569C15.7981 17.7563 15.8685 18.0094 15.8378 18.2607C15.8071 18.5119 15.6778 18.7406 15.4784 18.8966L15.476 18.899L15.4736 18.9014L15.4664 18.9062L15.4484 18.9194L15.3968 18.9578C15.1551 19.1228 14.8984 19.2646 14.63 19.3813C13.9575 19.6715 13.2325 19.8202 12.5 19.818C11.6036 19.818 10.8764 19.6021 10.37 19.3813C10.1016 19.2646 9.84489 19.1228 9.6032 18.9578C9.58539 18.9452 9.56779 18.9324 9.5504 18.9194L9.5336 18.9062L9.5264 18.9002L9.524 18.899L9.5216 18.8978L10.1132 18.1479L9.5204 18.8966C9.32101 18.7405 9.1918 18.5116 9.1612 18.2602C9.13059 18.0089 9.20109 17.7557 9.3572 17.5563C9.51331 17.357 9.74223 17.2278 9.9936 17.1972C10.245 17.1666 10.4982 17.2371 10.6976 17.3932ZM12.5 7.09376C8.7164 7.09376 5.708 9.90618 5.5196 13.3509L5.4704 14.2532H4.5668L4.5152 14.252C4.35212 14.2568 4.19721 14.3244 4.08283 14.4408C3.96846 14.5571 3.90347 14.7131 3.90146 14.8762C3.89945 15.0393 3.96056 15.1969 4.07203 15.316C4.18349 15.4352 4.33669 15.5066 4.4996 15.5154L5.2052 15.5658L5.3624 16.2545C6.1304 19.6213 9.326 21.0911 12.5 21.0911C15.674 21.0911 18.8696 19.6213 19.6376 16.2557L19.7936 15.5658L20.4992 15.5154C20.6628 15.5015 20.8145 15.4245 20.9223 15.3008C21.0302 15.1771 21.0857 15.0163 21.0771 14.8524C21.0685 14.6885 20.9966 14.5343 20.8764 14.4225C20.7562 14.3107 20.5973 14.25 20.4332 14.2532H19.5296L19.4804 13.3509C19.292 9.90738 16.2836 7.09376 12.5 7.09376ZM14.8376 13.2489C14.9471 13.1325 15.0789 13.0393 15.2251 12.9747C15.3713 12.9102 15.529 12.8757 15.6888 12.8732C15.8487 12.8707 16.0073 12.9004 16.1555 12.9604C16.3036 13.0203 16.4382 13.1095 16.5513 13.2224C16.6643 13.3354 16.7536 13.4699 16.8137 13.618C16.8738 13.7661 16.9035 13.9247 16.9012 14.0845C16.8988 14.2443 16.8644 14.402 16.7999 14.5482C16.7355 14.6945 16.6423 14.8263 16.526 14.9359C16.3 15.1487 16.0001 15.2652 15.6897 15.2606C15.3793 15.256 15.0829 15.1308 14.8633 14.9114C14.6437 14.692 14.5182 14.3957 14.5134 14.0854C14.5086 13.775 14.6249 13.475 14.8376 13.2489ZM8.474 13.2489C8.69774 13.0252 9.00119 12.8995 9.3176 12.8995C9.63401 12.8995 9.93746 13.0252 10.1612 13.2489C10.3849 13.4726 10.5106 13.776 10.5106 14.0924C10.5106 14.4088 10.3849 14.7122 10.1612 14.9359C9.93746 15.1596 9.63401 15.2853 9.3176 15.2853C9.00119 15.2853 8.69774 15.1596 8.474 14.9359C8.25026 14.7122 8.12457 14.4088 8.12457 14.0924C8.12457 13.776 8.25026 13.4726 8.474 13.2489Z" fill="#503872"/>
+                      </svg>
+                  </div>
+                  <span>Детям</span>
+                  <svg class="svg-icon " viewBox="0 0 14 8">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-arrowdown-3637c"></use>
+</svg>
+              </div>
+              <div class="page-catalog__mobile-item__content-outer-container">
+                  <div class="page-catalog__mobile-item__content-inner-container">
+                      <div class="page-catalog__mobile-item__categories-container">
+                          <button class="page-catalog__mobile-item__category-item active">Одежда</button>
+                          <button class="page-catalog__mobile-item__category-item">Аксессуары</button>
+                          <button class="page-catalog__mobile-item__category-item">Белье и купальники</button>
+                          <button class="page-catalog__mobile-item__category-item">Бытовая техника</button>
+                          <button class="page-catalog__mobile-item__category-item">Красота и здоровье</button>
+                          <button class="page-catalog__mobile-item__category-item">Обувь</button>
+                      </div>
+                      <div class="page-catalog__mobile-item__other-categories-container">
+                          <button class="page-catalog__mobile-item__other-category-item">Женское</button>
+                          <button class="page-catalog__mobile-item__other-category-item active">Мужское</button>
+                          <button class="page-catalog__mobile-item__other-category-item">Детское</button>
+                      </div>
+                      <div class="page-catalog__mobile-item__card-container">
+                          <a href="#" class="page-catalog__mobile-item__card">
+                              <img class="page-catalog__mobile-item__card__img" src="/izumrud-project/images/befreeLogo.png" />
+                              <span class="page-catalog__mobile-item__card__name">Befree</span>
+                              <div class="page-catalog__mobile-item__card__row">
+                                  <span class="page-catalog__mobile-item__card__description">Одежда, Мужская одежда, Женская одежда</span>
+                                  <span class="page-catalog__mobile-item__card__floor">3 этаж</span>
+                              </div>
+                          </a>
+                          <a href="#" class="page-catalog__mobile-item__card">
+                              <img class="page-catalog__mobile-item__card__img" src="/izumrud-project/images/befreeLogo.png" />
+                              <span class="page-catalog__mobile-item__card__name">Befree</span>
+                              <div class="page-catalog__mobile-item__card__row">
+                                  <span class="page-catalog__mobile-item__card__description">Одежда, Мужская одежда, Женская одежда</span>
+                                  <span class="page-catalog__mobile-item__card__floor">3 этаж</span>
+                              </div>
+                          </a>
+                          <a href="#" class="page-catalog__mobile-item__card">
+                              <span class="page-catalog__mobile-item__card__new">Новый</span>
+                              <img class="page-catalog__mobile-item__card__img" src="/izumrud-project/images/befreeLogo.png" />
+                              <span class="page-catalog__mobile-item__card__name">Befree</span>
+                              <div class="page-catalog__mobile-item__card__row">
+                                  <span class="page-catalog__mobile-item__card__description">Одежда, Мужская одежда, Женская одежда</span>
+                                  <span class="page-catalog__mobile-item__card__floor">3 этаж</span>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="page-catalog__mobile-item">
+              <div class="page-catalog__mobile-item__header">
+                  <div class="page-catalog__mobile-item__icon-container">
+                      <svg data-type="fill" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.93855 3.05003C6.93653 2.76953 6.83337 2.50139 6.65172 2.30451C6.47008 2.10763 6.22482 1.99812 5.96982 2.00003C5.84346 1.99893 5.71814 2.02521 5.60102 2.07738C5.4839 2.12954 5.37726 2.20658 5.28721 2.30408C5.19715 2.40158 5.12544 2.51764 5.07616 2.64563C5.02688 2.77363 5.001 2.91104 5 3.05003V9.09682C5 11.084 6.37782 12.6128 8.10036 13.0472V21.95C8.10036 22.5296 8.53455 23 9.06909 23C9.60364 23 10.0389 22.5296 10.0389 21.95V13.064C11.792 12.6524 13.2058 11.1092 13.2058 9.09682V7.83682C13.2059 7.74483 13.1949 7.65323 13.1731 7.56442V3.05003C13.1721 2.91104 13.1462 2.77363 13.0969 2.64563C13.0477 2.51764 12.9759 2.40158 12.8859 2.30408C12.7958 2.20658 12.6892 2.12954 12.5721 2.07738C12.4549 2.02521 12.3296 1.99893 12.2033 2.00003C11.9483 1.99812 11.703 2.10763 11.5214 2.30451C11.3397 2.50139 11.2366 2.76953 11.2345 3.05003V8.03242C11.2105 8.04416 11.1845 8.0499 11.1582 8.04922H10.2636C10.2004 8.02389 10.135 8.0058 10.0684 7.99522C10.0635 7.93358 10.0537 7.87253 10.0389 7.81282V3.05003C10.0379 2.91104 10.012 2.77363 9.96275 2.64563C9.91347 2.51764 9.84176 2.40158 9.7517 2.30408C9.66165 2.20658 9.55501 2.12954 9.43789 2.07738C9.32077 2.02521 9.19545 1.99893 9.06909 2.00003C8.81409 1.99812 8.56883 2.10763 8.38719 2.30451C8.20554 2.50139 8.10238 2.76953 8.10036 3.05003V7.98322H7.82982C7.71444 7.98315 7.59995 8.00549 7.49164 8.04922H7.01382C6.98791 8.04976 6.96221 8.04403 6.93855 8.03242V3.05003ZM9.61782 10.0832H8.55527C8.39277 10.1267 8.22615 10.1489 8.05891 10.1492H7.27673C7.64327 10.682 8.28582 11.072 9.10291 11.072C9.91891 11.072 10.5615 10.682 10.928 10.148H10.1142C9.94727 10.148 9.78036 10.1264 9.61782 10.0832ZM16.3444 2.11883C16.1964 2.03547 16.0315 1.99482 15.8653 2.00069C15.6991 2.00657 15.537 2.05878 15.3942 2.15243C15.2525 2.24489 15.1351 2.37621 15.0535 2.53355C14.9718 2.69089 14.9287 2.86886 14.9284 3.05003L14.9207 21.7016C14.9207 22.2812 15.3549 22.7516 15.8895 22.7516C16.424 22.7516 16.8593 22.2812 16.8593 21.7016L16.8615 15.284L18.4411 14.396C19.3662 13.874 20 12.8744 20 11.7224V11.3672C20 7.89922 19.1676 5.61203 18.2676 4.16483C17.9158 3.58952 17.4928 3.07093 17.0109 2.62403C16.825 2.45462 16.6277 2.30098 16.4207 2.16443C16.4048 2.1546 16.3888 2.145 16.3727 2.13563L16.3564 2.12603L16.3498 2.12123L16.3465 2.12003L16.3444 2.11883ZM17.5476 12.5324L16.8625 12.9164L16.8647 5.69003C17.4691 6.80483 18.0615 8.59642 18.0615 11.3672V11.7224C18.0615 12.0044 17.9055 12.3296 17.5476 12.5324Z" fill="#503872"/>
+                      </svg>
+                  </div>
+                  <span>Еда</span>
+                  <svg class="svg-icon " viewBox="0 0 14 8">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-arrowdown-3637c"></use>
+</svg>
+              </div>
+              <div class="page-catalog__mobile-item__content-outer-container">
+                  <div class="page-catalog__mobile-item__content-inner-container">
+                      <div class="page-catalog__mobile-item__categories-container">
+                          <button class="page-catalog__mobile-item__category-item active">Одежда</button>
+                          <button class="page-catalog__mobile-item__category-item">Аксессуары</button>
+                          <button class="page-catalog__mobile-item__category-item">Белье и купальники</button>
+                          <button class="page-catalog__mobile-item__category-item">Бытовая техника</button>
+                          <button class="page-catalog__mobile-item__category-item">Красота и здоровье</button>
+                          <button class="page-catalog__mobile-item__category-item">Обувь</button>
+                      </div>
+                      <div class="page-catalog__mobile-item__other-categories-container">
+                          <button class="page-catalog__mobile-item__other-category-item">Женское</button>
+                          <button class="page-catalog__mobile-item__other-category-item active">Мужское</button>
+                          <button class="page-catalog__mobile-item__other-category-item">Детское</button>
+                      </div>
+                      <div class="page-catalog__mobile-item__card-container">
+                          <a href="#" class="page-catalog__mobile-item__card">
+                              <img class="page-catalog__mobile-item__card__img" src="/izumrud-project/images/befreeLogo.png" />
+                              <span class="page-catalog__mobile-item__card__name">Befree</span>
+                              <div class="page-catalog__mobile-item__card__row">
+                                  <span class="page-catalog__mobile-item__card__description">Одежда, Мужская одежда, Женская одежда</span>
+                                  <span class="page-catalog__mobile-item__card__floor">3 этаж</span>
+                              </div>
+                          </a>
+                          <a href="#" class="page-catalog__mobile-item__card">
+                              <img class="page-catalog__mobile-item__card__img" src="/izumrud-project/images/befreeLogo.png" />
+                              <span class="page-catalog__mobile-item__card__name">Befree</span>
+                              <div class="page-catalog__mobile-item__card__row">
+                                  <span class="page-catalog__mobile-item__card__description">Одежда, Мужская одежда, Женская одежда</span>
+                                  <span class="page-catalog__mobile-item__card__floor">3 этаж</span>
+                              </div>
+                          </a>
+                          <a href="#" class="page-catalog__mobile-item__card">
+                              <span class="page-catalog__mobile-item__card__new">Новый</span>
+                              <img class="page-catalog__mobile-item__card__img" src="/izumrud-project/images/befreeLogo.png" />
+                              <span class="page-catalog__mobile-item__card__name">Befree</span>
+                              <div class="page-catalog__mobile-item__card__row">
+                                  <span class="page-catalog__mobile-item__card__description">Одежда, Мужская одежда, Женская одежда</span>
+                                  <span class="page-catalog__mobile-item__card__floor">3 этаж</span>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="page-catalog__mobile-item">
+              <div class="page-catalog__mobile-item__header">
+                  <div class="page-catalog__mobile-item__icon-container">
+                      <svg data-type="fill" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.616 6.23662L20.2737 4.8486V17.7374L15.3641 19.1686L9.82699 17.7507C9.68222 17.714 9.53052 17.7171 9.38728 17.7595L4.72742 19.1276V6.24105L9.63482 4.82866L15.1719 6.24659C15.3185 6.28384 15.4711 6.2804 15.616 6.23662ZM21.9999 4.6348C22.0019 4.38546 21.9475 4.13901 21.8409 3.91464C21.7343 3.69026 21.5784 3.49401 21.3853 3.34117C21.1922 3.18832 20.9671 3.08299 20.7276 3.03338C20.4881 2.98377 20.2406 2.99121 20.0044 3.05514L15.3619 4.43984L9.82699 3.02633C9.68387 2.98943 9.53379 2.99134 9.39162 3.03187L3.63411 4.68797C3.45031 4.74246 3.28895 4.85663 3.17452 5.01317C3.06009 5.16971 2.99883 5.36007 3.00005 5.55535V19.3414C2.99804 19.5905 3.05231 19.8367 3.15867 20.0609C3.26502 20.2851 3.4206 20.4813 3.61331 20.6342C3.80602 20.7871 4.03068 20.8926 4.26984 20.9426C4.509 20.9925 4.75623 20.9855 4.99233 20.9222L9.63699 19.5574L15.173 20.9743C15.3174 21.011 15.4686 21.0084 15.6116 20.9665L21.3692 19.2871C21.5522 19.2321 21.7127 19.1178 21.8265 18.9616C21.9402 18.8053 22.0011 18.6155 21.9999 18.4209V4.6348ZM6.23329 12.2185C6.29962 12.1493 6.37883 12.0943 6.46627 12.0568C6.55371 12.0193 6.64762 11.9999 6.74249 11.9999C6.83736 11.9999 6.93127 12.0193 7.01871 12.0568C7.10615 12.0943 7.18536 12.1493 7.25169 12.2185C7.38789 12.3602 7.46419 12.5507 7.46419 12.7491C7.46419 12.9476 7.38789 13.1381 7.25169 13.2798C7.18536 13.349 7.10615 13.4039 7.01871 13.4415C6.93127 13.479 6.83736 13.4984 6.74249 13.4984C6.64762 13.4984 6.55371 13.479 6.46627 13.4415C6.37883 13.4039 6.29962 13.349 6.23329 13.2798C6.09735 13.138 6.02123 12.9475 6.02123 12.7491C6.02123 12.5508 6.09735 12.3603 6.23329 12.2185ZM17.7483 10.7186C17.8146 10.6494 17.8939 10.5944 17.9813 10.5569C18.0687 10.5194 18.1626 10.5 18.2575 10.5C18.3524 10.5 18.4463 10.5194 18.5337 10.5569C18.6212 10.5944 18.7004 10.6494 18.7667 10.7186C18.9027 10.8604 18.9788 11.0509 18.9788 11.2492C18.9788 11.4476 18.9027 11.6381 18.7667 11.7799C18.7004 11.8491 18.6212 11.904 18.5337 11.9416C18.4463 11.9791 18.3524 11.9985 18.2575 11.9985C18.1626 11.9985 18.0687 11.9791 17.9813 11.9416C17.8939 11.904 17.8146 11.8491 17.7483 11.7799C17.6121 11.6382 17.5358 11.4477 17.5358 11.2492C17.5358 11.0508 17.6121 10.8603 17.7483 10.7186ZM7.67294 15.2195C7.73925 15.1504 7.8184 15.0956 7.90574 15.0581C7.99308 15.0207 8.08686 15.0014 8.1816 15.0014C8.27633 15.0014 8.37012 15.0207 8.45746 15.0581C8.5448 15.0956 8.62394 15.1504 8.69025 15.2195C8.82587 15.3612 8.90178 15.5514 8.90178 15.7495C8.90178 15.9476 8.82587 16.1378 8.69025 16.2796C8.62394 16.3486 8.5448 16.4035 8.45746 16.4409C8.37012 16.4783 8.27633 16.4976 8.1816 16.4976C8.08686 16.4976 7.99308 16.4783 7.90574 16.4409C7.8184 16.4035 7.73925 16.3486 7.67294 16.2796C7.53733 16.1378 7.46141 15.9476 7.46141 15.7495C7.46141 15.5514 7.53733 15.3612 7.67294 15.2195ZM16.3098 7.71881C16.3761 7.64977 16.4552 7.59493 16.5425 7.5575C16.6299 7.52006 16.7237 7.50077 16.8184 7.50077C16.9131 7.50077 17.0069 7.52006 17.0943 7.5575C17.1816 7.59493 17.2607 7.64977 17.3271 7.71881C17.4627 7.86055 17.5386 8.05078 17.5386 8.24887C17.5386 8.44696 17.4627 8.63719 17.3271 8.77893C17.2607 8.84813 17.1815 8.90312 17.0941 8.94066C17.0066 8.97819 16.9127 8.99753 16.8179 8.99753C16.723 8.99753 16.6291 8.97819 16.5416 8.94066C16.4542 8.90312 16.375 8.84813 16.3087 8.77893C16.173 8.63719 16.0971 8.44696 16.0971 8.24887C16.0971 8.05078 16.173 7.86055 16.3087 7.71881H16.3098ZM10.5522 10.7186C10.6186 10.6496 10.6977 10.5947 10.785 10.5573C10.8724 10.5199 10.9662 10.5006 11.0609 10.5006C11.1556 10.5006 11.2494 10.5199 11.3368 10.5573C11.4241 10.5947 11.5032 10.6496 11.5695 10.7186C11.7057 10.8603 11.782 11.0508 11.782 11.2492C11.782 11.4477 11.7057 11.6382 11.5695 11.7799C11.5032 11.8491 11.424 11.904 11.3366 11.9416C11.2491 11.9791 11.1552 11.9985 11.0604 11.9985C10.9655 11.9985 10.8716 11.9791 10.7841 11.9416C10.6967 11.904 10.6175 11.8491 10.5512 11.7799C10.415 11.6382 10.3387 11.4477 10.3387 11.2492C10.3387 11.0508 10.415 10.8603 10.5512 10.7186H10.5522ZM13.4305 12.2185C13.4968 12.1495 13.5759 12.0947 13.6632 12.0572C13.7506 12.0198 13.8444 12.0005 13.9391 12.0005C14.0338 12.0005 14.1276 12.0198 14.215 12.0572C14.3023 12.0947 14.3815 12.1495 14.4478 12.2185C14.584 12.3602 14.6603 12.5507 14.6603 12.7491C14.6603 12.9476 14.584 13.1381 14.4478 13.2798C14.3815 13.3488 14.3023 13.4036 14.215 13.4411C14.1276 13.4785 14.0338 13.4978 13.9391 13.4978C13.8444 13.4978 13.7506 13.4785 13.6632 13.4411C13.5759 13.4036 13.4968 13.3488 13.4305 13.2798C13.2945 13.138 13.2184 12.9475 13.2184 12.7491C13.2184 12.5508 13.2945 12.3603 13.4305 12.2185ZM16.5204 13.9389C16.7896 13.6575 17.1555 13.4991 17.5377 13.4991C17.9199 13.4991 18.2857 13.6575 18.5561 13.9389C18.8253 14.2203 18.9773 14.6013 18.9773 14.999C18.9773 15.3978 18.8253 15.7789 18.5561 16.0602C18.4235 16.1989 18.2652 16.3092 18.0903 16.3845C17.9154 16.4598 17.7275 16.4987 17.5377 16.4989C17.1555 16.4989 16.7896 16.3416 16.5204 16.0602C16.2491 15.7764 16.0974 15.3955 16.098 14.999C16.098 14.6013 16.25 14.2203 16.5204 13.9389ZM6.44501 7.93814C6.71426 7.65677 7.08015 7.49836 7.46232 7.49836C7.8434 7.49836 8.21037 7.65677 8.47962 7.93814C8.75144 8.22155 8.90365 8.6023 8.90365 8.99882C8.90365 9.39535 8.75144 9.7761 8.47962 10.0595C8.34731 10.1982 8.18916 10.3086 8.01446 10.3841C7.83977 10.4596 7.65204 10.4988 7.46232 10.4993C7.08015 10.4993 6.71426 10.3409 6.44392 10.0595C6.17299 9.77551 6.02178 9.39459 6.02267 8.99827C6.02267 8.60058 6.17466 8.21951 6.44392 7.93814H6.44501Z" fill="#503872"/>
+                      </svg>
+                  </div>
+                  <span>Услуги</span>
+                  <svg class="svg-icon " viewBox="0 0 14 8">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-arrowdown-3637c"></use>
+</svg>
+              </div>
+              <div class="page-catalog__mobile-item__content-outer-container">
+                  <div class="page-catalog__mobile-item__content-inner-container">
+                      <div class="page-catalog__mobile-item__categories-container">
+                          <button class="page-catalog__mobile-item__category-item active">Одежда</button>
+                          <button class="page-catalog__mobile-item__category-item">Аксессуары</button>
+                          <button class="page-catalog__mobile-item__category-item">Белье и купальники</button>
+                          <button class="page-catalog__mobile-item__category-item">Бытовая техника</button>
+                          <button class="page-catalog__mobile-item__category-item">Красота и здоровье</button>
+                          <button class="page-catalog__mobile-item__category-item">Обувь</button>
+                      </div>
+                      <div class="page-catalog__mobile-item__other-categories-container">
+                          <button class="page-catalog__mobile-item__other-category-item">Женское</button>
+                          <button class="page-catalog__mobile-item__other-category-item active">Мужское</button>
+                          <button class="page-catalog__mobile-item__other-category-item">Детское</button>
+                      </div>
+                      <div class="page-catalog__mobile-item__card-container">
+                          <a href="#" class="page-catalog__mobile-item__card">
+                              <img class="page-catalog__mobile-item__card__img" src="/izumrud-project/images/befreeLogo.png" />
+                              <span class="page-catalog__mobile-item__card__name">Befree</span>
+                              <div class="page-catalog__mobile-item__card__row">
+                                  <span class="page-catalog__mobile-item__card__description">Одежда, Мужская одежда, Женская одежда</span>
+                                  <span class="page-catalog__mobile-item__card__floor">3 этаж</span>
+                              </div>
+                          </a>
+                          <a href="#" class="page-catalog__mobile-item__card">
+                              <img class="page-catalog__mobile-item__card__img" src="/izumrud-project/images/befreeLogo.png" />
+                              <span class="page-catalog__mobile-item__card__name">Befree</span>
+                              <div class="page-catalog__mobile-item__card__row">
+                                  <span class="page-catalog__mobile-item__card__description">Одежда, Мужская одежда, Женская одежда</span>
+                                  <span class="page-catalog__mobile-item__card__floor">3 этаж</span>
+                              </div>
+                          </a>
+                          <a href="#" class="page-catalog__mobile-item__card">
+                              <span class="page-catalog__mobile-item__card__new">Новый</span>
+                              <img class="page-catalog__mobile-item__card__img" src="/izumrud-project/images/befreeLogo.png" />
+                              <span class="page-catalog__mobile-item__card__name">Befree</span>
+                              <div class="page-catalog__mobile-item__card__row">
+                                  <span class="page-catalog__mobile-item__card__description">Одежда, Мужская одежда, Женская одежда</span>
+                                  <span class="page-catalog__mobile-item__card__floor">3 этаж</span>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="page-catalog__mobile-item">
+              <div class="page-catalog__mobile-item__header">
+                  <div class="page-catalog__mobile-item__icon-container">
+                      <svg data-type="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M21 16.1538H6.13043C4.40154 16.1538 3 17.4626 3 19.0769M21 16.1538V20.5385C21 21.3456 20.2992 22 19.4348 22H6.13044C4.40154 22 3 20.6913 3 19.0769M21 16.1538V4.46154C21 3.65435 20.2992 3 19.4348 3H8.08696M3 19.0769V5.92308C3 4.30871 4.40154 3 6.13043 3H8.08696M12.0608 7.38462H16.3533M12.0608 11.7692H16.3533M8.08696 16.0625V3" stroke="#503872" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </div>
+                  <span>Сервисы</span>
+                  <svg class="svg-icon " viewBox="0 0 14 8">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-arrowdown-3637c"></use>
+</svg>
+              </div>
+              <div class="page-catalog__mobile-item__content-outer-container">
+                  <div class="page-catalog__mobile-item__content-inner-container">
+                      <div class="page-catalog__mobile-item__categories-container">
+                          <button class="page-catalog__mobile-item__category-item active">Одежда</button>
+                          <button class="page-catalog__mobile-item__category-item">Аксессуары</button>
+                          <button class="page-catalog__mobile-item__category-item">Белье и купальники</button>
+                          <button class="page-catalog__mobile-item__category-item">Бытовая техника</button>
+                          <button class="page-catalog__mobile-item__category-item">Красота и здоровье</button>
+                          <button class="page-catalog__mobile-item__category-item">Обувь</button>
+                      </div>
+                      <div class="page-catalog__mobile-item__other-categories-container">
+                          <button class="page-catalog__mobile-item__other-category-item">Женское</button>
+                          <button class="page-catalog__mobile-item__other-category-item active">Мужское</button>
+                          <button class="page-catalog__mobile-item__other-category-item">Детское</button>
+                      </div>
+                      <div class="page-catalog__mobile-item__card-container">
+                          <a href="#" class="page-catalog__mobile-item__card">
+                              <img class="page-catalog__mobile-item__card__img" src="/izumrud-project/images/befreeLogo.png" />
+                              <span class="page-catalog__mobile-item__card__name">Befree</span>
+                              <div class="page-catalog__mobile-item__card__row">
+                                  <span class="page-catalog__mobile-item__card__description">Одежда, Мужская одежда, Женская одежда</span>
+                                  <span class="page-catalog__mobile-item__card__floor">3 этаж</span>
+                              </div>
+                          </a>
+                          <a href="#" class="page-catalog__mobile-item__card">
+                              <img class="page-catalog__mobile-item__card__img" src="/izumrud-project/images/befreeLogo.png" />
+                              <span class="page-catalog__mobile-item__card__name">Befree</span>
+                              <div class="page-catalog__mobile-item__card__row">
+                                  <span class="page-catalog__mobile-item__card__description">Одежда, Мужская одежда, Женская одежда</span>
+                                  <span class="page-catalog__mobile-item__card__floor">3 этаж</span>
+                              </div>
+                          </a>
+                          <a href="#" class="page-catalog__mobile-item__card">
+                              <span class="page-catalog__mobile-item__card__new">Новый</span>
+                              <img class="page-catalog__mobile-item__card__img" src="/izumrud-project/images/befreeLogo.png" />
+                              <span class="page-catalog__mobile-item__card__name">Befree</span>
+                              <div class="page-catalog__mobile-item__card__row">
+                                  <span class="page-catalog__mobile-item__card__description">Одежда, Мужская одежда, Женская одежда</span>
+                                  <span class="page-catalog__mobile-item__card__floor">3 этаж</span>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="page-catalog__mobile-item">
+              <div class="page-catalog__mobile-item__header">
+                  <div class="page-catalog__mobile-item__icon-container">
+                      <svg data-type="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M15.2941 3L17.1053 7.89469L22 9.70588L17.1053 11.5171L15.2941 16.4118L13.4829 11.5171L8.58824 9.70588L13.4829 7.89469L15.2941 3Z" stroke="#503872" stroke-width="2" stroke-linejoin="round"/>
+                          <path d="M6.91176 14.1765L8.49394 16.5061L10.8235 18.0882L8.49394 19.6704L6.91176 22L5.32959 19.6704L3 18.0882L5.32959 16.5061L6.91176 14.1765Z" stroke="#503872" stroke-width="2" stroke-linejoin="round"/>
+                      </svg>
+                  </div>
+                  <span>Развлечения</span>
+                  <svg class="svg-icon " viewBox="0 0 14 8">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-arrowdown-3637c"></use>
+</svg>
+              </div>
+              <div class="page-catalog__mobile-item__content-outer-container">
+                  <div class="page-catalog__mobile-item__content-inner-container">
+                      <div class="page-catalog__mobile-item__categories-container">
+                          <button class="page-catalog__mobile-item__category-item active">Одежда</button>
+                          <button class="page-catalog__mobile-item__category-item">Аксессуары</button>
+                          <button class="page-catalog__mobile-item__category-item">Белье и купальники</button>
+                          <button class="page-catalog__mobile-item__category-item">Бытовая техника</button>
+                          <button class="page-catalog__mobile-item__category-item">Красота и здоровье</button>
+                          <button class="page-catalog__mobile-item__category-item">Обувь</button>
+                      </div>
+                      <div class="page-catalog__mobile-item__other-categories-container">
+                          <button class="page-catalog__mobile-item__other-category-item">Женское</button>
+                          <button class="page-catalog__mobile-item__other-category-item active">Мужское</button>
+                          <button class="page-catalog__mobile-item__other-category-item">Детское</button>
+                      </div>
+                      <div class="page-catalog__mobile-item__card-container">
+                          <a href="#" class="page-catalog__mobile-item__card">
+                              <img class="page-catalog__mobile-item__card__img" src="/izumrud-project/images/befreeLogo.png" />
+                              <span class="page-catalog__mobile-item__card__name">Befree</span>
+                              <div class="page-catalog__mobile-item__card__row">
+                                  <span class="page-catalog__mobile-item__card__description">Одежда, Мужская одежда, Женская одежда</span>
+                                  <span class="page-catalog__mobile-item__card__floor">3 этаж</span>
+                              </div>
+                          </a>
+                          <a href="#" class="page-catalog__mobile-item__card">
+                              <img class="page-catalog__mobile-item__card__img" src="/izumrud-project/images/befreeLogo.png" />
+                              <span class="page-catalog__mobile-item__card__name">Befree</span>
+                              <div class="page-catalog__mobile-item__card__row">
+                                  <span class="page-catalog__mobile-item__card__description">Одежда, Мужская одежда, Женская одежда</span>
+                                  <span class="page-catalog__mobile-item__card__floor">3 этаж</span>
+                              </div>
+                          </a>
+                          <a href="#" class="page-catalog__mobile-item__card">
+                              <span class="page-catalog__mobile-item__card__new">Новый</span>
+                              <img class="page-catalog__mobile-item__card__img" src="/izumrud-project/images/befreeLogo.png" />
+                              <span class="page-catalog__mobile-item__card__name">Befree</span>
+                              <div class="page-catalog__mobile-item__card__row">
+                                  <span class="page-catalog__mobile-item__card__description">Одежда, Мужская одежда, Женская одежда</span>
+                                  <span class="page-catalog__mobile-item__card__floor">3 этаж</span>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="page-catalog__mobile-item">
+      </div>
+  </div>
+    
+    <div class="layout__footer">
+        <div class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__main-column">
+                <div class="footer__logo">
+                    <svg class="svg-icon " viewBox="0 0 119 37">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-logo-white-dba0a"></use>
+</svg>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <a href="#">СОУТ</a>
+                        <a href="#">Арендаторам</a>
+                    </div>
+                    <div class="footer__column">
+                        <a href="#">Персональные данные</a>
+                        <a href="#">Рекламодателям</a>
+                    </div>
+                    <div class="footer__column">
+                        <a href="#">Программа лояльности</a>
+                        <a href="/izumrud-project/vacancy">Вакансии</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__main-column">
+                <div class="footer__socials">
+                    <a href="/">
+                        <svg class="svg-icon " viewBox="0 0 30 30">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-vk-0ac93"></use>
+</svg>
+                    </a>
+                    <a href="/">
+                        <svg class="svg-icon " viewBox="0 0 30 30">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-telegram-4d9a9"></use>
+</svg>
+                    </a>
+                </div>
+                <div class="footer__copyright">
+                    <a href="mailto:izumrudniy.tomsk.ru">izumrudniy.tomsk.ru © 2024</a>
+                    <p>Все права защищены</p>
+                    <a href="#">Персональные данные</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

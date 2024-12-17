@@ -15,14 +15,19 @@
     line-height: 12px;
 
     @media (@lg-min) {
-      font-size: 16px;
-      margin-left: 0;
+      font-size: 14px;
+      line-height: 14px;
     }
 
     a {
       color: #808080;
+      font-size: 12px;
+      font-weight: 200;
+      line-height: 12px;
+
       @media (@lg-min) {
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 14px;
       }
 
       &:hover {
@@ -197,10 +202,11 @@
 
       &__img {
         height: 13px;
-        margin-bottom: 3px;
+        margin-bottom: 12px;
       }
 
       &__name {
+        margin-bottom: 14px;
         font-size: 12px;
         font-weight: 700;
         line-height: 15.6px;
@@ -276,9 +282,13 @@
   }
 
   &__desktop-content {
-    margin-top: 40px;
-    display: flex;
-    gap: 30px;
+    display: none;
+
+    @media (@lg-min) {
+      margin-top: 40px;
+      display: flex;
+      gap: 30px;
+    }
   }
 
   &__desktop-menu {

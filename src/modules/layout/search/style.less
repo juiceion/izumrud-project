@@ -25,6 +25,8 @@
 
   @media (@lg-min) {
     padding: 60px 0 32px;
+    left: calc((100dvw - 100%) / -2);
+    padding-inline: calc((100dvw - 100%) / 2);
   }
 }
 
@@ -127,7 +129,7 @@
 
   @media (@lg-min) {
     margin-block: 36px;
-    padding-inline: 100px;
+    margin-inline: 100px;
     gap: 8px;
   }
 
@@ -178,10 +180,15 @@
       @media (@lg-min) {
         font-size: 16px;
         font-weight: 200;
-        line-height: 14.4px;
+        line-height: 16px;
       }
     }
   }
+}
+
+.running-line-container {
+  width: 100%;
+  overflow: hidden;
 }
 
 .running-line {

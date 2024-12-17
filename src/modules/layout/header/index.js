@@ -12,7 +12,7 @@ desktopTime.addEventListener('click', () => {
         search.classList.remove('visible');
         searchButton.classList.add('visible');
         closeSearchButton.classList.remove('visible');
-        menuButton.classList.remove('visible');
+        menuButton.classList.add('visible');
         closeMenuButton.classList.remove('visible');
     }
     desktopSchedule.classList.toggle('visible')

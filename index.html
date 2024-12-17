@@ -36,7 +36,7 @@
       opacity: 0;
     }
     </style>
-<script defer src="/izumrud-project/main.min.js?6c193cd6ccc311ebf46c"></script><link href="/izumrud-project/vendor.min.css?6c193cd6ccc311ebf46c" rel="stylesheet"><link href="/izumrud-project/main.min.css?6c193cd6ccc311ebf46c" rel="stylesheet"></head>
+<script defer src="/izumrud-project/main.min.js?de02e9dc036229da0a79"></script><link href="/izumrud-project/vendor.min.css?de02e9dc036229da0a79" rel="stylesheet"><link href="/izumrud-project/main.min.css?de02e9dc036229da0a79" rel="stylesheet"></head>
 <body class="opacity">
   
 <div class="layout">
@@ -46,9 +46,14 @@
         <div class="box__row header__row">
             <div class="box__col box__col_xs_2 box__col_sm_4">
                 <div class="header__menu-container">
-                    <button class="header__menu-btn">
+                    <button id="menu-button" class="header__menu-btn visible">
                         <svg class="svg-icon " viewBox="0 0 36 36">
   <use xlink:href="/izumrud-project/sprite.svg#icon-burger-9b26f"></use>
+</svg>
+                    </button>
+                    <button id="close-menu-button" class="header__menu-btn">
+                        <svg class="svg-icon " viewBox="0 0 24 24">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-close-0db4a"></use>
 </svg>
                     </button>
                     <a class="header__map">
@@ -371,6 +376,260 @@
             <span>ZARINA</span>
         </div>
     </div>
+</div>    <div id="menu">
+    <div class="desktop-menu-container">
+        <div class="menu-tile">
+            <a class="item-header">
+                Магазины
+            </a>
+            <ul class="menu-list">
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Аксессуары
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Обувь
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Одежда
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Красота и здоровье
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Товары для дома
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Украшение и часы
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="all-shops">Все магазины</a>
+        </div>
+        <div class="menu-tile">
+            <a class="item-header">
+                Детям
+            </a>
+            <ul class="menu-list">
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Детские кафе
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Детские парикмахерские
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Мероприятия для детей
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Прокат детских автомобилей
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-tile">
+            <a class="item-header">
+                Еда
+            </a>
+            <ul class="menu-list">
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Рестораны
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Кафе
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Мороженое и сладости
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Кофейни
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-tile">
+            <a class="item-header">
+                Развлечения
+            </a>
+            <ul class="menu-list">
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Кино
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Аквариум
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Тир
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Виртуальная реальность
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Киберспортивный клуб
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-tile">
+            <a class="item-header">
+                Услуги
+            </a>
+            <ul class="menu-list">
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Банкоматы
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Денежные переводы и обмен валют
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Ателье
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Маникюрные салоны
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Печать фото
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Ремонт мобильных телефонов
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Салон оптики
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-tile">
+            <a class="item-header">
+                Сервисы
+            </a>
+            <ul class="menu-list">
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Стойка информации
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Бюро находок
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Гардероб
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Сбор батареек
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-tile">
+            <a class="big-link">
+                Комплименты
+            </a>
+            <a class="big-link">
+                Новости и акции
+            </a>
+            <a class="big-link">
+                Обратная связь
+            </a>
+            <div class="menu-socials-container">
+                <svg class="svg-icon " viewBox="0 0 45 46">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-vkpurple-ae473"></use>
+</svg>
+                <svg class="svg-icon " viewBox="0 0 45 46">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-telegrampurple-a3284"></use>
+</svg>
+            </div>
+        </div>
+        <div class="custom-tile">
+            <a href="#" class="custom-tile__item">
+                <svg class="svg-icon " viewBox="0 0 21 20">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-arendators-b823c"></use>
+</svg>
+                <span>Арендаторам</span>
+            </a>
+            <a href="#" class="custom-tile__item">
+                <svg class="svg-icon " viewBox="0 0 20 20">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-advertisers-78bab"></use>
+</svg>
+                <span>Рекламодателям</span>
+            </a>
+            <a href="#" class="custom-tile__item">
+                <svg class="svg-icon " viewBox="0 0 20 20">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-vacancies-b6ee6"></use>
+</svg>
+                <span>Вакансии</span>
+            </a>
+        </div>
+    </div>
+    <div id="menu-mobile-overlay">
+        <div class="mobile-menu-container">
+            <a href="#">Магазины</a>
+            <a href="#">Детям</a>
+            <a href="#">Еда</a>
+            <a href="#">Услуги</a>
+            <a href="#">Кинотеатр</a>
+            <a href="#">Сервисы</a>
+            <a href="#">Развлечения</a>
+            <a href="#">Вакансии</a>
+            <a href="#">Фотографии</a>
+            <a href="#">Комплименты</a>
+            <a href="#">Арендодателям</a>
+            <a href="#">Рекламодателям</a>
+            <a href="#">Карта этажей</a>
+            <a href="#">Как добраться</a>
+            <a href="#">Контакты</a>
+        </div>
+    </div>
 </div></div>
 
 
@@ -442,13 +701,13 @@
         </a>
           <a href="#" class="tile">
               <svg class="svg-icon " viewBox="0 0 20 20">
-  <use xlink:href="/izumrud-project/sprite.svg#icon-kids-61f10"></use>
+  <use xlink:href="/izumrud-project/sprite.svg#icon-kids-dc553"></use>
 </svg>
               <span>Детям</span>
           </a>
           <a href="#" class="tile">
               <svg class="svg-icon " viewBox="0 0 20 20">
-  <use xlink:href="/izumrud-project/sprite.svg#icon-uslugi-b4c8e"></use>
+  <use xlink:href="/izumrud-project/sprite.svg#icon-uslugi-24e86"></use>
 </svg>
               <span>Услуги</span>
           </a>
@@ -935,7 +1194,7 @@
         <div class="info__buttons">
             <a href="#" class="info__button">
                 <svg class="svg-icon " viewBox="0 0 21 20">
-  <use xlink:href="/izumrud-project/sprite.svg#icon-arendators-a1479"></use>
+  <use xlink:href="/izumrud-project/sprite.svg#icon-arendators-b823c"></use>
 </svg>
                 <span>Арендаторам</span>
             </a>
@@ -947,7 +1206,7 @@
             </a>
             <a href="/vacancy" class="info__button">
                 <svg class="svg-icon " viewBox="0 0 20 20">
-  <use xlink:href="/izumrud-project/sprite.svg#icon-vacancies-54e53"></use>
+  <use xlink:href="/izumrud-project/sprite.svg#icon-vacancies-b6ee6"></use>
 </svg>
                 <span>Вакансии</span>
             </a>

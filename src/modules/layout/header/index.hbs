@@ -3,8 +3,11 @@
         <div class="box__row header__row">
             <div class="box__col box__col_xs_2 box__col_sm_4">
                 <div class="header__menu-container">
-                    <button class="header__menu-btn">
+                    <button id="menu-button" class="header__menu-btn visible">
                         {{> modules/common/svg-icon/index src="icons/burger.svg" }}
+                    </button>
+                    <button id="close-menu-button" class="header__menu-btn">
+                        {{> modules/common/svg-icon/index src="icons/close.svg" }}
                     </button>
                     <a class="header__map">
                         {{> modules/common/svg-icon/index src="icons/map.svg" }}
@@ -66,5 +69,6 @@
         </div>
     </div>
     {{> modules/layout/search/index }}
+    {{> modules/layout/menu/index }}
 </div>
 

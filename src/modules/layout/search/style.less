@@ -1,0 +1,245 @@
+@import (reference) 'src/style/mixins';
+
+#global-search {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  background-color: #F9F9F9;
+  width: 100dvw;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+
+  transition: all ease-in-out 0.3s;
+
+  &.visible {
+    height: calc(100dvh - 100%);
+    opacity: 1;
+    overscroll-behavior: contain;
+    pointer-events: initial;
+  }
+
+  @media (@lg-min) {
+    padding: 60px 0 32px;
+  }
+}
+
+.search-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+  @media (@lg-min) {
+    padding-inline: 100px;
+    gap: 24px;
+  }
+}
+
+.search-container {
+  position: relative;
+  border-bottom: 2px solid #000000;
+  flex: 1;
+
+  svg {
+    pointer-events: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 8px;
+    bottom: 5px;
+    fill: transparent;
+  }
+}
+
+#search-input {
+  width: 100%;
+  padding: 6px 40px 6px 8px;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #000;
+
+
+  &::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #808080;
+  }
+
+  @media (@lg-min) {
+    padding-block: 7px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+
+    &::placeholder {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+  }
+}
+
+#desktop-close-search-button {
+  display: none;
+
+  @media (@lg-min) {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18.2px;
+    color: #808080;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #808080;
+    cursor: pointer;
+    padding: 0;
+    width: 201px;
+    height: 35px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover,
+    &.active {
+      background-color: #503872;
+      color: #fff;
+      border-color: #503872;
+    }
+  }
+}
+
+.search-result {
+  margin-top: 18px;
+  overflow: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  @media (@lg-min) {
+    margin-block: 36px;
+    padding-inline: 100px;
+    gap: 8px;
+  }
+
+  &__item {
+    display: flex;
+    padding: 12px 20px;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+
+    @media (@lg-min) {
+      padding: 24px 48px;
+      gap: 12px;
+    }
+
+    &:hover {
+      background-color: #F2F2F2;
+    }
+
+    &__header {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      color: #503872;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      @media (@lg-min) {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+      }
+    }
+
+    &__description {
+      font-size: 12px;
+      font-weight: 200;
+      line-height: 12px;
+      color: #000;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+
+      @media (@lg-min) {
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 14.4px;
+      }
+    }
+  }
+}
+
+.running-line {
+  display: none;
+
+  @media (@lg-min) {
+    display: flex;
+    gap: 32px;
+    animation: scroll 5s linear infinite;
+  }
+
+  span {
+    white-space: nowrap;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 48.6px;
+    &:nth-child(3n + 1) {
+      color: #000;
+    }
+    &:nth-child(3n + 2) {
+      color: #503872;
+    }
+    &:nth-child(3n + 3) {
+      color: #7C4099;
+    }
+  }
+
+  &__margin {
+    margin-bottom: 12px;
+  }
+
+  &__animation {
+    @media (@lg-min) {
+      animation: scroll 10s linear infinite;
+    }
+  }
+
+  &__animation-reverse {
+    @media (@lg-min) {
+      animation: scroll-reverse 10s linear infinite;
+    }
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-801.21px));
+  }
+}
+
+@keyframes scroll-reverse {
+  from {
+    transform: translateX(-801.21px);
+  }
+  to {
+    transform: translateX(calc(0));
+  }
+}

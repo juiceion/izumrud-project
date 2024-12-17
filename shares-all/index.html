@@ -36,7 +36,7 @@
       opacity: 0;
     }
     </style>
-<script defer src="/izumrud-project/main.min.js?18cfc3f2d1a42b9ae95c"></script><link href="/izumrud-project/vendor.min.css?18cfc3f2d1a42b9ae95c" rel="stylesheet"><link href="/izumrud-project/main.min.css?18cfc3f2d1a42b9ae95c" rel="stylesheet"></head>
+<script defer src="/izumrud-project/main.min.js?0bf97f25334cad02ec9c"></script><link href="/izumrud-project/vendor.min.css?0bf97f25334cad02ec9c" rel="stylesheet"><link href="/izumrud-project/main.min.css?0bf97f25334cad02ec9c" rel="stylesheet"></head>
 <body class="opacity">
   
 <div class="layout">
@@ -51,13 +51,13 @@
   <use xlink:href="/izumrud-project/sprite.svg#icon-burger-9b26f"></use>
 </svg>
                     </button>
-                    <a class="header__map hidden_xs hidden_sm">
+                    <a class="header__map">
                         <svg class="svg-icon " viewBox="0 0 19 22">
   <use xlink:href="/izumrud-project/sprite.svg#icon-map-35c5a"></use>
 </svg>
                         <span class="header__text">Карта этажей</span>
                     </a>
-                    <a class="header__location hidden_xs hidden_sm">
+                    <a class="header__location">
                         <svg class="svg-icon " viewBox="0 0 24 24">
   <use xlink:href="/izumrud-project/sprite.svg#icon-place-6fc2f"></use>
 </svg>
@@ -75,18 +75,18 @@
 
             <div class="box__col box__col_xs_4">
                 <div class="header__menu-container header__menu-container_end">
-                    <button class="header__search">
+                    <button id="search-button" class="header__search visible">
                         <svg class="svg-icon " viewBox="0 0 24 24">
   <use xlink:href="/izumrud-project/sprite.svg#icon-search-11df8"></use>
 </svg>
-                        <span class="header__text hidden_xs hidden_sm">поиск</span>
+                        <span class="header__text">поиск</span>
                     </button>
-                    <button id="schedule-mobile-close">
+                    <button id="close-search-button">
                         <svg class="svg-icon " viewBox="0 0 24 24">
   <use xlink:href="/izumrud-project/sprite.svg#icon-close-0db4a"></use>
 </svg>
                     </button>
-                    <a id="desktop-time" class="header__time hidden_xs hidden_sm">
+                    <a id="desktop-time" class="header__time">
                         <svg class="svg-icon " viewBox="0 0 11 12">
   <use xlink:href="/izumrud-project/sprite.svg#icon-time-b5438"></use>
 </svg>
@@ -95,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <div class="box__row hidden_md hidden_lg hidden_xl">
+        <div class="box__row hidden_lg hidden_xl">
             <div class="box__col box__col_xs_4">
                 <a class="header__map header__mobile-container">
                     <svg class="svg-icon " viewBox="0 0 19 22">
@@ -297,7 +297,73 @@
     </div>
 </div>        </div>
     </div>
-</div>
+    <div id="global-search">
+    <div class="search-row">
+        <div class="search-container">
+            <input id="search-input" placeholder="Что вы хотите найти?" />
+            <svg class="svg-icon " viewBox="0 0 24 24">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-search-11df8"></use>
+</svg>
+        </div>
+        <button id="desktop-close-search-button">Закрыть</button>
+    </div>
+    <div class="search-result">
+        <a href="#" class="search-result__item">
+            <span class="search-result__item__header">Акция «Летний SALE в ZARINA»</span>
+            <span class="search-result__item__description">ZARINA - первый российский фэшн-бренд с 30-летней историей. Бренд вдохновляет на свершения</span>
+        </a>
+        <a href="#" class="search-result__item">
+            <span class="search-result__item__header">«Zarina»</span>
+            <span class="search-result__item__description">Скидки до 50%</span>
+        </a>
+        <a href="#" class="search-result__item">
+            <span class="search-result__item__header">Акция «До -70% на любимые товары в магазине»</span>
+            <span class="search-result__item__description">Скидки до 50%</span>
+        </a>
+        <a href="#" class="search-result__item">
+            <span class="search-result__item__header">Акция «200 бонусов в Zarina»</span>
+            <span class="search-result__item__description">200 бонусов в подарок при регистрации в Zarina Club</span>
+        </a>
+        <a href="#" class="search-result__item">
+            <span class="search-result__item__header">Акция «Летний SALE в ZARINA»</span>
+            <span class="search-result__item__description">ZARINA - первый российский фэшн-бренд с 30-летней историей. Бренд вдохновляет на свершения</span>
+        </a>
+        <a href="#" class="search-result__item">
+            <span class="search-result__item__header">«Zarina»</span>
+            <span class="search-result__item__description">Скидки до 50%</span>
+        </a>
+        <a href="#" class="search-result__item">
+            <span class="search-result__item__header">Акция «До -70% на любимые товары в магазине»</span>
+            <span class="search-result__item__description">Скидки до 50%</span>
+        </a>
+        <a href="#" class="search-result__item">
+            <span class="search-result__item__header">Акция «200 бонусов в Zarina»</span>
+            <span class="search-result__item__description">200 бонусов в подарок при регистрации в Zarina Club</span>
+        </a>
+    </div>
+    <div class="running-line running-line__animation running-line__margin">
+        <span>GLORIA JEANCE</span>
+        <span>MO</span>
+        <span>ZARINA</span>
+        <span>GLORIA JEANCE</span>
+        <span>MO</span>
+        <span>ZARINA</span>
+        <span>GLORIA JEANCE</span>
+        <span>MO</span>
+        <span>ZARINA</span>
+    </div>
+    <div class="running-line running-line__animation-reverse">
+        <span>MO</span>
+        <span>ZARINA</span>
+        <span>GLORIA JEANCE</span>
+        <span>MO</span>
+        <span>ZARINA</span>
+        <span>GLORIA JEANCE</span>
+        <span>MO</span>
+        <span>ZARINA</span>
+        <span>GLORIA JEANCE</span>
+    </div>
+</div></div>
 
 
   </div>

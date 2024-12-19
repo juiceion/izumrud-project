@@ -24,11 +24,8 @@
     background-color: #F9F9F9;
     width: 100dvw;
     height: 0;
-    padding: 60px 0 32px;
     left: calc((100dvw - 100%) / -2);
     padding-inline: calc((100dvw - 100%) / 2);
-    grid-template-columns: repeat(4, 1fr);
-    gap: 14px;
 
     &.visible {
       height: calc(100dvh - 100%);
@@ -80,7 +77,7 @@
 
   @media (@lg-min) {
     display: grid;
-    padding: 60px 100px 32px;
+    padding: 40px 100px;
     grid-template-columns: repeat(4, 1fr);
     gap: 14px;
   }
@@ -187,6 +184,26 @@
   svg {
     width: 45px;
     height: 45px;
+  }
+}
+
+.menu-social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  background-color: #503872;
+  transition: background-color 0.2s ease-in-out;
+
+  svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  &:hover {
+    background-color: #7C4099;
   }
 }
 

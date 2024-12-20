@@ -54,7 +54,9 @@ import './style.less';
 
 function change(){
     const offer = document.querySelector('.j-counter-gallery');
-    offer.innerHTML = ( swiperGallery.activeIndex + 1 ) + '/' + (swiperGallery.slides.length);
+    if (offer) {
+        offer.innerHTML = ( swiperGallery.activeIndex + 1 ) + '/' + (swiperGallery.slides.length);
+    }
 }
 
 change();

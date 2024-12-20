@@ -24,11 +24,29 @@ import './style.less';
              prevEl: '.gallery-swiper-button-prev',
          },
         breakpoints: {
-            640: {
-                spaceBetween: 45,
+             320: {
+                 spaceBetween: 110,
+             },
+            340: {
+                spaceBetween: 100,
             },
-            960: {
-                spaceBetween: 60,
+            400: {
+                spaceBetween: 110,
+            },
+            440: {
+                spaceBetween: 80,
+            },
+            480: {
+                spaceBetween: 90,
+            },
+            550: {
+                spaceBetween: 110,
+            },
+            650: {
+                spaceBetween: 80,
+            },
+            900: {
+                spaceBetween: 100,
             },
         },
     }

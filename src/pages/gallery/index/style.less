@@ -94,7 +94,12 @@
 }
 
 .gallery-swiper {
+  padding-top: 40px;
   margin-bottom: 100px;
+  &,
+  * {
+    transition-duration: 0.5s;
+  }
 
   .swiper {
 
@@ -102,23 +107,16 @@
         object-fit: cover;
         display: block;
         width: 100%;
+        transition: all 0.5s ease-in-out;
       }
     }
 
 .swiper-slide {
-  width: 280px !important;
-  transition: all 0.100s ease-in-out;
-
-  @media (@md-min) {
-    width: 600px !important;
-  }
 }
 
 .swiper-slide-active {
-  width: 280px !important;
-
-  @media (@md-min) {
-    width: 600px !important;
+  img {
+    transform: scale(1.2);
   }
 }
 

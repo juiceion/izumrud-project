@@ -61,5 +61,14 @@ function change(){
 
 change();
 
-document.querySelector(".gallery-swiper-button-next").addEventListener("click", change);
-document.querySelector(".gallery-swiper-button-prev").addEventListener("click", change);
+
+const next = document.querySelector(".gallery-swiper-button-next")
+const prev = document.querySelector(".gallery-swiper-button-next")
+
+if (next) {
+    next.addEventListener("click", change);
+}
+
+if (prev) {
+    prev.addEventListener("click", change);
+}

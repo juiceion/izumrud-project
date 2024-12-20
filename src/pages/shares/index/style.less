@@ -2,6 +2,12 @@
 
 .page-shares {
   margin-bottom: 60px;
+  padding-top: 20px;
+
+  @media (@lg-min) {
+    padding-top: 60px;
+  }
+
 
   @media (@md-min) {
     padding-inline: 100px;
@@ -16,7 +22,8 @@
     }
   }
   &__breadcrumb {
-    margin-top: 10px;
+    margin-left: 20px;
+
     color: #808080;
     font-size: 12px;
     font-weight: 200;
@@ -133,6 +140,7 @@
     cursor: pointer;
     font-size: 12px;
     transition: all ease-out 0.25ms;
+    min-width: 150px;
 
 
     &:hover {

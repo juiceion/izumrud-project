@@ -1,0 +1,57 @@
+{{#> modules/layout/default/index }}
+  <section class=" page-gallery">
+    <section class="box page-gallery__box">
+        <section class="box__row">
+            <section class="box__col">
+                <div class="page-gallery__breadcrumb">
+                    <a href="/">Главная</a>
+                    {{> modules/common/svg-icon/index src="icons/min-arrow.svg" }}
+                    <a href="">Фотогалерея</a>
+                    {{> modules/common/svg-icon/index src="icons/min-arrow.svg" }}
+                    <a href="">Неделя моды на Томи'24</a>
+                </div>
+            </section>
+        </section>
+        <section class="box__row">
+            <section class="box__col box__col_xs_12">
+                <h1 class="page-gallery__title">Недели моды на Томи’24</h1>
+            </section>
+        </section>
+        <section class="box__row">
+            <section class="box__col box__col_xs_12">
+                <div class="page-gallery__date">13.04.2024</div>
+            </section>
+        </section>
+    </section>
+  </section>
+  <section class="page">
+          <section class="box__row">
+              <div class="box__col">
+                  <section class="">
+                      <div class="swiper gallery-swiper">
+                          <div class="swiper-wrapper">
+                              {{#each couponList}}
+                                  <a href="#" class="swiper-slide">
+                                      <div>
+                                          <img src="images/gallery-img.png" alt="gallery-img">
+                                      </div>
+                                  </a>
+                              {{/each}}
+                          </div>
+                          <div class="page-gallery__navigation">
+                              <div class="swiper-button-next gallery-swiper-button-prev">
+                                  {{> modules/common/svg-icon/index src="icons/arrow.svg" }}
+                              </div>
+                              <div class="counter j-counter-gallery">
+                                  1/3
+                              </div>
+                              <div class="swiper-button-next gallery-swiper-button-next">
+                                  {{> modules/common/svg-icon/index src="icons/arrow.svg" }}
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+              </div>
+      </section>
+  </section>
+{{/ modules/layout/default/index }}

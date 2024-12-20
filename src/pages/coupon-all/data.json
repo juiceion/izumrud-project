@@ -1,0 +1,132 @@
+{
+  "head": {
+    "description": "Index",
+    "keywords": "Index",
+    "title": "Index",
+    "image": "image.svg",
+    "url": "http://html-layout-kit.ru"
+  },
+  "mobilePromoList": [
+    {
+      "image": "images/malina.png",
+      "name": "MALINA",
+      "type": "акции",
+      "description": "Летняя распродажа скидка до -50% в Malina"
+    },
+    {
+      "image": "images/marmalato.png",
+      "name": "MARMALATO",
+      "type": "события",
+      "description": "Долгожданная коллекция купальников"
+    },
+    {
+      "image": "images/gloriaJeans.png",
+      "name": "Gloria Jeans",
+      "type": "акции",
+      "description": "Сезонная распродажа «Скидки до -50%»"
+    },
+    {
+      "image": "images/reStore.png",
+      "name": "ReStore:",
+      "type": "события",
+      "description": "MacBook Air в restore:"
+    }
+  ],
+  "desktopPromoList1": [
+    {
+    "image": "images/marmalato.png",
+    "name": "MARMALATO",
+    "type": "события",
+    "description": "Долгожданная коллекция купальников"
+    },
+    {
+      "image": "images/gloriaJeans.png",
+      "name": "Gloria Jeans",
+      "type": "акции",
+      "description": "Сезонная распродажа «Скидки до -50%»"
+    },
+    {
+      "image": "images/reStore.png",
+      "name": "ReStore:",
+      "type": "события",
+      "description": "MacBook Air в restore:"
+    }
+  ],
+  "desktopPromoList2": [
+    {
+      "image": "images/malina.png",
+      "name": "MALINA",
+      "type": "акции",
+      "description": "Летняя распродажа скидка до -50% в Malina"
+    },{
+      "image": "images/marmalato.png",
+      "name": "MARMALATO",
+      "type": "события",
+      "description": "Долгожданная коллекция купальников"
+    },
+    {
+      "image": "images/reStore.png",
+      "name": "ReStore:",
+      "type": "события",
+      "description": "MacBook Air в restore:"
+    }
+  ],
+  "lookbooks": [
+    {
+      "image": "images/lookbook1.png",
+      "text": "Выбор\nстилистов"
+    },
+    {
+      "image": "images/lookbook2.png",
+      "text": "Тренды\nсезона"
+    },
+    {
+      "image": "images/lookbook3.png",
+      "text": "Летняя\nколлекция"
+    }
+  ],
+  "couponList": [
+    {
+      "topImage": "images/top21shop.png",
+      "logo": "images/21shopLogo.png",
+      "description": "Сертификат на шопинг в магазине 21 shop",
+      "date": "до 8 сентября",
+      "count": "15"
+    },
+    {
+      "topImage": "images/topSiberica.png",
+      "logo": "images/sibericaLogo.png",
+      "description": "Набор из натурального состава",
+      "date": "до 25 сентября",
+      "count": "10"
+    },
+    {
+      "topImage": "images/top21shop.png",
+      "logo": "images/21shopLogo.png",
+      "description": "Сертификат на шопинг в магазине 21 shop",
+      "date": "до 8 сентября",
+      "count": "15"
+    },
+    {
+      "topImage": "images/topSiberica.png",
+      "logo": "images/sibericaLogo.png",
+      "description": "Набор из натурального состава",
+      "date": "до 25 сентября",
+      "count": "10"
+    },
+    {
+      "topImage": "images/top21shop.png",
+      "logo": "images/21shopLogo.png",
+      "description": "Сертификат на шопинг в магазине 21 shop",
+      "date": "до 8 сентября",
+      "count": "15"
+    },
+    {
+      "topImage": "images/topSiberica.png",
+      "logo": "images/sibericaLogo.png",
+      "description": "Набор из натурального состава",
+      "date": "до 25 сентября",
+      "count": "10"
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import 'modules/common/promo-card';
 import 'modules/common/lookbook-card';
 import 'modules/common/coupon-card';
 import './style.less';
+import Swiper from "swiper";
 
 
 class Tabs {

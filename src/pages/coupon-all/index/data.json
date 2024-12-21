@@ -87,46 +87,25 @@
   ],
   "couponList": [
     {
-      "topImage": "images/top21shop.png",
+      "topImage": "images/coupon-card-all.png",
       "logo": "images/21shopLogo.png",
       "description": "Сертификат на шопинг в магазине 21 shop",
       "date": "до 8 сентября",
       "count": "15"
     },
     {
-      "topImage": "images/topSiberica.png",
+      "topImage": "images/coupon-card-all.png",
       "logo": "images/sibericaLogo.png",
       "description": "Набор из натурального состава",
       "date": "до 25 сентября",
       "count": "10"
     },
     {
-      "topImage": "images/top21shop.png",
+      "topImage": "images/coupon-card-all.png",
       "logo": "images/21shopLogo.png",
       "description": "Сертификат на шопинг в магазине 21 shop",
       "date": "до 8 сентября",
       "count": "15"
-    },
-    {
-      "topImage": "images/topSiberica.png",
-      "logo": "images/sibericaLogo.png",
-      "description": "Набор из натурального состава",
-      "date": "до 25 сентября",
-      "count": "10"
-    },
-    {
-      "topImage": "images/top21shop.png",
-      "logo": "images/21shopLogo.png",
-      "description": "Сертификат на шопинг в магазине 21 shop",
-      "date": "до 8 сентября",
-      "count": "15"
-    },
-    {
-      "topImage": "images/topSiberica.png",
-      "logo": "images/sibericaLogo.png",
-      "description": "Набор из натурального состава",
-      "date": "до 25 сентября",
-      "count": "10"
     }
   ]
 }

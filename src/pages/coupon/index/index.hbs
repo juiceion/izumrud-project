@@ -1,0 +1,105 @@
+{{#> modules/layout/default/index }}
+  <section class="page page-coupon">
+      <section class="box page-coupon__box">
+          <section class="box__row">
+              <section class="box__col">
+                  <div class="page-coupon__breadcrumb">
+                      <a href="/">Главная</a>
+                      {{> modules/common/svg-icon/index src="icons/min-arrow.svg" }}
+                      <a href="">Каталог комплиментов</a>
+                  </div>
+              </section>
+          </section>
+          <section class="box__row ">
+              <section class="box__col box__col_xs_12 page-coupon__z-indx">
+                  <h1 class="page-coupon__title">Кофе в подарок при покупке от 500 рублей</h1>
+              </section>
+          </section>
+          <section class="box__row page-coupon__info-block">
+              <section class="box__col box__col_xs_12 box__col_md_6 page-coupon__z-indx">
+                  <img class="page-coupon__info-image" src="images/coupon-main.png" alt="coupon-main"/>
+              </section>
+              <section class="box__col box__col_xs_12 box__col_md_6 page-coupon__z-indx">
+                  <div class="page-coupon__info-title">Любой кофе с собой в подарок (из классического меню) при покупке от 500 рублей в магазине чая и кофе "Кантата".</div>
+                  <div class="page-coupon__info-text">Для получения купон нажмите <b>«Купить»</b>. Чтобы активировать купон нажмите <b>«Активировать»</b>, получите ОВ-код и покажите его продавцу при покупке. Предложение ограничено и им можно воспользоваться только один раз в день</div>
+                  <div class="page-coupon__info-counter">
+                      <img src="images/izumrud.png" class="page-coupon__info-counter-logo" alt="izumrud"/>
+                      <span class="page-coupon__izumrud-count-text">10</span>
+                  </div>
+              </section>
+          </section>
+          <div class="page-coupon__line-background">
+              <img src="images/back-coupon.png"/>
+          </div>
+          <section class="box__row">
+              <section class="box__col box__col_xs_12">
+                  <div class="page-coupon__title">Как получить</div>
+              </section>
+          </section>
+          <section class="box__row">
+              <div class="box__col">
+                  <section class="page-coupon__tiles">
+                      <a href="#" class="page-coupon__tile g">
+                          {{> modules/common/svg-icon/index src="icons/coupon-1.svg" }}
+                          <span>Скачай приложение Изумрудный город</span>
+                      </a>
+                      <a href="#" class="page-coupon__tile ">
+                          {{> modules/common/svg-icon/index src="icons/coupon-2.svg" }}
+                          <span>Зарегистрируйся по номеру телефона</span>
+                      </a>
+                      <a href="#" class="page-coupon__tile ">
+                          {{> modules/common/svg-icon/index src="icons/qr-icon-small.svg" }}
+                          <span>Сканируй чеки за покупки и накапливай изумруды</span>
+                      </a>
+                      <a href="#" class="page-coupon__tile">
+                          {{> modules/common/svg-icon/index src="icons/download-app.svg" }}
+                          <span>Обменивай изумруды на купон и получай подарок или скидку</span>
+                      </a>
+                  </section>
+              </div>
+          </section>
+      </section>
+      <section class="page-coupon__box">
+          <section class="page-coupon__purple-container">
+                 <div class="box">
+                     <div class="box__row">
+                         <div class="box__col">
+                           <div class="page-coupon-all__sub-title">Другие предложения</div>
+                         </div>
+                     </div>
+                 </div>
+              <div class="swiper page-coupon__coupons-swiper">
+                  <div class="swiper-wrapper">
+                      {{#each couponList}}
+                          <a href="#" class="swiper-slide">
+                              {{>modules/common/coupon-card/index }}
+                          </a>
+                      {{/each}}
+                  </div>
+              </div>
+              <div class="page-coupon__main-info__app">
+                  <img class="page-coupon__main-info__left-izumrud" src="images/leftIzumrud.png" alt="leftIzumrud"/>
+                  <img class="page-coupon__main-info__app-qr" src="images/qr.png" alt="qr"/>
+                  <div class="page-coupon__main-info__app-info">
+                          <span class="page-coupon__main-info__mobile-app-label">Cкачайте бесплатное
+                              приложение
+                          </span>
+                      <a href="#" class="page-coupon__main-info__app-link">
+                          <img class="coupons__main-info__app-image" src="images/appStore.png" alt="appStore" />
+                      </a>
+                      <a href="#" class="page-coupon__main-info__app-link">
+                          <img class="page-coupon__main-info__app-image" src="images/googlePlay.png" alt="googlePlay"/>
+                      </a>
+                      <span class="page-coupon__main-info__desktop-app-label">
+                              Наведите камеру
+                              и скачайте
+                              бесплатное приложение
+                          </span>
+                      <a class="page-coupon__main-info__label">Подробнее</a>
+                      <img class="page-coupon__main-info__right-izumrud" src="images/rightIzumrud.png" alt="rightIzumrud"/>
+                  </div>
+              </div>
+          </section>
+      </section>
+  </section>
+{{/ modules/layout/default/index }}

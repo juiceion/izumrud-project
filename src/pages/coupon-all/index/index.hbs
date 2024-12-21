@@ -1,0 +1,100 @@
+{{#> modules/layout/default/index }}
+  <section class="page page-coupon-all">
+      <section class="box page-coupon-all__box">
+          <section class="box__row">
+              <section class="box__col">
+                  <div class="page-coupon-all__breadcrumb">
+                      <a href="/">Главная</a>
+                      {{> modules/common/svg-icon/index src="icons/min-arrow.svg" }}
+                      <a href="">Программа лояльности</a>
+                  </div>
+              </section>
+          </section>
+          <section class="box__row">
+              <section class="box__col box__col_xs_12">
+                  <h1 class="page-coupon-all__title">Как получить подарок или скидку?</h1>
+              </section>
+          </section>
+          <section class="box__row">
+              <div class="box__col">
+                  <section class="page-coupon-all__tiles">
+                      <a href="#" class="page-coupon-all__tile g">
+                          {{> modules/common/svg-icon/index src="icons/coupon-1.svg" }}
+                          <span>Скачай приложение Изумрудный город</span>
+                      </a>
+                      <a href="#" class="page-coupon-all__tile ">
+                          {{> modules/common/svg-icon/index src="icons/coupon-2.svg" }}
+                          <span>Зарегистрируйся по номеру телефона</span>
+                      </a>
+                      <a href="#" class="page-coupon-all__tile ">
+                          {{> modules/common/svg-icon/index src="icons/qr-icon-small.svg" }}
+                          <span>Сканируй чеки за покупки и накапливай изумруды</span>
+                      </a>
+                      <a href="#" class="page-coupon-all__tile">
+                          {{> modules/common/svg-icon/index src="icons/download-app.svg" }}
+                          <span>Обменивай изумруды на купон и получай подарок или скидку</span>
+                      </a>
+                  </section>
+              </div>
+          </section>
+          <div class="page-coupon-all__line-background">
+              <img src="images/back-coupon.png"/>
+          </div>
+      </section>
+      <section class="page-coupon-all__box">
+          <img class="page-coupon-all__main-info__left-izumrud" src="images/leftIzumrud.png" alt="leftIzumrud"/>
+          <section class="page-coupon-all__purple-container">
+              <div class="page-coupon-all__main-info__app">
+                  <img class="page-coupon-all__main-info__app-qr" src="images/qr.png" alt="qr"/>
+                  <div class="page-coupon-all__main-info__app-info">
+                          <span class="page-coupon-all__main-info__mobile-app-label">Cкачайте бесплатное
+                              приложение
+                          </span>
+                      <a href="#" class="page-coupon-all__main-info__app-link">
+                          <img class="coupons__main-info__app-image" src="images/appStore.png" alt="appStore" />
+                      </a>
+                      <a href="#" class="page-coupon-all__main-info__app-link">
+                          <img class="page-coupon-all__main-info__app-image" src="images/googlePlay.png" alt="googlePlay"/>
+                      </a>
+                      <span class="page-coupon-all__main-info__desktop-app-label">
+                              Наведите камеру
+                              и скачайте
+                              бесплатное приложение
+                          </span>
+                      <a class="page-coupon-all__main-info__label">Подробнее</a>
+                  </div>
+              </div>
+          </section>
+          <img class="page-coupon-all__main-info__right-izumrud" src="images/rightIzumrud.png" alt="rightIzumrud"/>
+      </section>
+      <div class="box">
+          <section class="box__row">
+              <div class="box__col">
+                  <div class="page-coupon-all__sub-title">Каталог комплиментов</div>
+              </div>
+          </section>
+      </div>
+     <div class="box page-coupon-all__box">
+         <section class="box__row page-coupon-all__tabs j-tabs-coupon">
+                 <button class="page-coupon-all__all page-coupon-all__tab page-coupon-all__tab_active j-tab-coupon" data-tab-id="all">
+                     <span class="page-shares-all__tab-text">популярное</span>
+                 </button>
+                 <button class="page-coupon-all__action page-coupon-all__tab  j-tab-coupon" data-tab-id="shares">
+                     <span class="page-coupon-all__tab-text">показать дороже</span>
+                 </button>
+                 <button class="page-coupon-all__new page-coupon-all__tab  j-tab-coupon" data-tab-id="new">
+                     <span class="page-coupon-all__tab-text">показать дешевле</span>
+                 </button>
+         </section>
+     </div>
+      <section class="box__row page-coupon-all__list">
+          {{#each couponList}}
+            <div class="box__col box__col_xs_10 box__col_md_4">
+                 <a href="#" class="page-coupon-all__list-item">
+                     {{>modules/common/coupon-card/index }}
+                 </a>
+             </div>
+          {{/each}}
+      </section>
+  </section>
+{{/ modules/layout/default/index }}

@@ -1,0 +1,96 @@
+{{#> modules/layout/default/index }}
+  <section class="page page-feedback-form">
+    <section class="box page-shares__box">
+        <section class="box__row">
+            <section class="box__col">
+                <div class="page-shares__breadcrumb">
+                    <a href="/">Главная</a>
+                    {{> modules/common/svg-icon/index src="icons/min-arrow.svg" }}
+                    <a href="">Обратная связь</a>
+                </div>
+            </section>
+        </section>
+    </section>
+      <section class="box">
+          <div class="box__row">
+              <div class="box__col">
+          <div class="feedback-form">
+              <form id="feedbackForm" novalidate>
+                  <h1 class="form-title">Обратная связь</h1>
+                  <div class="box__row">
+                      <div class="box__col box__col_xs_12 box__col_md_6">
+                  <div class="form-group">
+                      <label for="topic">Выбрать тему</label>
+                      <div class="input-container">
+                          <select id="topic" class="form-control" required>
+                              <option value="">Тема сообщения</option>
+                              <option value="1">Общие вопросы</option>
+                              <option value="2">Техническая поддержка</option>
+                              <option value="3">Предложения</option>
+                          </select>
+                      </div>
+                      <div class="error-message">Пожалуйста, выберите тему</div>
+                  </div>
+                      </div>
+                      <div class="box__col box__col_xs_12 box__col_md_6">
+                  <div class="form-group">
+                      <label for="name">ФИО</label>
+                      <div class="input-container">
+                          <input type="text" id="name" class="form-control" placeholder="Иванов Иван Иванович" required>
+                      </div>
+                      <div class="error-message">Пожалуйста, заполните ваше ФИО</div>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="box__row">
+                  <div class="box__col box__col_xs_12 box__col_md_6">
+                  <div class="form-group">
+                      <label for="email">E-mail</label>
+                      <div class="input-container">
+                          <input type="email" id="email" class="form-control" placeholder="mail@example.com" required>
+                      </div>
+                      <div class="error-message">Пожалуйста, введите корректный email</div>
+                  </div>
+                  </div>
+
+                  <div class="box__col box__col_xs_12 box__col_md_6">
+                  <div class="form-group">
+                      <label for="phone">Телефон</label>
+                      <div class="input-container">
+                          <input type="tel" id="phone" class="form-control" placeholder="+7 (000) - 000 - 00-00" required>
+                      </div>
+                      <div class="error-message">Пожалуйста, введите корректный номер телефона</div>
+                  </div>
+                  </div>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="message">Сообщение</label>
+                      <div class="input-container">
+                          <textarea id="message" class="form-control" rows="5" placeholder="Хочу выразить благодарность сотрудникам клиника" required></textarea>
+                      </div>
+                      <div class="error-message">Пожалуйста, введите сообщение</div>
+                  </div>
+
+                  <div class="file-upload" id="dropZone">
+                      <input type="file" id="fileInput" hidden accept=".jpg,.jpeg,.png,.pdf">
+                      <p>Выберите на компьютере или перетащите файл сюда</p>
+                      <p>(не более 10 МБ)</p>
+                      <p>Допустимые форматы: jpg, jpeg, png, pdf</p>
+                  </div>
+                  <div class="error-message" id="fileError"></div>
+
+                  <div class="checkbox-group">
+                      <input type="checkbox" id="consent" required>
+                      <label for="consent">Я даю согласие на <a href="#" >обработку персональных данных</a></label>
+                  </div>
+                  <div class="error-message" id="consentError">Необходимо дать согласие на обработку персональных данных</div>
+
+                  <button type="submit" class="submit-button">Отправить заявку</button>
+              </form>
+          </div>
+          </div>
+          </div>
+      </section>
+  </section>
+{{/ modules/layout/default/index }}

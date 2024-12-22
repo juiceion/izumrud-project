@@ -1,0 +1,338 @@
+@import (reference) 'src/style/mixins';
+
+.page-promo-form {
+  margin-bottom: 60px;
+  padding-top: 20px;
+
+  @media (@lg-min) {
+    padding-top: 60px;
+  }
+
+
+  @media (@md-min) {
+    padding-inline: 100px;
+  }
+
+
+  &__space {
+    margin-bottom: 30px;
+
+    @media (@md-min) {
+      margin-bottom: 60px;
+    }
+  }
+  &__breadcrumb {
+    margin-left: 20px;
+
+    color: #808080;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 12px;
+
+    @media (@lg-min) {
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    a {
+      color: #808080;
+      font-size: 12px;
+      font-weight: 200;
+      line-height: 12px;
+
+      @media (@lg-min) {
+        font-size: 14px;
+        line-height: 14px;
+      }
+
+      &:hover {
+        color: #808080;
+      }
+    }
+
+    svg {
+      fill: transparent;
+      width: 4px;
+      height: 4px;
+      margin-bottom: 2px;
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+
+    @media (@md-min) {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+  .promo-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    //padding: 20px;
+
+    @media (@lg-min) {
+      margin-top: 64px;
+    }
+  }
+
+  .form-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000;
+    margin-bottom: 20px;
+
+    @media (@lg-min) {
+      font-size: 32px;
+      line-height: 28.8px;
+      font-weight: 400;
+
+      margin-bottom: 36px;
+    }
+  }
+
+  .form-layout {
+    //display: grid;
+    //grid-template-columns: 1fr 1fr;
+    //gap: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    position: relative;
+
+    &_full {
+      height: 100%;
+      margin-bottom: 25px;
+    }
+  }
+
+  .form-group.full-width {
+    margin-top: 10px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 400;
+    margin-left: 20px;
+
+    @media (@lg-min) {
+      font-size: 20px;
+      line-height: 26px;
+      margin-left: 30px;
+    }
+  }
+
+  .form-control {
+    width: 100%;
+    border: 0.5px solid #503872;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 16px 20px;
+    color: #000;
+    outline: none;
+
+    &::placeholder {
+      color: #808080;
+
+    }
+
+    @media (@lg-min) {
+      font-size: 14px;
+      line-height: 14px;
+      padding: 16px 30px;
+    }
+  }
+
+  .form-control.error {
+    border-color: #ff6b6b;
+  }
+
+  textarea.form-control {
+    resize: vertical;
+    min-height: 116px;
+    border-radius: 20px;
+    padding: 30px 20px;
+
+    @media (@lg-min) {
+      padding: 30px 30px ;
+      min-height: 80px;
+      border-radius: 40px;
+
+    }
+
+  }
+
+  .error-message {
+    color: #ff6b6b;
+    font-size: 8px;
+    margin-top: 5px;
+    padding: 0 20px;
+    display: none;
+
+    @media (@lg-min) {
+      padding: 0 30px;
+      font-size: 12px;
+
+    }
+  }
+
+  .error-message.visible {
+    display: block;
+  }
+
+  .file-upload {
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: border-color 0.3s ease-out;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px dashed #E5E7EB;
+    margin-bottom: 10px;
+
+    @media (@lg-min) {
+      border: 4px dashed #E5E7EB;
+      margin-left: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+  .file-upload:hover {
+    border-color: #513973;
+  }
+
+  .file-upload.error {
+    border-color: #ff6b6b;
+  }
+
+  .file-upload p {
+    //margin: 5px 0;
+    color: #000;
+    font-size: 14px;
+
+    @media (@md-min) {
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 100;
+    }
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #513973;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+
+    @media (@lg-min) {
+      margin-top: 20px;
+    }
+  }
+
+  .submit-button:hover {
+    background-color: #422f5e;
+  }
+
+  .submit-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+
+  .download-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #503872;
+    text-decoration: underline;
+    font-weight: 400;
+
+    @media (@lg-min) {
+      font-size: 24px;
+      line-height: 26px;
+      margin-top: 40px;
+
+    }
+  }
+
+  .download-link:hover {
+    text-decoration: underline;
+  }
+
+  .benefits-section {
+    margin-top: 40px;
+  }
+
+  .benefits-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    display: flex;
+
+    @media (@lg-min) {
+      font-size: 32px;
+      line-height: 28.8px;
+      font-weight: 400;
+      margin-bottom: 51px;
+    }
+  }
+
+  .benefits-text {
+    color: #333;
+    margin-bottom: 31px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    display: flex;
+
+    @media (@lg-min) {
+      margin-bottom: 31px;
+      font-size: 20px;
+      line-height: 28.8px;
+    }
+  }
+
+  #promoForm {
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: 10px;
+
+    @media (@lg-min) {
+      padding: 50px 40px;
+    }
+  }
+
+  .download-link-container {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 20px;
+      height: 26px;
+      margin-left: 20px;
+      margin-top: 16px;
+
+      @media (@lg-min) {
+        margin-top: 36px;
+        width: 25px;
+        height: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{{#> modules/layout/default/index }}
+  <section class="page page-promo-form">
+    <section class="box page-promo-form__box">
+        <section class="box__row">
+            <section class="box__col">
+                <div class="page-shares__breadcrumb">
+                    <a href="/">Главная</a>
+                    {{> modules/common/svg-icon/index src="icons/min-arrow.svg" }}
+                    <a href="">Рекламодателям</a>
+                </div>
+            </section>
+        </section>
+    </section>
+      <section class="box">
+          <div class="box__row">
+              <div class="box__col">
+              <div class="promo-form">
+                  <form id="promoForm" novalidate>
+                      <h1 class="form-title">Проведение промо и размещение рекламы</h1>
+                      <div class="box__row">
+                      <div class="box__col box__col_xs_12 box__col_md_5">
+                      <div class="form-layout">
+                          <div class="form-group">
+                              <label for="name">ФИО</label>
+                              <input type="text" id="name" class="form-control" placeholder="Иванов Иван Иванович" maxlength="50" required>
+                              <div class="error-message">Пожалуйста, введите ФИО</div>
+                          </div>
+
+                          <div class="form-group">
+                              <label for="email">E-mail</label>
+                              <input type="email" id="email" class="form-control" placeholder="mail@example.com" maxlength="50" required>
+                              <div class="error-message">Пожалуйста, введите корректный email</div>
+                          </div>
+
+                          <div class="form-group">
+                              <label for="phone">Телефон</label>
+                              <input type="tel" id="phone" class="form-control" placeholder="+7 (000)-000-00-00" required>
+                              <div class="error-message">Пожалуйста, введите корректный номер телефона</div>
+                          </div>
+                      </div>
+                      </div>
+
+                          <div class="box__col box__col_xs_12 box__col_md_7">
+                              <div class="form-group form-group_full">
+                                  <div class="file-upload" id="dropZone">
+                                      <input type="file" id="fileInput" hidden accept=".jpg,.jpeg,.png,.pdf">
+                                      <p>Выберите на компьютере или перетащите файл сюда</p>
+                                      <p>(не более 10 МБ)</p>
+                                      <p>Допустимые форматы: jpg, jpeg, png, pdf</p>
+                                  </div>
+                                  <div class="error-message" id="fileError"></div>
+                              </div>
+                          </div>
+                      </div>
+
+                          <div class="box__row">
+                              <div class="box__col box__col_xs_12">
+                                  <div class="form-group full-width">
+                                      <label for="description">Описание проекта</label>
+                                      <textarea id="description" class="form-control"
+                                                placeholder="ТРЦ «Изумрудный город» совместно с музыкальной студией «Музыкариум» запускают новый уникальный для города шоу-проект «Во весь голос». Если ты любишь петь и мечтаешь выступать на сцене, то этот проект для тебя!"
+                                                required></textarea>
+                                      <div class="error-message">Пожалуйста, добавьте описание проекта</div>
+                                  </div>
+                              </div>
+                          </div>
+                      <button type="submit" class="submit-button">Отправить заявку</button>
+                      <div class="download-link-container">
+                          <a href="#" class="download-link">Скачать презентацию</a>
+                          {{> modules/common/svg-icon/index src="icons/icon-pdf.svg" }}
+                      </div>
+                  </form>
+
+
+                  <div class="benefits-section">
+                      <h2 class="benefits-title">Почему размещать рекламу у нас выгодно?</h2>
+                      <p class="benefits-text">Ежедневно ТРЦ «Изумрудный город» встречает гостей – платежеспособных томичей и гостей города, которые пришли за покупками или развлечениями.</p>
+                      <p class="benefits-text">Эта аудитория ценна не только для брендов-арендаторов, она может стать ключевой для любой другой компании в сегменте B2C, которая ищет возможность увеличения продаж</p>
+                      <p class="benefits-text">Благодаря своему расположению, размерам, уникальному составу арендаторов и масштабной рекламной кампании, «Изумрудный город» становится точкой притяжения №1 в Томске. Посещаемость ТРЦ ежедневно растет. Рекламные площади и промо-площадки внутри и вне торгового центра становятся эффективным рекламным ресурсом, которые помогут вам успешно решить любые коммерческие и маркетинговые задачи.</p>
+                  </div>
+              </div>
+              </div>
+      </section>
+  </section>
+{{/ modules/layout/default/index }}

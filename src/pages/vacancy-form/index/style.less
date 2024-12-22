@@ -1,0 +1,230 @@
+@import (reference) 'src/style/mixins';
+
+.page-vacancy-form {
+  margin-bottom: 60px;
+  padding-top: 20px;
+
+  @media (@lg-min) {
+    padding-top: 60px;
+  }
+
+
+  @media (@md-min) {
+    padding-inline: 100px;
+  }
+
+
+  &__space {
+    margin-bottom: 30px;
+
+    @media (@md-min) {
+      margin-bottom: 60px;
+    }
+  }
+  &__breadcrumb {
+    margin-left: 20px;
+
+    color: #808080;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 12px;
+
+    @media (@lg-min) {
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    a {
+      color: #808080;
+      font-size: 12px;
+      font-weight: 200;
+      line-height: 12px;
+
+      @media (@lg-min) {
+        font-size: 14px;
+        line-height: 14px;
+      }
+
+      &:hover {
+        color: #808080;
+      }
+    }
+
+    svg {
+      fill: transparent;
+      width: 4px;
+      height: 4px;
+      margin-bottom: 2px;
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+
+    @media (@md-min) {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+  .resume-form {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .form-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .form-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+
+  .form-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .personal-data {
+    padding-right: 20px;
+  }
+
+  .resume-upload {
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #fff;
+  }
+
+  .form-control.error {
+    border-color: #ff6b6b;
+  }
+
+  .error-message {
+    color: #ff6b6b;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+  }
+
+  .error-message.visible {
+    display: block;
+  }
+
+  .file-upload {
+    border: 2px dashed #E5E7EB;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .file-upload:hover {
+    border-color: #513973;
+  }
+
+  .file-upload.error {
+    border-color: #ff6b6b;
+  }
+
+  .file-upload p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+  }
+
+  .resume-link {
+    margin-top: 20px;
+  }
+
+  .resume-link input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fff;
+  }
+
+  .checkbox-group {
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .checkbox-group input[type="checkbox"] {
+    margin-top: 3px;
+  }
+
+  .checkbox-group label {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .checkbox-group a {
+    color: #513973;
+    text-decoration: none;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #513973;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  .submit-button:hover {
+    background-color: #422f5e;
+  }
+
+  .submit-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+}

@@ -70,69 +70,56 @@
       line-height: 32px;
     }
   }
-  .resume-form {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
+  .vacancy-form {
 
-  .form-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-
-  .form-subtitle {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 30px;
-  }
-
-  .form-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
-
-  .personal-data {
-    padding-right: 20px;
-  }
-
-  .resume-upload {
-    background: #f9fafb;
-    padding: 20px;
-    border-radius: 12px;
-  }
-
-  .section-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
   }
 
   .form-group {
     margin-bottom: 20px;
     position: relative;
+
+    &_full {
+      height: 100%;
+      margin-bottom: 25px;
+    }
   }
 
   .form-group label {
     display: block;
     margin-bottom: 8px;
-    font-weight: 500;
-    color: #333;
+    font-weight: 400;
+    margin-left: 20px;
+
+    @media (@lg-min) {
+      font-size: 20px;
+      line-height: 26px;
+      margin-left: 30px;
+    }
   }
+
 
   .form-control {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #E5E7EB;
-    border-radius: 8px;
+    border: 0.5px solid #503872;
+    border-radius: 20px;
     box-sizing: border-box;
-    font-size: 14px;
-    background-color: #fff;
-  }
+    font-size: 10px;
+    line-height: 10px;
+    padding: 16px 20px;
+    color: #000;
+    outline: none;
 
+    &::placeholder {
+      color: #808080;
+
+    }
+
+    @media (@lg-min) {
+      font-size: 14px;
+      line-height: 14px;
+      padding: 16px 30px;
+    }
+  }
   .form-control.error {
     border-color: #ff6b6b;
   }
@@ -149,18 +136,14 @@
   }
 
   .file-upload {
-    border: 2px dashed #E5E7EB;
-    padding: 40px 20px;
+    border: 2px dashed #ddd;
+    padding: 20px;
     text-align: center;
-    border-radius: 12px;
+    margin: 20px 0;
     cursor: pointer;
     transition: border-color 0.3s;
-    background-color: #fff;
-    margin-bottom: 20px;
-  }
 
-  .file-upload:hover {
-    border-color: #513973;
+
   }
 
   .file-upload.error {
@@ -170,52 +153,17 @@
   .file-upload p {
     margin: 5px 0;
     color: #666;
-    font-size: 14px;
-  }
-
-  .resume-link {
-    margin-top: 20px;
-  }
-
-  .resume-link input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #E5E7EB;
-    border-radius: 8px;
-    font-size: 14px;
-    background-color: #fff;
-  }
-
-  .checkbox-group {
-    margin: 20px 0;
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .checkbox-group input[type="checkbox"] {
-    margin-top: 3px;
-  }
-
-  .checkbox-group label {
-    font-size: 14px;
-    color: #666;
-  }
-
-  .checkbox-group a {
-    color: #513973;
-    text-decoration: none;
+    font-size: 0.9em;
   }
 
   .submit-button {
     width: 100%;
-    padding: 14px;
+    padding: 12px;
     background-color: #513973;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
     transition: background-color 0.3s;
   }
 
@@ -227,4 +175,264 @@
     background-color: #cccccc;
     cursor: not-allowed;
   }
+
+  .checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 20px 0;
+
+    @media (@lg-min) {
+      margin: 100px 0 40px 0px;
+    }
+
+    label {
+
+      @media (@lg-min) {
+        font-size: 24px;
+        line-height: 26px;
+      }
+    }
+
+    a {
+      color: #503872;
+      text-decoration: underline;
+
+      @media (@lg-min) {
+        font-size: 24px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  .checkbox-group input[type="checkbox"] {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    border: 1px solid #000;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    @media (@lg-min) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  t-container {
+    position: relative;
+  }
+  .error-icon.visible {
+    display: block;
+  }
+
+  .form-control {
+    width: 100%;
+    border: 0.5px solid #503872;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 16px 20px;
+    color: #000;
+    outline: none;
+
+    &::placeholder {
+      color: #808080;
+
+    }
+
+    @media (@lg-min) {
+      font-size: 14px;
+      line-height: 14px;
+      padding: 16px 30px;
+    }
+  }
+
+  .form-control.error {
+    border-color: #ff6b6b;
+  }
+
+  textarea.form-control {
+    resize: vertical;
+    min-height: 116px;
+    border-radius: 20px;
+    padding: 30px 20px;
+
+    @media (@lg-min) {
+      padding: 30px 30px ;
+      min-height: 80px;
+      border-radius: 40px;
+
+    }
+
+  }
+
+  .error-message {
+    color: #ff6b6b;
+    font-size: 8px;
+    margin-top: 5px;
+    padding: 0 20px;
+    display: none;
+
+    @media (@lg-min) {
+      padding: 0 30px;
+      font-size: 12px;
+
+    }
+  }
+
+  .error-message.visible {
+    display: block;
+  }
+  .file-upload {
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 12px;
+    height: 59.5%;
+    cursor: pointer;
+    transition: border-color 0.3s ease-out;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px dashed #E5E7EB;
+    margin-bottom: 10px;
+
+    @media (@lg-min) {
+      border: 4px dashed #E5E7EB;
+      margin-bottom: 0;
+    }
+  }
+
+  .file-upload:hover {
+    border-color: #513973;
+  }
+
+  .file-upload.error {
+    border-color: #ff6b6b;
+  }
+
+  .file-upload p {
+    //margin: 5px 0;
+    color: #000;
+    font-size: 14px;
+
+    @media (@md-min) {
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 100;
+    }
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #513973;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+
+    @media (@lg-min) {
+      margin-top: 20px;
+    }
+  }
+
+  .submit-button:hover {
+    background-color: #422f5e;
+  }
+
+  .submit-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+
+  #resumeForm {
+    margin-top: 20px;
+
+    @media (@lg-min) {
+      margin-top: 60px;
+    }
+  }
+
+  .form-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000;
+    margin-bottom: 20px;
+
+    @media (@lg-min) {
+      font-size: 32px;
+      line-height: 28.8px;
+      font-weight: 400;
+
+      margin-bottom: 36px;
+    }
+  }
+
+  .resume-link {
+
+    @media (@lg-min) {
+      margin-top: 20px;
+    }
+  }
+
+  .resume-upload {
+    border-radius: 20px;
+    height: 100%;
+    padding: 20px;
+
+
+    @media (@lg-min) {
+      margin-left: 40px;
+      padding: 30px 60px 30px 60px;
+      border-radius: 40px;
+      margin-top: 30px;
+    }
+  }
+
+  #resumeLink {
+    border-radius: 0;
+  }
+
+  .form-subtitle {
+
+    font-size: 16px;
+    line-height: 16px;
+
+
+
+    @media (@lg-min) {
+      font-size: 24px;
+      line-height: 26px;
+
+    }
+  }
+
+  .section-title {
+    font-weight: 700;
+    margin-bottom: 20px;
+
+    @media (@lg-min) {
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .form-space {
+    margin-top: 20px;
+
+    @media (@lg-min) {
+      margin-top: 40px;
+    }
+  }
+
 }

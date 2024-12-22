@@ -9,7 +9,7 @@ import './style.less';
 
  const swiperGallery = new Swiper('.gallery-swiper', {
      spaceBetween: 30,
-     slidesPerView: 2.2,
+     slidesPerView: 1.5,
      initialSlide: 1,
      centeredSlides: true,
      updateOnWindowResize: true,
@@ -24,30 +24,14 @@ import './style.less';
              prevEl: '.gallery-swiper-button-prev',
          },
         breakpoints: {
-             320: {
-                 spaceBetween: 110,
-             },
-            340: {
-                spaceBetween: 100,
-            },
-            400: {
-                spaceBetween: 110,
-            },
-            440: {
-                spaceBetween: 80,
-            },
             480: {
-                spaceBetween: 90,
+                slidesPerView: 1.7,
+                spaceBetween: 50,
             },
-            550: {
-                spaceBetween: 110,
-            },
-            650: {
-                spaceBetween: 80,
-            },
-            900: {
-                spaceBetween: 100,
-            },
+            960: {
+                slidesPerView: 2,
+                spaceBetween: 60,
+            }
         },
     }
 );

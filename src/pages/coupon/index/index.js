@@ -10,8 +10,6 @@ import Swiper from "swiper";
 const couponsSwiper = new Swiper('.page-coupon__coupons-swiper', {
         slidesPerView: 2.4,
         spaceBetween: 10,
-        slidesOffsetAfter: 20,
-        slidesOffsetBefore: 20,
         breakpoints: {
             320: {
                 slidesPerView: 1.7,

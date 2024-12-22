@@ -15,6 +15,7 @@
     line-height: 12px;
 
     @media (@lg-min) {
+      margin-left: 0;
       font-size: 14px;
       line-height: 14px;
     }
@@ -109,6 +110,13 @@
       width: 20px;
       height: 20px;
     }
+
+    @media (@lg-min) {
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
   }
 
   &__floor {
@@ -116,12 +124,6 @@
     font-weight: 600;
     line-height: 18.2px;
     color: #808080;
-
-    @media (@lg-min) {
-      font-size: 12px;
-      font-weight: 600;
-      line-height: 15.6px;
-    }
   }
 
   &__map-button {
@@ -169,10 +171,6 @@
     @media (@lg-min) {
       margin-bottom: 15px;
       gap: 15px;
-      svg {
-        width: 25px;
-        height: 25px;
-      }
     }
   }
 
@@ -187,9 +185,6 @@
 
     @media (@lg-min) {
       margin-bottom: 15px;
-      font-size: 10px;
-      font-weight: 600;
-      line-height: 14px;
     }
   }
 
@@ -208,6 +203,7 @@
     }
 
     @media (@lg-min) {
+      gap: 15px;
       svg {
         width: 25px;
         height: 25px;
@@ -239,12 +235,6 @@
       background-color: #D9D9D9;
     }
 
-    div {
-      width: 7px;
-      height: 7px;
-      background-color: #D9D9D9;
-    }
-
     &.active {
       &:before {
         background-color: #503872;
@@ -270,9 +260,9 @@
         height: 9px;
       }
       span {
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 300;
-        line-height: 13px;
+        line-height: 12px;
       }
     }
   }

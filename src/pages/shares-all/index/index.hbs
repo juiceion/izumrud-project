@@ -1,44 +1,31 @@
 {{#> modules/layout/default/index }}
   <section class="page page-shares-all">
-    <section class="box page-shares-all__box">
-        <section class="box__row">
-            <section class="box__col">
-                <div class="page-shares-all__breadcrumb">
-                    <a href="/">Главная</a>
-                    {{> modules/common/svg-icon/index src="icons/min-arrow.svg" }}
-                    <a href="">Акции</a>
-                    {{> modules/common/svg-icon/index src="icons/min-arrow.svg" }}
-                    <a href="">Maramalato</a>
-                </div>
-            </section>
-        </section>
-        <section class="box__row">
-           <div class="box__col">
-               <h1 class="page-shares-all__title">Акции</h1>
-           </div>
-        </section>
-        <section class="box__row page-shares-all__tabs j-tabs">
-                <button class="page-shares-all__all page-shares-all__tab page-shares-all__tab_active j-tab" data-tab-id="all">
-                    <span class="page-shares-all__tab-text">все</span>
-                </button>
-                <button class="page-shares-all__action page-shares-all__tab j-tab" data-tab-id="shares">
-                    <span class="page-shares-all__tab-text">акции и скидки</span>
-                </button>
-                <button class="page-shares-all__new page-shares-all__tab j-tab" data-tab-id="new">
-                    <span class="page-shares-all__tab-text">новинки</span>
-                </button>
-        </section>
-        <section class="box__row page-shares-all__cards">
-           {{#each desktopPromoList1}}
-                <div class="box__col box__col_xs_12 box__col_md_3 box__col_lg_3">
-                    <a href="/shares" class="page-shares-all__card">
-                        {{>modules/common/promo-card/index }}
-                    </a>
-
-                </div>
-           {{/each}}
-       </section>
-    </section>
+      <div class="page-shares-all__breadcrumb">
+          <a href="/">Главная</a>
+          {{> modules/common/svg-icon/index src="icons/min-arrow.svg" }}
+          <a href="">Акции</a>
+          {{> modules/common/svg-icon/index src="icons/min-arrow.svg" }}
+          <a href="">Maramalato</a>
+      </div>
+      <h1 class="page-shares-all__title">Акции</h1>
+      <section class="page-shares-all__tabs j-tabs">
+          <button class="page-shares-all__all page-shares-all__tab page-shares-all__tab_active j-tab" data-tab-id="all">
+              <span class="page-shares-all__tab-text">все</span>
+          </button>
+          <button class="page-shares-all__action page-shares-all__tab j-tab" data-tab-id="shares">
+              <span class="page-shares-all__tab-text">акции и скидки</span>
+          </button>
+          <button class="page-shares-all__new page-shares-all__tab j-tab" data-tab-id="new">
+              <span class="page-shares-all__tab-text">новинки</span>
+          </button>
+      </section>
+      <section class="page-shares-all__cards">
+          {{#each desktopPromoList1}}
+              <a href="/shares" class="page-shares-all__card">
+                  {{>modules/common/promo-card/index }}
+              </a>
+          {{/each}}
+      </section>
   </section>
   <div class="page-shares-all page-shares-all_line">
       <div class="page-shares-all__line">

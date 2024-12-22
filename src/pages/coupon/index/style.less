@@ -8,8 +8,6 @@
   }
 
   &__breadcrumb {
-    margin-left: 20px;
-
     color: #808080;
     font-size: 12px;
     font-weight: 200;
@@ -47,23 +45,42 @@
   }
 
   &__title {
+    display: block;
     color: #000000;
-    margin-top: 30px;
+    margin-block: 30px;
     font-size: 16px;
+    font-weight: 700;
     line-height: 16px;
     z-index: 9;
 
 
-    @media (@md-min) {
+    @media (@lg-min) {
+      font-size: 32px;
+      line-height: 38.4px;
+      margin-block: 45px 0;
+    }
+  }
+
+  &__how-get {
+    color: #000000;
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+
+    @media (@lg-min) {
+      margin-top: 50px;
       font-size: 32px;
       font-weight: 700;
-      line-height: 32.4px;
-      margin-top: 80px;
+      line-height: 38.4px;
+      text-align: initial;
     }
   }
 
   &__tiles {
-    padding: 20px 20px 40px;
+    padding-block: 10px 80px;
     display: flex;
     gap: 10px 20px;
     position: relative;
@@ -72,11 +89,11 @@
     z-index: 9;
 
     @media (@lg-min) {
-      margin-top: 64px;
-      margin-bottom: 40px;
+      margin-top: 45px;
+      margin-bottom: 75px;
       flex-direction: row;
       align-items: initial;
-
+      justify-content: space-between;
     }
   }
 
@@ -88,18 +105,21 @@
     background-color: transparent;
     text-align: center;
     flex-direction: column;
-    width: calc(70% - 10px);
     gap: 15px;
-    transition: all  ease-out 0.2s;
+    white-space: pre-line;
 
-    &:hover {
-      background-color: #F2F2F2;
+    span {
+      width: 260px;
     }
 
     @media (@lg-min) {
       padding-block: 40px;
       gap: 15px;
       width: 260px;
+
+      span {
+        width: initial;
+      }
     }
 
     svg {
@@ -127,14 +147,14 @@
     position: absolute;
     z-index: 1;
     width: 300%;
-    top: -34px;
+    top: 0;
     height: 100%;
     overflow: hidden;
     left: -100%;
+    pointer-events: none;
 
     @media (@lg-min) {
       width: 200%;
-      top: 0;
       left: -20%;
     }
 
@@ -160,10 +180,24 @@
     }
   }
 
+  &__sub-title {
+    margin-top: 60px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+
+    @media (@lg-min) {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 38.4px;
+    }
+  }
+
   &__purple-container {
     width: 100%;
     position: relative;
     overflow: hidden;
+    padding-inline: 20px;
 
     background-image: url(images/couponsBackground.png);
     background-repeat: no-repeat;
@@ -467,6 +501,11 @@
 
   &__box {
     position: relative;
+    padding-inline: 20px;
+
+    @media (@lg-min) {
+      padding-inline: 0;
+    }
   }
 
   &__sub-title {
@@ -490,7 +529,7 @@
     margin-left: 0;
     flex-wrap: nowrap;
 
-    @media (@md-min) {
+    @media (@lg-min) {
       gap: 16px;
       margin-top: 35px;
       margin-left: 0;
@@ -513,7 +552,7 @@
     font-size: 10px;
     font-weight: 100;
 
-    @media (@md-min) {
+    @media (@lg-min) {
       font-size: 24px;
       min-width: 250px;
       padding: 24px 16px;

@@ -3,14 +3,13 @@
 .page-coupon-all {
   margin-bottom: 60px;
   padding-top: 20px;
+  padding-inline: 20px;
 
   @media (@lg-min) {
     padding-inline: 100px;
   }
 
   &__breadcrumb {
-    margin-left: 20px;
-
     color: #808080;
     font-size: 12px;
     font-weight: 200;
@@ -52,7 +51,7 @@
     margin-top: 30px;
 
 
-    @media (@md-min) {
+    @media (@lg-min) {
       font-size: 32px;
       font-weight: 700;
       line-height: 32.4px;
@@ -61,7 +60,7 @@
   }
 
   &__tiles {
-    padding: 20px 20px 40px;
+    padding-block: 20px 40px;
     display: flex;
     gap: 10px 20px;
     position: relative;
@@ -71,8 +70,8 @@
 
     @media (@lg-min) {
       margin-top: 64px;
-      margin-bottom: 40px;
       flex-direction: row;
+      justify-content: space-between;
       align-items: initial;
 
     }
@@ -88,17 +87,19 @@
     flex-direction: column;
     width: calc(70% - 10px);
     gap: 15px;
-    transition: all  ease-out 0.2s;
 
-    &:hover {
-      //background-color: #F2F2F2;
-      transform: scale(1.1);
+    span {
+      width: 260px;
     }
 
     @media (@lg-min) {
       padding-block: 40px;
       gap: 15px;
       width: 260px;
+
+      span {
+        width: initial;
+      }
     }
 
     svg {
@@ -460,6 +461,14 @@
     position: relative;
   }
 
+  &__box-izumrud {
+    margin-inline: -20px;
+
+    @media (@lg-min) {
+      margin-inline: 0;
+    }
+  }
+
   &__sub-title {
     font-size: 16px;
     line-height: 16px;
@@ -480,7 +489,7 @@
     margin-left: 0;
     flex-wrap: nowrap;
 
-    @media (@md-min) {
+    @media (@lg-min) {
       gap: 16px;
       margin-top: 35px;
       margin-left: 0;
@@ -501,13 +510,14 @@
     border-radius: 10px;
     transition: background-color ease-out 0.25s;
     font-size: 10px;
-    font-weight: 100;
+    font-weight: 200;
 
-    @media (@md-min) {
-      font-size: 24px;
+    @media (@lg-min) {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 26px;
       min-width: 250px;
       padding: 24px 16px;
-      font-weight: 300;
     }
 
     &:hover {
@@ -531,21 +541,24 @@
   }
 
   &__list {
-    //margin-top: 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    @media (@md-min) {
+      grid-template-columns: repeat(3, 1fr);
+    }
 
     @media (@lg-min) {
-      margin-top: 20px;
+      margin-top: 40px;
       margin-bottom: 40px;
       justify-content: initial;
+      gap: 15px;
     }
   }
 
   &__list-item {
-    margin-top: 20px;
     display: block;
-
-    @media (@lg-min) {
-      margin-top: 30px;
-    }
   }
 }

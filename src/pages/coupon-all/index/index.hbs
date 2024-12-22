@@ -87,14 +87,16 @@
                  </button>
          </section>
      </div>
-      <section class="box__row page-coupon-all__list">
-          {{#each couponList}}
-            <div class="box__col box__col_xs_10 box__col_md_4">
-                 <a href="#" class="page-coupon-all__list-item">
-                     {{>modules/common/coupon-card/index }}
-                 </a>
-             </div>
-          {{/each}}
-      </section>
+      <div class="box">
+          <section class="box__row page-coupon-all__list">
+              {{#each couponList}}
+                  <div class="box__col box__col_xs_6 box__col_sm_3 box__col_md_3">
+                      <a href="#" class="page-coupon-all__list-item">
+                          {{>modules/common/coupon-card/index }}
+                      </a>
+                  </div>
+              {{/each}}
+          </section>
+      </div>
   </section>
 {{/ modules/layout/default/index }}

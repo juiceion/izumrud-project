@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" name="viewport" />
+<meta content="htmlLayoutKit" name="copyright">
+<meta content="RU" name="language">
+<meta content="index,follow" name="robots" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="htmlLayoutKit" name="og:site_name" />
+  <meta content="Событие - Изумрудный город" name="description" />
+<meta content="Событие - Изумрудный город" name="keywords" />
+<meta content="Событие - Изумрудный город" name="title">
+<meta content="http://html-layout-kit.ru" name="url">
+
+<meta content="Событие - Изумрудный город" property="og:description">
+  <meta content="/izumrud-project/sprite.svg#view-icon-image-c1c4b" property="og:image">
+<meta content="Событие - Изумрудный город" property="og:title">
+<meta content="website" property="og:type">
+<meta content="http://html-layout-kit.ru" property="og:url">
+
+<meta content="summary" property="twitter:card">
+<meta content="Событие - Изумрудный город" property="twitter:description">
+  <meta content="/izumrud-project/sprite.svg#view-icon-image-c1c4b" property="twitter:image">
+<meta content="Событие - Изумрудный город" property="twitter:title">
+<meta content="http://html-layout-kit.ru" property="twitter:url">
+  <link href="/izumrud-project/sprite.svg#view-icon-image-c1c4b" rel="icon">
+
+<title>Событие - Изумрудный город</title>
+  <style>
+    svg {
+      height: 0;
+    }
+
+    .opacity {
+      opacity: 0;
+    }
+    </style>
+<script defer src="/izumrud-project/vendor.min.js?0f52f98ca7235a857cf5"></script><script defer src="/izumrud-project/main.min.js?0f52f98ca7235a857cf5"></script><link href="/izumrud-project/vendor.min.css?0f52f98ca7235a857cf5" rel="stylesheet"><link href="/izumrud-project/main.min.css?0f52f98ca7235a857cf5" rel="stylesheet"></head>
+<body class="opacity">
+  
+<div class="layout">
+  <div class="layout__header">
+    <div class="header">
+    <div class="header__inner-container">
+        <div class="box__row header__row">
+            <div class="box__col box__col_xs_2 box__col_sm_4">
+                <div class="header__menu-container">
+                    <button id="menu-button" class="header__menu-btn visible">
+                        <svg class="svg-icon " viewBox="0 0 36 36">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-burger-9b26f"></use>
+</svg>
+                    </button>
+                    <button id="close-menu-button" class="header__menu-btn">
+                        <svg class="svg-icon " viewBox="0 0 24 24">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-close-0db4a"></use>
+</svg>
+                    </button>
+                    <a class="header__map">
+                        <svg class="svg-icon " viewBox="0 0 19 22">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-map-35c5a"></use>
+</svg>
+                        <span class="header__text">Карта этажей</span>
+                    </a>
+                    <a class="header__location">
+                        <svg class="svg-icon " viewBox="0 0 24 24">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-place-6fc2f"></use>
+</svg>
+                        <span class="header__text">Как добраться</span>
+                    </a>
+                </div>
+            </div>
+            <div class="box__col box__col_xs_6 header__center">
+                <a href="/izumrud-project/" class="header__logo">
+                    <svg class="svg-icon " viewBox="0 0 165 51">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-logo-5f22e"></use>
+</svg>
+                </a>
+            </div>
+
+            <div class="box__col box__col_xs_4">
+                <div class="header__menu-container header__menu-container_end">
+                    <button id="search-button" class="header__search visible">
+                        <svg class="svg-icon " viewBox="0 0 24 24">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-search-11df8"></use>
+</svg>
+                        <span class="header__text">поиск</span>
+                    </button>
+                    <button id="close-search-button">
+                        <svg class="svg-icon " viewBox="0 0 24 24">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-close-0db4a"></use>
+</svg>
+                    </button>
+                    <a id="desktop-time" class="header__time">
+                        <svg class="svg-icon " viewBox="0 0 11 12">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-time-b5438"></use>
+</svg>
+                        <span class="header__text">сегодня до 22:00</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box__row hidden_lg hidden_xl">
+            <div class="box__col box__col_xs_4">
+                <a class="header__map header__mobile-container">
+                    <svg class="svg-icon " viewBox="0 0 19 22">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-map-35c5a"></use>
+</svg>
+                    <span class="header__text">Карта этажей</span>
+                </a>
+            </div>
+            <div class="box__col box__col_xs_4">
+                <a class="header__location header__mobile-container">
+                    <svg class="svg-icon " viewBox="0 0 24 24">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-place-6fc2f"></use>
+</svg>
+                    <span class="header__text">Как добраться</span>
+                </a>
+            </div>
+            <div class="box__col box__col_xs_4">
+                <div id="schedule-mobile-button" class="header__time header__mobile-container">
+                    <svg class="svg-icon " viewBox="0 0 11 12">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-time-b5438"></use>
+</svg>
+                    <span class="header__text">Время работы</span>
+                </div>
+            </div>
+        </div>
+        <div id="schedule-desktop-container"><div class="schedule">
+    <img class="schedule__shop-build" src="/izumrud-project/images/shopBuild.png" />
+    <div class="schedule__content">
+        <div class="schedule__label-row">
+            <svg class="svg-icon " viewBox="0 0 22 22">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-clock-628cf"></use>
+</svg>
+            <span>Время работы</span>
+        </div>
+        <div class="schedule__schedule-outer-container">
+            <svg class="svg-icon " viewBox="0 0 22 22">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-clock-628cf"></use>
+</svg>
+            <div class="schedule__schedule-inner-container">
+                <div class="schedule__day-item">
+                    <span>ПН</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item active">
+                    <span>ВТ</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>СР</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>ЧТ</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>ПТ</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>СБ</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>ВС</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="schedule__custom-schedule-container">
+            <div class="schedule__custom-schedule-item">
+                <span class="schedule__custom-schedule-item__name">INTERSPAR</span>
+                <span class="schedule__custom-schedule-item__type">Супермаркет</span>
+                <span class="schedule__custom-schedule-item__time">10:00 - 23:00</span>
+            </div>
+            <div class="schedule__custom-schedule-item">
+                <span class="schedule__custom-schedule-item__name">WEZION</span>
+                <span class="schedule__custom-schedule-item__type">Компьютерный клуб</span>
+                <span class="schedule__custom-schedule-item__time">Круглосуточно</span>
+            </div>
+            <div class="schedule__custom-schedule-item">
+                <span class="schedule__custom-schedule-item__name">GOODWIN
+                    CINEMA
+                </span>
+                <span class="schedule__custom-schedule-item__type">Кинотеатр</span>
+                <span class="schedule__custom-schedule-item__time">10:00 - 23:00</span>
+            </div>
+        </div>
+    </div>
+</div></div>
+    </div>
+    <div id="schedule-mobile-container">
+        <div id="schedule-mobile-container-overlay">
+            <div class="schedule">
+    <img class="schedule__shop-build" src="/izumrud-project/images/shopBuild.png" />
+    <div class="schedule__content">
+        <div class="schedule__label-row">
+            <svg class="svg-icon " viewBox="0 0 22 22">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-clock-628cf"></use>
+</svg>
+            <span>Время работы</span>
+        </div>
+        <div class="schedule__schedule-outer-container">
+            <svg class="svg-icon " viewBox="0 0 22 22">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-clock-628cf"></use>
+</svg>
+            <div class="schedule__schedule-inner-container">
+                <div class="schedule__day-item">
+                    <span>ПН</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item active">
+                    <span>ВТ</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>СР</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>ЧТ</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>ПТ</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>СБ</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+                <div class="schedule__day-item">
+                    <span>ВС</span>
+                    <span>
+                        10:00
+                        22:00
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="schedule__custom-schedule-container">
+            <div class="schedule__custom-schedule-item">
+                <span class="schedule__custom-schedule-item__name">INTERSPAR</span>
+                <span class="schedule__custom-schedule-item__type">Супермаркет</span>
+                <span class="schedule__custom-schedule-item__time">10:00 - 23:00</span>
+            </div>
+            <div class="schedule__custom-schedule-item">
+                <span class="schedule__custom-schedule-item__name">WEZION</span>
+                <span class="schedule__custom-schedule-item__type">Компьютерный клуб</span>
+                <span class="schedule__custom-schedule-item__time">Круглосуточно</span>
+            </div>
+            <div class="schedule__custom-schedule-item">
+                <span class="schedule__custom-schedule-item__name">GOODWIN
+                    CINEMA
+                </span>
+                <span class="schedule__custom-schedule-item__type">Кинотеатр</span>
+                <span class="schedule__custom-schedule-item__time">10:00 - 23:00</span>
+            </div>
+        </div>
+    </div>
+</div>        </div>
+    </div>
+    <div id="global-search">
+    <div class="search-row">
+        <div class="search-container">
+            <input id="search-input" placeholder="Что вы хотите найти?" />
+            <svg class="svg-icon " viewBox="0 0 24 24">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-search-11df8"></use>
+</svg>
+        </div>
+        <button id="desktop-close-search-button">Закрыть</button>
+    </div>
+    <div class="search-result">
+        <a href="#" class="search-result__item">
+            <span class="search-result__item__header">Акция «Летний SALE в ZARINA»</span>
+            <span class="search-result__item__description">ZARINA - первый российский фэшн-бренд с 30-летней историей. Бренд вдохновляет на свершения</span>
+        </a>
+        <a href="#" class="search-result__item">
+            <span class="search-result__item__header">«Zarina»</span>
+            <span class="search-result__item__description">Скидки до 50%</span>
+        </a>
+        <a href="#" class="search-result__item">
+            <span class="search-result__item__header">Акция «До -70% на любимые товары в магазине»</span>
+            <span class="search-result__item__description">Скидки до 50%</span>
+        </a>
+        <a href="#" class="search-result__item">
+            <span class="search-result__item__header">Акция «200 бонусов в Zarina»</span>
+            <span class="search-result__item__description">200 бонусов в подарок при регистрации в Zarina Club</span>
+        </a>
+        <a href="#" class="search-result__item">
+            <span class="search-result__item__header">Акция «Летний SALE в ZARINA»</span>
+            <span class="search-result__item__description">ZARINA - первый российский фэшн-бренд с 30-летней историей. Бренд вдохновляет на свершения</span>
+        </a>
+        <a href="#" class="search-result__item">
+            <span class="search-result__item__header">«Zarina»</span>
+            <span class="search-result__item__description">Скидки до 50%</span>
+        </a>
+        <a href="#" class="search-result__item">
+            <span class="search-result__item__header">Акция «До -70% на любимые товары в магазине»</span>
+            <span class="search-result__item__description">Скидки до 50%</span>
+        </a>
+        <a href="#" class="search-result__item">
+            <span class="search-result__item__header">Акция «200 бонусов в Zarina»</span>
+            <span class="search-result__item__description">200 бонусов в подарок при регистрации в Zarina Club</span>
+        </a>
+    </div>
+    <div class="running-line-container">
+        <div class="running-line running-line__animation running-line__margin">
+            <span>GLORIA JEANCE</span>
+            <span>MO</span>
+            <span>ZARINA</span>
+            <span>GLORIA JEANCE</span>
+            <span>MO</span>
+            <span>ZARINA</span>
+            <span>GLORIA JEANCE</span>
+            <span>MO</span>
+            <span>ZARINA</span>
+            <span>GLORIA JEANCE</span>
+            <span>MO</span>
+            <span>ZARINA</span>
+        </div>
+        <div class="running-line running-line__animation-reverse">
+            <span>MO</span>
+            <span>ZARINA</span>
+            <span>GLORIA JEANCE</span>
+            <span>MO</span>
+            <span>ZARINA</span>
+            <span>GLORIA JEANCE</span>
+            <span>MO</span>
+            <span>ZARINA</span>
+            <span>GLORIA JEANCE</span>
+            <span>GLORIA JEANCE</span>
+            <span>MO</span>
+            <span>ZARINA</span>
+        </div>
+    </div>
+</div>    <div id="menu">
+    <div class="desktop-menu-container">
+        <div class="menu-tile">
+            <a class="item-header">
+                Магазины
+            </a>
+            <ul class="menu-list">
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Аксессуары
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Обувь
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Одежда
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Красота и здоровье
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Товары для дома
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Украшение и часы
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="all-shops">Все магазины</a>
+        </div>
+        <div class="menu-tile">
+            <a class="item-header">
+                Детям
+            </a>
+            <ul class="menu-list">
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Детские кафе
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Детские парикмахерские
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Мероприятия для детей
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Прокат детских автомобилей
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-tile">
+            <a class="item-header">
+                Еда
+            </a>
+            <ul class="menu-list">
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Рестораны
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Кафе
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Мороженое и сладости
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Кофейни
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-tile">
+            <a class="item-header">
+                Развлечения
+            </a>
+            <ul class="menu-list">
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Кино
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Аквариум
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Тир
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Виртуальная реальность
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Киберспортивный клуб
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-tile">
+            <a class="item-header">
+                Услуги
+            </a>
+            <ul class="menu-list">
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Банкоматы
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Денежные переводы и обмен валют
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Ателье
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Маникюрные салоны
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Печать фото
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Ремонт мобильных телефонов
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Салон оптики
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-tile">
+            <a class="item-header">
+                Сервисы
+            </a>
+            <ul class="menu-list">
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Стойка информации
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Бюро находок
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Гардероб
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-item-link">
+                        Сбор батареек
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-tile">
+            <a class="big-link">
+                Комплименты
+            </a>
+            <a class="big-link">
+                Новости и акции
+            </a>
+            <a class="big-link">
+                Обратная связь
+            </a>
+            <div class="menu-socials-container">
+                <a href="#" class="menu-social-item">
+                    <svg class="svg-icon " viewBox="0 0 36 36">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-vkempty-0318f"></use>
+</svg>
+                </a>
+                <a href="#" class="menu-social-item">
+                    <svg class="svg-icon " viewBox="0 0 36 36">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-telegramempty-2623e"></use>
+</svg>
+                </a>
+            </div>
+        </div>
+        <div class="custom-tile">
+            <a href="#" class="custom-tile__item">
+                <svg class="svg-icon " viewBox="0 0 21 20">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-arendators-b823c"></use>
+</svg>
+                <span>Арендаторам</span>
+            </a>
+            <a href="#" class="custom-tile__item">
+                <svg class="svg-icon " viewBox="0 0 20 20">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-advertisers-78bab"></use>
+</svg>
+                <span>Рекламодателям</span>
+            </a>
+            <a href="#" class="custom-tile__item">
+                <svg class="svg-icon " viewBox="0 0 20 20">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-vacancies-b6ee6"></use>
+</svg>
+                <span>Вакансии</span>
+            </a>
+        </div>
+    </div>
+    <div id="menu-mobile-overlay">
+        <div class="mobile-menu-container">
+            <a href="#">Магазины</a>
+            <a href="#">Детям</a>
+            <a href="#">Еда</a>
+            <a href="#">Услуги</a>
+            <a href="#">Кинотеатр</a>
+            <a href="#">Сервисы</a>
+            <a href="#">Развлечения</a>
+            <a href="#">Вакансии</a>
+            <a href="#">Фотографии</a>
+            <a href="#">Комплименты</a>
+            <a href="#">Арендодателям</a>
+            <a href="#">Рекламодателям</a>
+            <a href="#">Карта этажей</a>
+            <a href="#">Как добраться</a>
+            <a href="#">Контакты</a>
+        </div>
+    </div>
+</div></div>
+
+
+  </div>
+  <div class="layout__body">
+          <section class="page page-vacancy-form">
+    <section class="boxpage-promo-form__box">
+        <section class="box__row">
+            <section class="box__col">
+                <div class="page-shares__breadcrumb">
+                    <a href="/">Главная</a>
+                    <svg class="svg-icon " viewBox="0 0 4 5">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-min-arrow-ca54e"></use>
+</svg>
+                    <a href="">Вакансии</a>
+                    <svg class="svg-icon " viewBox="0 0 4 5">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-min-arrow-ca54e"></use>
+</svg>
+                    <a href="">Оставить резюме</a>
+                </div>
+            </section>
+        </section>
+    </section>
+      <section class="box">
+          <div class="box__row">
+              <div class="box__col">
+          <div class="resume-form">
+              <form id="resumeForm" novalidate>
+                  <div class="box__row">
+                      <div class="box__col">
+                          <h1 class="form-title">Оставить резюме</h1>
+                          <p class="form-subtitle">Расскажите нам о себе и мы обязательно с вами свяжемся</p>
+                      </div>
+                  </div>
+
+                      <div class="box__row form-space">
+                          <div class="box__col box__col_xs_12 box__col_md_4">
+                      <div class="personal-data">
+                          <h2 class="section-title">Личные данные</h2>
+
+                          <div class="form-group">
+                              <label for="firstName">Имя</label>
+                              <input type="text" id="firstName" class="form-control" placeholder="Иванов Иван Иванович" required>
+                              <div class="error-message">Пожалуйста, введите имя</div>
+                          </div>
+
+                          <div class="form-group">
+                              <label for="lastName">Фамилия</label>
+                              <input type="text" id="lastName" class="form-control" placeholder="Управляющий" required>
+                              <div class="error-message">Пожалуйста, введите фамилию</div>
+                          </div>
+
+                          <div class="form-group">
+                              <label for="email">E-mail</label>
+                              <input type="email" id="email" class="form-control" placeholder="mail@example.com" required>
+                              <div class="error-message">Пожалуйста, введите корректный email</div>
+                          </div>
+
+                          <div class="form-group">
+                              <label for="phone">Телефон</label>
+                              <input type="tel" id="phone" class="form-control" placeholder="+7 (3822) 281-381" required>
+                              <div class="error-message">Пожалуйста, введите корректный номер телефона</div>
+                          </div>
+                      </div>
+                     </div>
+                          <div class="box__col box__col_xs_12 box__col_md_8">
+                      <div class="resume-upload">
+                          <h2 class="section-title">Резюме</h2>
+
+                          <div class="file-upload" id="dropZone">
+                              <input type="file" id="fileInput" hidden accept=".jpg,.jpeg,.png,.pdf">
+                              <p>Выберите на компьютере или перетащите файл сюда</p>
+                              <p>(не более 10 МБ)</p>
+                              <p>Допустимые форматы: jpg, jpeg, png, pdf</p>
+                          </div>
+                          <div class="error-message" id="fileError"></div>
+
+                          <div class="resume-link">
+                              <input type="text" class="form-control" id="resumeLink"
+                                     placeholder="Или вставьте ссылку на резюме hh.ru или Superjob.ru">
+                          </div>
+                      </div>
+                          </div>
+                  </div>
+                  <div class="box__row">
+                      <div class="box__col">
+                          <div class="checkbox-group">
+                              <input type="checkbox" id="consent" required>
+                              <label for="consent">
+                                  Я даю согласие на <a href="#">обработку персональных данных</a>
+                              </label>
+                          </div>
+                          <div class="error-message" id="consentError">Необходимо дать согласие на обработку персональных данных</div>
+
+                          <button type="submit" class="submit-button">Оставить резюме</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+          </div>
+          </div>
+      </section>
+  </section>
+    
+    <div class="layout__footer">
+        <div class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__main-column">
+                <div class="footer__logo">
+                    <svg class="svg-icon " viewBox="0 0 119 37">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-logo-white-dba0a"></use>
+</svg>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <a href="#">СОУТ</a>
+                        <a href="#">Арендаторам</a>
+                    </div>
+                    <div class="footer__column">
+                        <a href="#">Персональные данные</a>
+                        <a href="#">Рекламодателям</a>
+                    </div>
+                    <div class="footer__column">
+                        <a href="#">Программа лояльности</a>
+                        <a href="/izumrud-project/vacancy">Вакансии</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__main-column">
+                <div class="footer__socials">
+                    <a href="/">
+                        <svg class="svg-icon " viewBox="0 0 30 30">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-vk-0ac93"></use>
+</svg>
+                    </a>
+                    <a href="/">
+                        <svg class="svg-icon " viewBox="0 0 30 30">
+  <use xlink:href="/izumrud-project/sprite.svg#icon-telegram-4d9a9"></use>
+</svg>
+                    </a>
+                </div>
+                <div class="footer__copyright">
+                    <a href="mailto:izumrudniy.tomsk.ru">izumrudniy.tomsk.ru © 2024</a>
+                    <p>Все права защищены</p>
+                    <a href="#">Персональные данные</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

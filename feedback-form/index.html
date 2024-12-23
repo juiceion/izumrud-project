@@ -36,7 +36,7 @@
       opacity: 0;
     }
     </style>
-<script defer src="/izumrud-project/vendor.min.js?9f342f50ddd9a300b88f"></script><script defer src="/izumrud-project/main.min.js?9f342f50ddd9a300b88f"></script><link href="/izumrud-project/vendor.min.css?9f342f50ddd9a300b88f" rel="stylesheet"><link href="/izumrud-project/main.min.css?9f342f50ddd9a300b88f" rel="stylesheet"></head>
+<script defer src="/izumrud-project/vendor.min.js?1da68f03b8fafc943891"></script><script defer src="/izumrud-project/main.min.js?1da68f03b8fafc943891"></script><link href="/izumrud-project/vendor.min.css?1da68f03b8fafc943891" rel="stylesheet"><link href="/izumrud-project/main.min.css?1da68f03b8fafc943891" rel="stylesheet"></head>
 <body class="opacity">
   
 <div class="layout">
@@ -714,8 +714,11 @@
               <div class="error-message" id="fileError"></div>
 
               <div class="checkbox-group">
-                  <input type="checkbox" id="consent" required>
-                  <label for="consent">Я даю согласие на <a href="#" >обработку персональных данных</a></label>
+                  <label for="consent">
+                      <input type="checkbox" id="consent" required>
+                      <span class="radiobtn"></span>
+                      <p>Я даю согласие на <a href="#" >обработку персональных данных</a></p>
+                  </label>
               </div>
               <div class="error-message" id="consentError">Необходимо дать согласие на обработку персональных данных</div>
 

@@ -80,7 +80,7 @@
   }
 
   &__tiles {
-    padding-block: 10px 80px;
+    padding-block: 10px 40px;
     display: flex;
     gap: 10px 20px;
     position: relative;
@@ -90,9 +90,10 @@
 
     @media (@lg-min) {
       margin-top: 45px;
-      margin-bottom: 75px;
+      margin-bottom: 10px;
       flex-direction: row;
       align-items: initial;
+      padding-block: 10px 0px;
       justify-content: space-between;
     }
   }
@@ -130,12 +131,14 @@
     span {
       font-size: 16px;
       font-weight: 400;
+      padding-inline: 40px;
       line-height: 16px;
       color: #000;
 
       @media (@lg-min) {
         line-height: 26px;
         font-weight: 300;
+        padding-inline: 0;
         font-size: 20px;
       }
     }
@@ -377,7 +380,6 @@
 
       @media (@lg-min) {
         display: initial;
-        margin-top: 20px;
         font-size: 20px;
         font-weight: 400;
         line-height: 26px;

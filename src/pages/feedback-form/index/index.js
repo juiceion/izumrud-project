@@ -57,6 +57,11 @@ import './style.less';
                 selectHead.style.color = '#808080';
                 wrapper.appendChild(selectHead);
 
+                selectHead.innerHTML = selectHead.innerHTML + `<div class="new-select__icon-arrow"><svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 2L8 8L2 2" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>`;
+
                 // Create select list
                 const selectList = document.createElement('div');
                 selectList.className = 'new-select__list';
@@ -95,7 +100,11 @@ import './style.less';
                             item.addEventListener('click', function() {
                                 const chooseItem = this.getAttribute('data-value');
                                 selectElement.value = chooseItem;
-                                selectHead.textContent = this.querySelector('span').textContent;
+                                selectHead.innerHTML = this.querySelector('span').textContent + `<div class="new-select__icon-arrow"><svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 2L8 8L2 2" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>`;
+                                ;
                                 selectHead.style.color = '#000';
                                 slideUp(selectList, duration, selectHead);
                                 selectHead.classList.remove('on');

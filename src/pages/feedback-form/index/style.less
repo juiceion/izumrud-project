@@ -201,8 +201,35 @@
       border-bottom-right-radius: 40px;
     }
   }
+
+  .new-select__icon-arrow {
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background-repeat: no-repeat;
+    transition: all .27s ease-in-out;
+    flex-shrink: 0;
+    top: 16px;
+    right: 18px;
+
+    @media (@lg-min) {
+      right: 22px;
+    }
+
+    svg {
+      width: 10px;
+      height: 10px;
+      flex-shrink: 0;
+      transform: rotate(0deg);
+      transition: all 0.4ms ease-in-out;
+    }
+  }
+
   .new-select__list.on {
     display: block;
+
+
   }
   .new-select__item span {
     display: block;
@@ -221,24 +248,12 @@
     color: #fff;
     background-color: #503872;
     transition: all 0.2s ease-in-out;
-
-
   }
-  .new-select:after {
-    content: "";
-    display: block;
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    background-repeat: no-repeat;
-    transition: all .27s ease-in-out;
-    transform: rotate(0deg);
-    flex-shrink: 0;
-  }
-  .new-select.on:after {
-    transform: rotate(180deg);
+
+  .new-select.on {
+    svg {
+      transform: rotate(180deg);
+    }
   }
 
   .form-control.error {

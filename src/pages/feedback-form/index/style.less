@@ -106,6 +106,8 @@
     color: #000;
     outline: none;
 
+
+
     &::placeholder {
       color: #808080;
 
@@ -117,6 +119,128 @@
       padding: 16px 30px;
     }
   }
+
+  .form-control-select {
+    display: block;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &::-ms-expand { display: none; }
+
+
+    option {
+      background-color: #fff;
+
+    }
+
+
+  }
+
+  .new-select {
+    width: 100%;
+    border: 0.5px solid #503872;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 16px 20px;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    color: #808080;
+
+
+    &__br {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &::placeholder {
+      color: #808080;
+
+    }
+
+    @media (@lg-min) {
+      padding: 16px 30px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+  .new-select__list {
+    position: absolute;
+    left: 0;
+    border: 0.5px solid #503872;
+    cursor: pointer;
+    width: 100%;
+    top: 68px;
+    z-index: 2;
+    background: #fff;
+    user-select: none;
+
+    //border-radius: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 19px;
+    outline: none;
+
+
+    @media (@lg-min) {
+      padding-top: 20px;
+      padding-bottom: 30px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      top: 80px;
+    }
+
+    &:first-child:hover {
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+  }
+  .new-select__list.on {
+    display: block;
+  }
+  .new-select__item span {
+    display: block;
+    padding: 4px 20px;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 200;
+
+    @media (@lg-min) {
+      padding: 4px 30px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+  .new-select__item span:hover {
+    color: #fff;
+    background-color: #503872;
+    transition: all 0.2s ease-in-out;
+
+
+  }
+  .new-select:after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-repeat: no-repeat;
+    transition: all .27s ease-in-out;
+    transform: rotate(0deg);
+    flex-shrink: 0;
+  }
+  .new-select.on:after {
+    transform: rotate(180deg);
+  }
+
   .form-control.error {
     border-color: #ff6b6b;
   }

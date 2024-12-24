@@ -266,15 +266,22 @@
     background-color: transparent;
 
     &:before {
-      background-color: #503872;
-      height: 12px;
-      width: 12px;
+      height: 8px;
+      width: 8px;
       content: "";
-      margin-left: 3px;
-      margin-bottom: 3px;
+      margin-left: 2.5px;
+      margin-bottom: 2px;
+      background-color: #503872;
       border-radius: 50%;
       display: inline-block;
       top: 2px;
+
+      @media (@lg-min) {
+        height: 12px;
+        width: 12px;
+        margin-left: 3px;
+        margin-bottom: 3px;
+      }
     }
   }
 
